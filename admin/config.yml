@@ -38,23 +38,45 @@ collections:
             fields:
               - {label: "Email", name: "email", widget: "string"}
               - {label: "Footer Tagline", name: "footer_line", widget: "string"}
-          - label: "Illustration Projects"
-            name: "illustration"
-            widget: "list"
-            fields: &project_fields
-              - {label: "Title", name: "title", widget: "string"}
-              - {label: "Tag / Category", name: "subtitle", widget: "string"}
-              - {label: "One-line Description", name: "desc", widget: "string"}
-              - {label: "Image", name: "image", widget: "image"}
           - label: "Design Projects"
             name: "design"
             widget: "list"
-            fields: *project_fields
-          - label: "E-Learning Projects"
-            name: "elearning"
+            fields: &project_fields
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Tag / Subcategory", name: "subtitle", widget: "string"}
+              - {label: "One-line Description", name: "desc", widget: "string"}
+              - {label: "Image", name: "image", widget: "image"}
+              - {label: "Image Fit (Contain = full-width strip for icons, Wide = full-width showcase for big layouts, Letterbox = show the whole image inside the card without cropping)", name: "fit", widget: "select", options: ["cover", "letterbox", "contain", "wide"], default: "cover", required: false}
+          - label: "Instructional Design Projects"
+            name: "instructional_design"
             widget: "list"
             fields: *project_fields
+          - label: "Illustration Projects"
+            hint: "Use Tag / Subcategory for things like Corporate, Sketchbook, Miscellaneous."
+            name: "illustration"
+            widget: "list"
+            fields:
+              - {label: "Subsection Name", name: "subtype", widget: "string"}
+              - label: "Pieces In This Subsection"
+                name: "items"
+                widget: "list"
+                fields: *project_fields
+          - label: "Caricature Projects"
+            hint: "Grouped by subtype. Each subtype is its own labeled row on the site. Add pieces inside the matching subtype, or add a whole new subtype group."
+            name: "caricature"
+            widget: "list"
+            fields:
+              - {label: "Subtype Name", name: "subtype", widget: "string"}
+              - label: "Pieces In This Subtype"
+                name: "items"
+                widget: "list"
+                fields: *project_fields
           - label: "Animation Projects"
             name: "animation"
+            widget: "list"
+            fields: *project_fields
+          - label: "Misc Projects"
+            hint: "Traditional art, 3D, or anything else that doesn't fit the other buckets."
+            name: "misc"
             widget: "list"
             fields: *project_fields

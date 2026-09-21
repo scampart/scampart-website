@@ -63,14 +63,13 @@
   .btn-outline:hover { border-color: var(--ink); transform: translateY(-2px); }
 
   .hero-art { position: relative; }
-  .hero-art-frame { position: relative; overflow: hidden; box-shadow: 0 30px 60px -20px rgba(0,0,0,0.6); }
-  .hero-art-frame img { width: 100%; display: block; filter: grayscale(1) contrast(1.15) brightness(0.94); }
-  .hero-art-frame::before { content: ""; position: absolute; inset: 0; z-index: 1; background: linear-gradient(150deg, var(--bg) 0%, var(--red) 100%); mix-blend-mode: color; opacity: 0.92; pointer-events: none; }
-  .hero-art-frame::after { content: ""; position: absolute; inset: 0; z-index: 2; background: linear-gradient(180deg, rgba(21,19,25,0) 55%, rgba(21,19,25,0.6) 100%); pointer-events: none; }
-  .badge { position: absolute; top: -20px; left: -20px; width: 64px; height: 64px; background: var(--red); border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 8px 18px rgba(0,0,0,0.4); z-index: 3; }
+  .hero-art-frame { position: relative; display: flex; justify-content: center; align-items: flex-end; padding-top: 30px; }
+  .hero-art-frame::before { content: ""; position: absolute; top: 0; right: 4%; bottom: 0; width: 62%; background: var(--red); z-index: 0; }
+  .hero-art-frame img { position: relative; z-index: 1; width: auto; max-width: 100%; max-height: 640px; display: block; filter: drop-shadow(0 18px 28px rgba(0,0,0,0.5)); }
+  .badge { position: absolute; top: 4px; left: 30%; width: 64px; height: 64px; background: var(--red); border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 8px 18px rgba(0,0,0,0.4); z-index: 3; }
   .badge svg { width: 30px; height: 30px; fill: #191016; }
   .torn-note { position: absolute; bottom: -22px; right: -24px; width: 150px; background: var(--paper); color: #2A2620; padding: 16px 16px 18px; font-family: var(--font-hand); font-size: 19px; line-height: 1.2; text-align: center; box-shadow: 0 14px 26px rgba(0,0,0,0.45); transform: rotate(3deg); z-index: 3; clip-path: polygon(2% 6%, 18% 0%, 40% 4%, 60% 0%, 80% 5%, 100% 0%, 98% 92%, 82% 100%, 62% 96%, 42% 100%, 20% 97%, 0% 100%); }
-  .est-tag { position: absolute; bottom: 14px; left: 14px; z-index: 3; font-family: var(--font-hand); font-size: 20px; color: var(--ink); background: rgba(21,19,25,0.55); padding: 4px 10px; backdrop-filter: blur(2px); }
+  .est-tag { position: absolute; bottom: 14px; left: 34%; z-index: 3; font-family: var(--font-hand); font-size: 20px; color: var(--ink); background: rgba(21,19,25,0.55); padding: 4px 10px; backdrop-filter: blur(2px); }
 
   @media (max-width: 900px) { .hero-grid { grid-template-columns: 1fr; } .toplinks { display: none; } .torn-note { right: 6px; bottom: -18px; } }
 
@@ -84,6 +83,16 @@
   @media (max-width: 780px) { .section-head { grid-template-columns: 1fr; } .section-desc { justify-content: flex-start; } }
 
   .bucket-nav-wrap { position: sticky; top: 65px; z-index: 20; background: var(--bg); padding: 16px 0; margin-bottom: 40px; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+  .subgroup-head { font-family: var(--font-mono); font-size: 12.5px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--red); margin: 0 0 18px; padding-bottom: 10px; border-bottom: 1px solid var(--line); }
+  .subnav { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin: 0 0 34px; padding: 16px 18px; background: var(--bg-raised); border: 1px solid var(--line-strong); border-radius: 14px; }
+  .subnav-label { font-family: var(--font-body); font-size: 13px; font-weight: 600; color: var(--ink); margin-right: 8px; }
+  .subnav-label span { color: var(--ink-soft); font-weight: 400; margin-left: 6px; }
+  .subnav button { font-family: var(--font-body); font-size: 14px; font-weight: 600; cursor: pointer; color: #1a1620; background: var(--paper); border: 2px solid var(--paper); border-radius: 999px; padding: 9px 18px; display: inline-flex; align-items: center; gap: 8px; transition: background .15s ease, color .15s ease, border-color .15s ease, transform .15s ease; }
+  .subnav button::after { content: "↓"; font-size: 15px; line-height: 1; }
+  .subnav button:hover { background: var(--red); border-color: var(--red); color: #191016; transform: translateY(2px); }
+  .subnav button .n { font-weight: 500; opacity: 0.6; margin-left: 2px; }
+  .subgroup { scroll-margin-top: 150px; }
+  .subgroup-empty { font-family: var(--font-mono); font-size: 12.5px; color: var(--ink-soft); margin: 0; }
   .bucket-nav { display: flex; flex-wrap: wrap; gap: 10px; }
   .bucket-nav button { font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.05em; text-transform: uppercase; cursor: pointer; color: var(--ink); background: transparent; border: 1px solid var(--line-strong); padding: 9px 16px; transition: background .15s ease, color .15s ease; }
   .bucket-nav button:hover { border-color: var(--red); color: var(--red); }
@@ -94,6 +103,11 @@
   .card:hover { transform: translateY(-6px); border-color: var(--line-strong); }
   .card-num { position: absolute; top: 12px; right: 12px; z-index: 2; font-family: var(--font-mono); font-size: 11px; color: var(--ink); background: rgba(21,19,25,0.6); padding: 3px 8px; backdrop-filter: blur(2px); }
   .card img { width: 100%; aspect-ratio: 4/3; object-fit: cover; display: block; filter: contrast(1.03); background: var(--bg-raised); }
+  .card.wide { grid-column: 1 / -1; }
+  .card.wide img.contain { aspect-ratio: 7 / 1; padding: 22px 30px; }
+  .card.wide img.natural { aspect-ratio: auto; height: auto; object-fit: contain; max-height: 620px; background: var(--bg-raised); }
+  .card img.letterbox { object-fit: contain; background: #0f0e13; }
+  .card img.contain { object-fit: contain; background: #fff; padding: 14px; }
   .card-body { padding: 18px 18px 22px; }
   .card-tag { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--red); margin: 0 0 8px; }
   .card-title { font-family: var(--font-display); font-weight: 700; font-size: 21px; text-transform: uppercase; margin: 0 0 6px; line-height: 1.05; }
@@ -123,16 +137,27 @@
   .contact-link:hover { color: var(--red); border-color: var(--red); }
   .foot-meta { font-family: var(--font-mono); font-size: 10.5px; color: var(--ink-soft); text-transform: uppercase; letter-spacing: 0.05em; }
 </style>
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", function (user) {});
+    window.netlifyIdentity.on("login", function () {
+      window.location.href = "/admin/";
+    });
+  }
+</script>
 </head>
 <body>
 
 <div class="topbar">
   <a class="mark" href="#top">SCAMP<span>.</span>ART</a>
   <ul class="toplinks">
-    <li><a href="#work" data-jump="illustration">Illustration</a></li>
     <li><a href="#work" data-jump="design">Design</a></li>
-    <li><a href="#work" data-jump="elearning">E&#8209;Learning</a></li>
+    <li><a href="#work" data-jump="instructional_design">Instructional Design</a></li>
+    <li><a href="#work" data-jump="illustration">Illustration</a></li>
+    <li><a href="#work" data-jump="caricature">Caricature</a></li>
     <li><a href="#work" data-jump="animation">Animation</a></li>
+    <li><a href="#work" data-jump="misc">Misc</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
 </div>
@@ -164,23 +189,27 @@
         <p class="section-num">01 — Selected Work</p>
         <h2>Real Work.<br><em>Real Impact.</em></h2>
       </div>
-      <div class="section-desc"><p>A selection of projects across e&#8209;learning, visual design, illustration, and animation.</p></div>
+      <div class="section-desc"><p>A selection of projects across design, instructional design, illustration, caricature, and animation.</p></div>
     </div>
 
     <div class="bucket-nav-wrap">
       <nav class="bucket-nav" role="tablist" aria-label="Filter work by category">
         <button type="button" role="tab" aria-pressed="true" data-bucket="all">All Work</button>
-        <button type="button" role="tab" aria-pressed="false" data-bucket="illustration">Illustration</button>
         <button type="button" role="tab" aria-pressed="false" data-bucket="design">Design</button>
-        <button type="button" role="tab" aria-pressed="false" data-bucket="elearning">E&#8209;Learning</button>
+        <button type="button" role="tab" aria-pressed="false" data-bucket="instructional_design">Instructional Design</button>
+        <button type="button" role="tab" aria-pressed="false" data-bucket="illustration">Illustration</button>
+        <button type="button" role="tab" aria-pressed="false" data-bucket="caricature">Caricature</button>
         <button type="button" role="tab" aria-pressed="false" data-bucket="animation">Animation</button>
+        <button type="button" role="tab" aria-pressed="false" data-bucket="misc">Misc</button>
       </nav>
     </div>
 
-    <div class="bucket" id="illustration"><div class="grid" data-grid="illustration"></div></div>
-    <div class="bucket" id="design" style="margin-top:24px;"><div class="grid" data-grid="design"></div></div>
-    <div class="bucket" id="elearning" style="margin-top:24px;"><div class="grid" data-grid="elearning"></div></div>
-    <div class="bucket" id="animation" style="margin-top:24px;"><div class="grid" data-grid="animation"></div></div>
+    <div class="bucket" id="design"><div class="bucket-body" data-body="design"></div></div>
+    <div class="bucket" id="instructional_design" style="margin-top:24px;"><div class="bucket-body" data-body="instructional_design"></div></div>
+    <div class="bucket" id="illustration" style="margin-top:24px;"><div class="bucket-body" data-body="illustration"></div></div>
+    <div class="bucket" id="caricature" style="margin-top:24px;"><div class="bucket-body" data-body="caricature"></div></div>
+    <div class="bucket" id="animation" style="margin-top:24px;"><div class="bucket-body" data-body="animation"></div></div>
+    <div class="bucket" id="misc" style="margin-top:24px;"><div class="bucket-body" data-body="misc"></div></div>
   </div>
 </section>
 
@@ -221,22 +250,49 @@
   function escText(s) { return String(s == null ? "" : s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;"); }
   function escAttr(s) { return String(s == null ? "" : s).replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;").replace(/>/g, "&gt;"); }
 
-  var BUCKET_KEYS = ["illustration", "design", "elearning", "animation"];
+  var BUCKET_KEYS = ["design", "instructional_design", "illustration", "caricature", "animation", "misc"];
 
   function renderCard(item, idx) {
     var num = String(idx + 1).padStart(2, "0");
     return (
-      '<a class="card" href="#">' +
+      '<a class="card' + (item.fit === 'contain' || item.fit === 'wide' ? ' wide' : '') + '" href="#">' +
         '<span class="card-num">' + num + '</span>' +
-        '<img src="' + escAttr(item.image) + '" alt="' + escAttr(item.title) + '">' +
+        '<img' + (item.fit === 'contain' ? ' class="contain"' : (item.fit === 'wide' ? ' class="natural"' : (item.fit === 'letterbox' ? ' class="letterbox"' : ''))) + ' src="' + escAttr(item.image) + '" alt="' + escAttr(item.title) + '">' +
         '<div class="card-body">' +
           '<p class="card-tag">' + escText(item.subtitle) + '</p>' +
           '<h3 class="card-title">' + escText(item.title) + '</h3>' +
-          '<p class="card-desc">' + escText(item.desc) + '</p>' +
+          (item.desc ? '<p class="card-desc">' + escText(item.desc) + '</p>' : '') +
           '<span class="card-link">View Project &#8594;</span>' +
         '</div>' +
       '</a>'
     );
+  }
+
+  function renderBucket(key, list) {
+    var body = document.querySelector('.bucket-body[data-body="' + key + '"]');
+    if (!body) return;
+    list = list || [];
+    var grouped = list.length > 0 && list[0] && Array.isArray(list[0].items);
+    if (!grouped) {
+      body.innerHTML = '<div class="grid">' + list.map(renderCard).join('') + '</div>';
+      return;
+    }
+    var subnav = '<div class="subnav" role="navigation" aria-label="Jump to a subsection"><span class="subnav-label">Jump to a subsection<span>(click to scroll)</span></span>' +
+      list.map(function (group, gIdx) {
+        return '<button type="button" data-subgroup="' + key + '-g' + gIdx + '">' + escText(group.subtype) + '<span class="n">' + (group.items || []).length + '</span></button>';
+      }).join('') + '</div>';
+    body.innerHTML = subnav + list.map(function (group, gIdx) {
+      var items = group.items || [];
+      var gridHtml = items.length ? items.map(renderCard).join('') : '<p class="subgroup-empty">No pieces added yet.</p>';
+      return '<div class="subgroup" id="' + key + '-g' + gIdx + '"' + (gIdx > 0 ? ' style="margin-top:40px;"' : '') + '>' +
+        '<h4 class="subgroup-head">' + escText(group.subtype) + '</h4><div class="grid">' + gridHtml + '</div></div>';
+    }).join('');
+    body.querySelectorAll('.subnav button').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var target = document.getElementById(btn.getAttribute('data-subgroup'));
+        if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
   }
 
   function render(data) {
@@ -258,12 +314,7 @@
     emailEl.href = 'mailto:' + (c.email || '');
     document.getElementById('footerLine').innerHTML = escText(c.footer_line || '');
 
-    BUCKET_KEYS.forEach(function (key) {
-      var grid = document.querySelector('.grid[data-grid="' + key + '"]');
-      if (!grid) return;
-      var items = data[key] || [];
-      grid.innerHTML = items.map(renderCard).join('');
-    });
+    BUCKET_KEYS.forEach(function (key) { renderBucket(key, data[key]); });
   }
 
   var currentFilter = 'all';

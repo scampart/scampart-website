@@ -1,38 +1,1083 @@
 {
   "hero": {
-    "eyebrow_tags": "Design, Illustration, E-Learning, Animation",
+    "eyebrow_tags": "Design, Instructional Design, Illustration, Caricature, Animation, Misc",
     "title_line1": "Ideas Into",
     "title_line2": "Experiences.",
-    "subtitle": "Senior visual designer crafting illustration, e-learning, animation, and digital design for brands that move people.",
-    "image": "/images/hero.jpg",
-    "image_alt": "Portrait photo",
+    "subtitle": "Senior visual designer crafting illustration, caricature, animation, and instructional design for brands that move people.",
+    "image": "/images/hero.webp",
+    "image_alt": "Illustrated portrait of Shawn Camp",
     "note_text": "Same curiosity. Different canvas.",
     "est_tag": "est. '96"
   },
   "about": {
     "title_line1": "Part Artist.",
     "title_line2": "Part Problem Solver.",
-    "body": "For over 25 years, I've helped brands turn complex ideas into clear, engaging visual experiences. Whether it's a character, an animation, or a full e-learning experience, I love finding creative ways to make information stick."
+    "body": "For over 25 years, I've helped brands turn complex ideas into clear, engaging visual experiences. Whether it's a caricature, a character, an animation, or a full instructional design build, I love finding creative ways to make information stick."
   },
   "contact": {
     "email": "scampart@gmail.com",
     "footer_line": "Good Ideas Travel Far."
   },
-  "illustration": [
-    {"title": "Ink & Aged Paper", "subtitle": "Caricature / Commission", "desc": "A character caricature rendered in bold ink over an aged-paper texture.", "image": "/images/illustration-1.jpg"},
-    {"title": "Odd Company", "subtitle": "Character / Concept", "desc": "A surreal character concept exploring texture and unsettling detail.", "image": "/images/illustration-2.jpg"},
-    {"title": "Neon Series", "subtitle": "Caricature / Digital", "desc": "Digital caricature work built for speed, likeness, and personality.", "image": "/images/illustration-3.jpg"},
-    {"title": "Laura The Explorer", "subtitle": "Character / Campaign", "desc": "A branded travel mascot designed for a recurring marketing campaign.", "image": "/images/illustration-4.jpg"}
-  ],
   "design": [
-    {"title": "Elevate Campaign", "subtitle": "Visual Design / Campaign", "desc": "Print and brand system for a national recognition program.", "image": "/images/design-1.jpg"},
-    {"title": "Brand Island Map", "subtitle": "Brand Illustration", "desc": "A custom illustrated map used across a corporate brand campaign.", "image": "/images/design-2.jpg"}
+    {
+      "title": "Spirit Songbook Cover Art",
+      "subtitle": "Editorial Design",
+      "desc": "Hand-lettered type and a single spot of color over a black-and-white street photograph.",
+      "image": "/images/spirit-songbook.jpg"
+    },
+    {
+      "title": "Hospitality Trends Infographics",
+      "subtitle": "Information Design",
+      "desc": "Two data-driven infographic spreads that turn hospitality research into discussion-ready layouts.",
+      "image": "/images/hospitality-infographics.jpg",
+      "fit": "wide"
+    },
+    {
+      "title": "Energy Drink Vehicle Icons",
+      "subtitle": "Icon Design",
+      "desc": "An icon series showing a vehicle evolving through stages for an energy drink brand.",
+      "image": "/images/energy-drink-icons.jpg",
+      "fit": "contain"
+    },
+    {
+      "title": "Maumee Valley Movers Brand & Promotional",
+      "subtitle": "Brand Identity",
+      "desc": "A logo seal, apparel, business cards, truck graphics and a web banner for a regional moving company.",
+      "image": "/images/maumee-valley-movers.jpg",
+      "fit": "wide"
+    },
+    {
+      "title": "Rental Company Workshop Experience",
+      "subtitle": "Illustrative Design",
+      "desc": "An illustrated workshop guide with a character host, activity panels and data graphics that walk a team through a growth-planning exercise.",
+      "image": "/images/workshop-experience.jpg",
+      "fit": "wide"
+    },
+    {
+      "title": "Employee Recognition Program",
+      "subtitle": "Print & Collateral",
+      "desc": "Lanyard badge and recognition card system for an airline, from print layout to in-use mockups.",
+      "image": "/images/recognition-program-collage.jpg",
+      "fit": "wide"
+    }
   ],
-  "elearning": [
-    {"title": "Metro Module", "subtitle": "E-Learning / Storyline", "desc": "Interactive navigation for a corporate training course, built in Storyline.", "image": "/images/elearning-1.jpg"},
-    {"title": "Brand-O-Meter Island", "subtitle": "E-Learning / Course Map", "desc": "An illustrated course map guiding learners through a branded training path.", "image": "/images/elearning-2.jpg"}
+  "instructional_design": [
+    {
+      "title": "Game-Based Learning Splash Screen",
+      "subtitle": "Instructional Design",
+      "desc": "A retro arcade title screen that introduces a game-based training program.",
+      "image": "/images/game-learning-splash.jpg",
+      "fit": "wide"
+    },
+    {
+      "title": "Safety Course Title Screen",
+      "subtitle": "Instructional Design",
+      "desc": "An opening screen for an associate safety training course, pairing bold type with site photography.",
+      "image": "/images/safety-course-title.jpg",
+      "fit": "wide"
+    },
+    {
+      "title": "Illustrated Course Map Interface",
+      "subtitle": "Instructional Design",
+      "desc": "An illustrated island map that learners explore, with character guides and a progress meter.",
+      "image": "/images/course-map-interface.jpg"
+    },
+    {
+      "title": "Recipe for Success Scenario",
+      "subtitle": "Instructional Design",
+      "desc": "A drive-thru scene with call-out circles that presents research findings for restaurant managers.",
+      "image": "/images/recipe-for-success-scene.jpg"
+    },
+    {
+      "title": "Character-Guided Scenario Screen",
+      "subtitle": "Instructional Design",
+      "desc": "A host character guides learners through a convenience store scenario.",
+      "image": "/images/character-guided-scenario.jpg"
+    },
+    {
+      "title": "Change Management Animation Frame",
+      "subtitle": "Instructional Design",
+      "desc": "A rock-star character announces a software transition in a humorous animated scene.",
+      "image": "/images/change-management-scene.jpg"
+    },
+    {
+      "title": "Company Overview Screen",
+      "subtitle": "Instructional Design",
+      "desc": "A word-cloud screen introducing a company's client base, with navigation and progress controls.",
+      "image": "/images/company-overview-screen.jpg",
+      "fit": "letterbox"
+    },
+    {
+      "title": "Workplace Safety Game Screen",
+      "subtitle": "Instructional Design",
+      "desc": "A side-scrolling safety game where learners collect stars and avoid workplace hazards.",
+      "image": "/images/safety-game-screen.jpg",
+      "fit": "letterbox"
+    },
+    {
+      "title": "Coach Character Scene",
+      "subtitle": "Instructional Design",
+      "desc": "A coach character presents a concept on a projector screen.",
+      "image": "/images/coach-character-scene.jpg"
+    },
+    {
+      "title": "Data Storytelling Challenge Screen",
+      "subtitle": "Instructional Design",
+      "desc": "A dark, game-style interface that teaches a business concept with a chart, rounds and a skip-to-challenge option.",
+      "image": "/images/challenge-interface.jpg",
+      "fit": "letterbox"
+    },
+    {
+      "title": "Metro Map Navigation Module",
+      "subtitle": "Instructional Design",
+      "desc": "A subway-map interface where each line is a course section and each station is a lesson.",
+      "image": "/images/metro-navigation.jpg"
+    }
+  ],
+  "illustration": [
+    {
+      "subtype": "Corporate",
+      "items": [
+        {
+          "title": "Hot Dog King Graffiti Logo",
+          "subtitle": "Corporate Illustration",
+          "desc": "",
+          "image": "/images/rudys-hot-dog-king.jpg"
+        },
+        {
+          "title": "Album Cover Illustration",
+          "subtitle": "Corporate Illustration",
+          "desc": "",
+          "image": "/images/album-cover-devil.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Drum Mascot Congratulations",
+          "subtitle": "Corporate Illustration",
+          "desc": "",
+          "image": "/images/drum-mascot-congrats.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Illustrated Building Infographic",
+          "subtitle": "Corporate Illustration",
+          "desc": "",
+          "image": "/images/teddy-bear-building.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Equipment Dealer Spot Illustrations",
+          "subtitle": "Corporate Illustration",
+          "desc": "",
+          "image": "/images/equipment-dealer-spot-art.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Training Story Panels",
+          "subtitle": "Corporate Illustration",
+          "desc": "",
+          "image": "/images/training-storyboard-green.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Three-Panel Fire Comic",
+          "subtitle": "Corporate Illustration",
+          "desc": "",
+          "image": "/images/fire-comic-strip.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Our Story Classroom Scene",
+          "subtitle": "Corporate Illustration",
+          "desc": "",
+          "image": "/images/our-story-classroom.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Window Seat Traveler",
+          "subtitle": "Corporate Illustration",
+          "desc": "",
+          "image": "/images/traveler-window-seat.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Career Journey Comic",
+          "subtitle": "Corporate Illustration",
+          "desc": "",
+          "image": "/images/career-timeline-comic.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Winter Holiday Card",
+          "subtitle": "Corporate Illustration",
+          "desc": "",
+          "image": "/images/holiday-card-caricatures.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Giant Lizard City Scene",
+          "subtitle": "Corporate Illustration",
+          "desc": "",
+          "image": "/images/giant-lizard-city.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Pirate Ship Scene",
+          "subtitle": "Corporate Illustration",
+          "desc": "",
+          "image": "/images/pirate-ship-scene.jpg"
+        },
+        {
+          "title": "Hipster and Vintage Car",
+          "subtitle": "Corporate Illustration",
+          "desc": "",
+          "image": "/images/hipster-car-burger.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Heart in Cupped Hands",
+          "subtitle": "Corporate Illustration",
+          "desc": "",
+          "image": "/images/heart-in-hands.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Stretched Athlete Caricature",
+          "subtitle": "Corporate Illustration",
+          "desc": "",
+          "image": "/images/stretched-athlete-caricature.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Airplane and Cloud Heart",
+          "subtitle": "Corporate Illustration",
+          "desc": "",
+          "image": "/images/airplane-heart-clouds.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Claddagh Crest",
+          "subtitle": "Corporate Illustration",
+          "desc": "",
+          "image": "/images/claddagh-crest.jpg"
+        }
+      ]
+    },
+    {
+      "subtype": "Illustration Collection",
+      "items": [
+        {
+          "title": "Vespa Fun",
+          "subtitle": "Illustration",
+          "desc": "",
+          "image": "/images/ill-scooter-rider.jpg"
+        },
+        {
+          "title": "Hellboy",
+          "subtitle": "Illustration",
+          "desc": "",
+          "image": "/images/ill-red-demon-hero.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Little Reaper",
+          "subtitle": "Illustration",
+          "desc": "",
+          "image": "/images/ill-lava-reaper.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Glowing Guardian Encounter",
+          "subtitle": "Illustration",
+          "desc": "",
+          "image": "/images/ill-glowing-guardian.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Jason",
+          "subtitle": "Illustration",
+          "desc": "",
+          "image": "/images/ill-jason.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "I See You",
+          "subtitle": "Illustration",
+          "desc": "",
+          "image": "/images/ill-eyeball-tangle.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Mosquito Man",
+          "subtitle": "Illustration",
+          "desc": "",
+          "image": "/images/ill-mosquito-man.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Tin Man",
+          "subtitle": "Illustration",
+          "desc": "",
+          "image": "/images/ill-robot-heart-balloon.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Sunset Gharial",
+          "subtitle": "Illustration",
+          "desc": "",
+          "image": "/images/ill-sunset-gharial.jpg"
+        },
+        {
+          "title": "Zombie",
+          "subtitle": "Illustration",
+          "desc": "",
+          "image": "/images/ill-zombie-number-13.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Deadpool and Cable",
+          "subtitle": "Illustration",
+          "desc": "",
+          "image": "/images/ill-deadpool-cable.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Officer Freeze",
+          "subtitle": "Illustration",
+          "desc": "",
+          "image": "/images/ill-officer-freeze.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Clownhunter",
+          "subtitle": "Illustration",
+          "desc": "",
+          "image": "/images/ill-clownhunter.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Dark Knight",
+          "subtitle": "Illustration",
+          "desc": "",
+          "image": "/images/ill-dark-knight.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Swamp Xenomorph",
+          "subtitle": "Illustration",
+          "desc": "",
+          "image": "/images/ill-swamp-xenomorph.jpg"
+        },
+        {
+          "title": "Golden Retriever Portrait",
+          "subtitle": "Illustration",
+          "desc": "",
+          "image": "/images/ill-golden-retriever.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Yoda",
+          "subtitle": "Illustration",
+          "desc": "",
+          "image": "/images/ill-yoda.jpg"
+        },
+        {
+          "title": "Panicked Chicken",
+          "subtitle": "Illustration",
+          "desc": "",
+          "image": "/images/ill-panicked-chicken.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Tiki Scream",
+          "subtitle": "Illustration",
+          "desc": "",
+          "image": "/images/ill-tiki-scream.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Skull Pop",
+          "subtitle": "Illustration",
+          "desc": "",
+          "image": "/images/ill-skull-pop.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Splash Zone",
+          "subtitle": "Illustration",
+          "desc": "",
+          "image": "/images/ill-splash-zone.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "TV-Head Roach",
+          "subtitle": "Illustration",
+          "desc": "",
+          "image": "/images/ill-tv-head-roach.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Off the Yellow Brick Road",
+          "subtitle": "Illustration",
+          "desc": "",
+          "image": "/images/ill-yellow-brick-road.jpg"
+        },
+        {
+          "title": "Kingpin",
+          "subtitle": "Illustration",
+          "desc": "",
+          "image": "/images/ill-kingpin.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Tangled Totem",
+          "subtitle": "Illustration",
+          "desc": "",
+          "image": "/images/ill-tangled-totem.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Red Elephant",
+          "subtitle": "Illustration",
+          "desc": "",
+          "image": "/images/ill-red-elephant.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Hooked Goldfish",
+          "subtitle": "Illustration",
+          "desc": "",
+          "image": "/images/ill-hooked-goldfish.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Bear and Monsters",
+          "subtitle": "Illustration",
+          "desc": "",
+          "image": "/images/ill-bear-and-monsters.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Horned Robe",
+          "subtitle": "Illustration",
+          "desc": "",
+          "image": "/images/ill-horned-robe.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Skater Devil",
+          "subtitle": "Illustration",
+          "desc": "",
+          "image": "/images/ill-skater-devil.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Tentacle Summoner",
+          "subtitle": "Illustration",
+          "desc": "",
+          "image": "/images/ill-tentacle-summoner.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Chewbacca",
+          "subtitle": "Illustration",
+          "desc": "",
+          "image": "/images/ill-chewbacca.jpg"
+        },
+        {
+          "title": "Cocktail Hour TV",
+          "subtitle": "Illustration",
+          "desc": "",
+          "image": "/images/ill-cocktail-hour-tv.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Tusked Shark",
+          "subtitle": "Illustration",
+          "desc": "",
+          "image": "/images/ill-tusked-shark.jpg"
+        },
+        {
+          "title": "Bear in Track Pants",
+          "subtitle": "Illustration",
+          "desc": "",
+          "image": "/images/ill-bear-in-track-pants.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Monster Tangle",
+          "subtitle": "Illustration",
+          "desc": "",
+          "image": "/images/ill-monster-tangle.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Happy Pineapple",
+          "subtitle": "Illustration",
+          "desc": "",
+          "image": "/images/ill-happy-pineapple.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Brain in a Jar",
+          "subtitle": "Illustration",
+          "desc": "",
+          "image": "/images/ill-brain-in-a-jar.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Two Monsters",
+          "subtitle": "Illustration",
+          "desc": "",
+          "image": "/images/ill-two-monsters.jpg"
+        },
+        {
+          "title": "He-Man Villains",
+          "subtitle": "Illustration",
+          "desc": "",
+          "image": "/images/ill-he-man-villains.jpg"
+        },
+        {
+          "title": "Skeletor",
+          "subtitle": "Illustration",
+          "desc": "",
+          "image": "/images/ill-skeletor.jpg"
+        },
+        {
+          "title": "Orko",
+          "subtitle": "Illustration",
+          "desc": "",
+          "image": "/images/ill-orko.jpg"
+        },
+        {
+          "title": "Beast Man",
+          "subtitle": "Illustration",
+          "desc": "",
+          "image": "/images/ill-beast-man.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Merman",
+          "subtitle": "Illustration",
+          "desc": "",
+          "image": "/images/ill-merman.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Laboratory Background",
+          "subtitle": "Illustration",
+          "desc": "",
+          "image": "/images/ill-lab-background.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Pancake Monster",
+          "subtitle": "Illustration",
+          "desc": "",
+          "image": "/images/ill-pancake-monster.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Witch Doctor and Cauldron",
+          "subtitle": "Illustration",
+          "desc": "",
+          "image": "/images/ill-witch-doctor-cauldron.jpg",
+          "fit": "letterbox"
+        }
+      ]
+    }
+  ],
+  "caricature": [
+    {
+      "subtype": "Caricature Commissions",
+      "items": [
+        {
+          "title": "Superhero Comic Cover",
+          "subtitle": "Caricature Commission",
+          "desc": "",
+          "image": "/images/comm-superhero-comic-cover.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Frequent Flyer Caricature",
+          "subtitle": "Caricature Commission",
+          "desc": "",
+          "image": "/images/comm-frequent-flyer.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Retro Cartoon Villain Parody",
+          "subtitle": "Caricature Commission",
+          "desc": "",
+          "image": "/images/comm-retro-cartoon-villain.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Shirt-Rip Hero Caricature",
+          "subtitle": "Caricature Commission",
+          "desc": "",
+          "image": "/images/comm-shirt-rip-hero.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Muscle Car Road Trip",
+          "subtitle": "Caricature Commission",
+          "desc": "",
+          "image": "/images/comm-mustang-road-trip.jpg"
+        },
+        {
+          "title": "Comic Team-Up Family Portrait",
+          "subtitle": "Caricature Commission",
+          "desc": "",
+          "image": "/images/comm-avengers-family.jpg"
+        },
+        {
+          "title": "Explorer Travel Scene",
+          "subtitle": "Caricature Commission",
+          "desc": "",
+          "image": "/images/comm-explorer-luggage.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Dragon Boat Team Caricature",
+          "subtitle": "Caricature Commission",
+          "desc": "",
+          "image": "/images/comm-dragon-boat-team.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Retirement Send-Off",
+          "subtitle": "Caricature Commission",
+          "desc": "",
+          "image": "/images/comm-retirement-truck.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Firefighter Caricature",
+          "subtitle": "Caricature Commission",
+          "desc": "",
+          "image": "/images/comm-firefighter.jpg"
+        },
+        {
+          "title": "Pizza Dough Toss",
+          "subtitle": "Caricature Commission",
+          "desc": "",
+          "image": "/images/comm-pizza-cook.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Lakeside Cats Scene",
+          "subtitle": "Caricature Commission",
+          "desc": "",
+          "image": "/images/comm-lakeside-cats.jpg"
+        },
+        {
+          "title": "Bobblehead Caricature",
+          "subtitle": "Caricature Commission",
+          "desc": "",
+          "image": "/images/comm-bobblehead-crate.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Cartoon-Style Basketball Portrait",
+          "subtitle": "Caricature Commission",
+          "desc": "",
+          "image": "/images/comm-cartoon-basketball.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Retro Gamer Caricature",
+          "subtitle": "Caricature Commission",
+          "desc": "",
+          "image": "/images/comm-retro-gamer.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Construction Quality Control",
+          "subtitle": "Caricature Commission",
+          "desc": "",
+          "image": "/images/comm-construction-quality-control.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Wedding Couple Caricature",
+          "subtitle": "Caricature Commission",
+          "desc": "",
+          "image": "/images/comm-wedding-couple.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Golfer Caricature",
+          "subtitle": "Caricature Commission",
+          "desc": "",
+          "image": "/images/comm-golfer.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Line Art Couple",
+          "subtitle": "Caricature Commission",
+          "desc": "",
+          "image": "/images/comm-line-art-couple.jpg"
+        },
+        {
+          "title": "Framed Portrait Set",
+          "subtitle": "Caricature Commission",
+          "desc": "",
+          "image": "/images/comm-framed-portraits.jpg",
+          "fit": "wide"
+        }
+      ]
+    },
+    {
+      "subtype": "Caricature Celebrities",
+      "items": [
+        {
+          "title": "Clint Eastwood",
+          "subtitle": "Celebrity Caricature",
+          "desc": "",
+          "image": "/images/celeb-gunslinger-poncho.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "LeBron James",
+          "subtitle": "Celebrity Caricature",
+          "desc": "",
+          "image": "/images/celeb-basketball-neon.jpg"
+        },
+        {
+          "title": "Lucille Ball",
+          "subtitle": "Celebrity Caricature",
+          "desc": "",
+          "image": "/images/celeb-knife-throw.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Keanu Reeves",
+          "subtitle": "Celebrity Caricature",
+          "desc": "",
+          "image": "/images/celeb-hitman-poster.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Daisy Ridley as Rey",
+          "subtitle": "Celebrity Caricature",
+          "desc": "",
+          "image": "/images/celeb-desert-scavenger.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Abraham Lincoln",
+          "subtitle": "Celebrity Caricature",
+          "desc": "",
+          "image": "/images/celeb-bow-tie-statesman.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Michael Keaton as Batman",
+          "subtitle": "Celebrity Caricature",
+          "desc": "",
+          "image": "/images/celeb-caped-crusader.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Ben Kingsley",
+          "subtitle": "Celebrity Caricature",
+          "desc": "",
+          "image": "/images/celeb-damask-actor.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Nick Offerman as Ron Swanson",
+          "subtitle": "Celebrity Caricature",
+          "desc": "",
+          "image": "/images/celeb-argyle-mustache.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Val Kilmer as Doc Holliday",
+          "subtitle": "Celebrity Caricature",
+          "desc": "",
+          "image": "/images/celeb-wide-brim-gambler.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Ron Howard",
+          "subtitle": "Celebrity Caricature",
+          "desc": "",
+          "image": "/images/celeb-ron-howard.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Thanos",
+          "subtitle": "Celebrity Caricature",
+          "desc": "",
+          "image": "/images/celeb-thanos.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Danny DeVito as Frank Reynolds",
+          "subtitle": "Celebrity Caricature",
+          "desc": "",
+          "image": "/images/celeb-danny-devito.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Johnny Cash",
+          "subtitle": "Celebrity Caricature",
+          "desc": "",
+          "image": "/images/celeb-johnny-cash.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Phil Collins",
+          "subtitle": "Celebrity Caricature",
+          "desc": "",
+          "image": "/images/celeb-phil-collins.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Self-Portrait, Side Profile",
+          "subtitle": "Caricature",
+          "desc": "",
+          "image": "/images/celeb-self-side-profile.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Robin Williams",
+          "subtitle": "Celebrity Caricature",
+          "desc": "",
+          "image": "/images/celeb-robin-williams.jpg"
+        },
+        {
+          "title": "Julian Dennison as Firefist",
+          "subtitle": "Celebrity Caricature",
+          "desc": "",
+          "image": "/images/celeb-firefist.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Jay-Z",
+          "subtitle": "Celebrity Caricature",
+          "desc": "",
+          "image": "/images/celeb-jay-z.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Ian McShane as Al Swearengen",
+          "subtitle": "Celebrity Caricature",
+          "desc": "",
+          "image": "/images/celeb-deadwood.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "R. Lee Ermey as Gunnery Sergeant Hartman",
+          "subtitle": "Celebrity Caricature",
+          "desc": "",
+          "image": "/images/celeb-drill-sergeant.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Pope Benedict XVI",
+          "subtitle": "Celebrity Caricature",
+          "desc": "",
+          "image": "/images/celeb-the-pope.jpg"
+        },
+        {
+          "title": "Jelly Roll",
+          "subtitle": "Celebrity Caricature",
+          "desc": "",
+          "image": "/images/celeb-jelly-roll.jpg"
+        },
+        {
+          "title": "Hugh Jackman as Wolverine, with Deadpool",
+          "subtitle": "Celebrity Caricature",
+          "desc": "",
+          "image": "/images/celeb-deadpool-wolverine.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Steve Martin in The Jerk",
+          "subtitle": "Celebrity Caricature",
+          "desc": "",
+          "image": "/images/celeb-the-jerk.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Vincent and Jules from Pulp Fiction",
+          "subtitle": "Celebrity Caricature",
+          "desc": "",
+          "image": "/images/celeb-pulp-fiction.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Rick Ross",
+          "subtitle": "Celebrity Caricature",
+          "desc": "",
+          "image": "/images/celeb-rick-ross.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Danny McBride and Steve Little from Eastbound & Down",
+          "subtitle": "Celebrity Caricature",
+          "desc": "",
+          "image": "/images/celeb-eastbound-down.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Tony Sirico as Paulie Walnuts",
+          "subtitle": "Celebrity Caricature",
+          "desc": "",
+          "image": "/images/celeb-paulie-walnuts.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "James Brown, Miley Cyrus and David Bowie",
+          "subtitle": "Celebrity Caricature",
+          "desc": "",
+          "image": "/images/celeb-music-trio.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Bubbles from Trailer Park Boys",
+          "subtitle": "Celebrity Caricature",
+          "desc": "",
+          "image": "/images/celeb-bubbles.jpg"
+        },
+        {
+          "title": "Morgan Freeman",
+          "subtitle": "Celebrity Caricature",
+          "desc": "",
+          "image": "/images/celeb-morgan-freeman.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Ving Rhames",
+          "subtitle": "Celebrity Caricature",
+          "desc": "",
+          "image": "/images/celeb-mission-impossible.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Leonard Nimoy as Spock",
+          "subtitle": "Celebrity Caricature",
+          "desc": "",
+          "image": "/images/celeb-leonard-nimoy.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "ZZ Top",
+          "subtitle": "Celebrity Caricature",
+          "desc": "",
+          "image": "/images/celeb-zz-top.jpg",
+          "fit": "letterbox"
+        }
+      ]
+    }
   ],
   "animation": [
-    {"title": "Sequence Work", "subtitle": "Animation / Storyboard", "desc": "Frame-by-frame storyboarding for a motion sequence.", "image": "/images/animation-1.jpg"}
+    {
+      "title": "Animation Build Up 1",
+      "subtitle": "Animation Build Up",
+      "desc": "",
+      "image": "/images/animation-build-up-1.jpg"
+    },
+    {
+      "title": "Animation Build Up 2",
+      "subtitle": "Animation Build Up",
+      "desc": "",
+      "image": "/images/animation-build-up-2.jpg"
+    },
+    {
+      "title": "Animation Build Up 3",
+      "subtitle": "Animation Build Up",
+      "desc": "",
+      "image": "/images/animation-build-up-3.jpg"
+    },
+    {
+      "title": "Animation Build Up 4",
+      "subtitle": "Animation Build Up",
+      "desc": "",
+      "image": "/images/animation-build-up-4.jpg"
+    },
+    {
+      "title": "Animation Build Up 5",
+      "subtitle": "Animation Build Up",
+      "desc": "",
+      "image": "/images/animation-build-up-5.jpg"
+    },
+    {
+      "title": "Animation Build Up 6",
+      "subtitle": "Animation Build Up",
+      "desc": "",
+      "image": "/images/animation-build-up-6.jpg"
+    },
+    {
+      "title": "Animation Build Up 7",
+      "subtitle": "Animation Build Up",
+      "desc": "",
+      "image": "/images/animation-build-up-7.jpg"
+    },
+    {
+      "title": "Animation Build Up 8",
+      "subtitle": "Animation Build Up",
+      "desc": "",
+      "image": "/images/animation-build-up-8.jpg"
+    }
+  ],
+  "misc": [
+    {
+      "title": "3D Piece 1",
+      "subtitle": "3D",
+      "desc": "",
+      "image": "/images/3d-piece-1.jpg"
+    },
+    {
+      "title": "3D Piece 2",
+      "subtitle": "3D",
+      "desc": "",
+      "image": "/images/3d-piece-2.jpg"
+    },
+    {
+      "title": "3D Piece 3",
+      "subtitle": "3D",
+      "desc": "",
+      "image": "/images/3d-piece-3.jpg"
+    },
+    {
+      "title": "Traditional Art 1",
+      "subtitle": "Traditional Art",
+      "desc": "",
+      "image": "/images/traditional-art-1.jpg"
+    },
+    {
+      "title": "Traditional Art 2",
+      "subtitle": "Traditional Art",
+      "desc": "",
+      "image": "/images/traditional-art-2.jpg"
+    },
+    {
+      "title": "Traditional Art 3",
+      "subtitle": "Traditional Art",
+      "desc": "",
+      "image": "/images/traditional-art-3.jpg"
+    },
+    {
+      "title": "Traditional Art 4",
+      "subtitle": "Traditional Art",
+      "desc": "",
+      "image": "/images/traditional-art-4.jpg"
+    },
+    {
+      "title": "Traditional Art 5",
+      "subtitle": "Traditional Art",
+      "desc": "",
+      "image": "/images/traditional-art-5.jpg"
+    },
+    {
+      "title": "Traditional Art 6",
+      "subtitle": "Traditional Art",
+      "desc": "",
+      "image": "/images/traditional-art-6.jpg"
+    }
   ]
 }
