@@ -1,0 +1,38 @@
+{
+  "hero": {
+    "eyebrow_tags": "Design, Illustration, E-Learning, Animation",
+    "title_line1": "Ideas Into",
+    "title_line2": "Experiences.",
+    "subtitle": "Senior visual designer crafting illustration, e-learning, animation, and digital design for brands that move people.",
+    "image": "/images/hero.jpg",
+    "image_alt": "Portrait photo",
+    "note_text": "Same curiosity. Different canvas.",
+    "est_tag": "est. '96"
+  },
+  "about": {
+    "title_line1": "Part Artist.",
+    "title_line2": "Part Problem Solver.",
+    "body": "For over 25 years, I've helped brands turn complex ideas into clear, engaging visual experiences. Whether it's a character, an animation, or a full e-learning experience, I love finding creative ways to make information stick."
+  },
+  "contact": {
+    "email": "scampart@gmail.com",
+    "footer_line": "Good Ideas Travel Far."
+  },
+  "illustration": [
+    {"title": "Ink & Aged Paper", "subtitle": "Caricature / Commission", "desc": "A character caricature rendered in bold ink over an aged-paper texture.", "image": "/images/illustration-1.jpg"},
+    {"title": "Odd Company", "subtitle": "Character / Concept", "desc": "A surreal character concept exploring texture and unsettling detail.", "image": "/images/illustration-2.jpg"},
+    {"title": "Neon Series", "subtitle": "Caricature / Digital", "desc": "Digital caricature work built for speed, likeness, and personality.", "image": "/images/illustration-3.jpg"},
+    {"title": "Laura The Explorer", "subtitle": "Character / Campaign", "desc": "A branded travel mascot designed for a recurring marketing campaign.", "image": "/images/illustration-4.jpg"}
+  ],
+  "design": [
+    {"title": "Elevate Campaign", "subtitle": "Visual Design / Campaign", "desc": "Print and brand system for a national recognition program.", "image": "/images/design-1.jpg"},
+    {"title": "Brand Island Map", "subtitle": "Brand Illustration", "desc": "A custom illustrated map used across a corporate brand campaign.", "image": "/images/design-2.jpg"}
+  ],
+  "elearning": [
+    {"title": "Metro Module", "subtitle": "E-Learning / Storyline", "desc": "Interactive navigation for a corporate training course, built in Storyline.", "image": "/images/elearning-1.jpg"},
+    {"title": "Brand-O-Meter Island", "subtitle": "E-Learning / Course Map", "desc": "An illustrated course map guiding learners through a branded training path.", "image": "/images/elearning-2.jpg"}
+  ],
+  "animation": [
+    {"title": "Sequence Work", "subtitle": "Animation / Storyboard", "desc": "Frame-by-frame storyboarding for a motion sequence.", "image": "/images/animation-1.jpg"}
+  ]
+}

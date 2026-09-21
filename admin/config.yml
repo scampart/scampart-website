@@ -1,0 +1,60 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "content"
+    label: "Site Content"
+    files:
+      - name: "content"
+        label: "Edit Website"
+        file: "content.json"
+        fields:
+          - label: "Hero Section"
+            name: "hero"
+            widget: "object"
+            fields:
+              - {label: "Discipline Tags (comma separated)", name: "eyebrow_tags", widget: "string"}
+              - {label: "Headline Line 1", name: "title_line1", widget: "string"}
+              - {label: "Headline Line 2 (highlighted in red)", name: "title_line2", widget: "string"}
+              - {label: "Subheading", name: "subtitle", widget: "text"}
+              - {label: "Hero Photo", name: "image", widget: "image"}
+              - {label: "Photo Alt Text", name: "image_alt", widget: "string", required: false}
+              - {label: "Sticky Note Text", name: "note_text", widget: "string"}
+              - {label: "Est. Tag", name: "est_tag", widget: "string"}
+          - label: "About Section"
+            name: "about"
+            widget: "object"
+            fields:
+              - {label: "Headline Line 1", name: "title_line1", widget: "string"}
+              - {label: "Headline Line 2 (highlighted in red)", name: "title_line2", widget: "string"}
+              - {label: "Body Paragraph", name: "body", widget: "text"}
+          - label: "Contact / Footer"
+            name: "contact"
+            widget: "object"
+            fields:
+              - {label: "Email", name: "email", widget: "string"}
+              - {label: "Footer Tagline", name: "footer_line", widget: "string"}
+          - label: "Illustration Projects"
+            name: "illustration"
+            widget: "list"
+            fields: &project_fields
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Tag / Category", name: "subtitle", widget: "string"}
+              - {label: "One-line Description", name: "desc", widget: "string"}
+              - {label: "Image", name: "image", widget: "image"}
+          - label: "Design Projects"
+            name: "design"
+            widget: "list"
+            fields: *project_fields
+          - label: "E-Learning Projects"
+            name: "elearning"
+            widget: "list"
+            fields: *project_fields
+          - label: "Animation Projects"
+            name: "animation"
+            widget: "list"
+            fields: *project_fields
