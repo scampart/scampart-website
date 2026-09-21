@@ -176,6 +176,7 @@
   .cdirect a { color: var(--ink); border-bottom: 1px solid var(--red); }
   .cdirect a:hover { color: var(--red); }
   .cthanks { text-align: center; padding: 30px 0 10px; }
+  .cthanks-logo { width: 130px; height: auto; display: block; margin: 0 auto 22px; }
   .cthanks h3 { font-family: var(--font-display); font-weight: 900; text-transform: uppercase; font-size: 34px; margin: 0 0 8px; color: var(--red); }
   @media (max-width: 640px) { .cbox { padding: 40px 20px 26px; } .cform { grid-template-columns: 1fr; } }
   .subnav { position: sticky; top: 138px; z-index: 15; display: flex; flex-wrap: wrap; gap: 8px 10px; align-items: center; margin: 0 0 34px; padding: 10px 16px; box-shadow: 0 10px 18px -8px rgba(0,0,0,0.55); background: var(--bg-raised); border: 1px solid var(--line-strong); border-radius: 14px; }
@@ -375,8 +376,9 @@
       <p class="cdirect"><span>Or email me directly:</span><a id="contactEmail2" href="#"></a></p>
     </div>
     <div class="cthanks" id="cThanks" hidden>
-      <h3>Message sent!</h3>
-      <p class="cintro">Thanks for reaching out. I&#8217;ll get back to you soon.</p>
+      <img class="cthanks-logo" src="/images/logo.png" alt="Scamp Art logo">
+      <h3>Thank you!</h3>
+      <p class="cintro">I look forward to working with you. I will get back to you as soon as I can.</p>
       <p class="cdirect" style="justify-content:center;border:0;padding:0;margin:0;"><a href="#" id="cAgain">Send another message</a></p>
     </div>
   </div>
