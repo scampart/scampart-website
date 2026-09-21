@@ -36,7 +36,6 @@ collections:
             widget: "object"
             fields:
               - {label: "Email", name: "email", widget: "string"}
-              - {label: "LinkedIn URL", name: "linkedin", widget: "string", required: false}
           - label: "Design Projects"
             name: "design"
             widget: "list"

@@ -62,6 +62,8 @@
   @media (max-width: 1180px) { .toplinks { gap: 16px; font-size: 11px; letter-spacing: 0.05em; } .mark { font-size: 18px; } }
   @media (max-width: 1100px) { .toplinks { display: none; } }
   .toplinks a { border-bottom: 1px solid transparent; padding-bottom: 3px; }
+  .toplinks a.menu-contact { color: var(--red); font-weight: 700; }
+  .toplinks a.menu-contact:hover { color: var(--paper); border-color: var(--paper); }
   .toplinks a:hover { border-color: var(--red); color: var(--red); }
 
   .hero { padding: 40px 0 72px; }
@@ -140,12 +142,42 @@
   .contact-ribbon .cr-panel { max-width: 0; overflow: hidden; white-space: nowrap; background: var(--paper); color: #1a1620; display: flex; flex-direction: column; justify-content: center; gap: 10px; padding: 14px 0; transition: max-width .25s ease; border-radius: 8px 0 0 8px; }
   .contact-ribbon.open .cr-panel { max-width: 320px; }
   .contact-ribbon .cr-panel a { font-family: var(--font-mono); font-size: 12.5px; letter-spacing: 0.04em; padding: 0 20px; }
+  .contact-ribbon .cr-panel .cr-send { display: none; }
+  @media (max-width: 1100px) { .contact-ribbon .cr-panel .cr-send { display: block; color: var(--red-ink); } }
   .contact-ribbon .cr-panel a:hover { color: var(--red-ink); }
   .contact-ribbon { flex-direction: row-reverse; }
   @media (hover: hover) { .contact-ribbon:hover .cr-panel { max-width: 320px; } }
   @media (max-width: 780px) { .contact-ribbon .cr-tab { padding: 14px 7px; font-size: 10.5px; } .contact-ribbon.open .cr-panel { max-width: 250px; } }
   @media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; animation: none !important; transition: none !important; } }
   .copyright { text-align: center; font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.06em; color: var(--ink-soft); padding: 34px 20px 40px; border-top: 1px solid var(--line); }
+  .cmodal { position: fixed; inset: 0; z-index: 120; background: rgba(8,7,10,0.92); display: flex; align-items: flex-start; justify-content: center; padding: 40px 20px; overflow-y: auto; }
+  .cmodal[hidden] { display: none; }
+  .cbox { position: relative; width: min(680px, 100%); background: var(--bg-raised); border: 1px solid var(--line-strong); border-radius: 16px; padding: 44px 44px 36px; margin: auto 0; }
+  .cbox h2 { font-family: var(--font-display); font-weight: 900; text-transform: uppercase; font-size: clamp(32px, 5vw, 46px); line-height: 0.95; margin: 0 0 10px; }
+  .cbox h2 em { font-style: normal; color: var(--red); }
+  .cbox .cintro { color: var(--ink-soft); margin: 0 0 26px; font-size: 15.5px; }
+  .cclose { position: absolute; top: 14px; right: 14px; font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; cursor: pointer; color: var(--ink); background: transparent; border: 1px solid var(--line-strong); padding: 8px 12px; border-radius: 6px; }
+  .cclose:hover { border-color: var(--red); color: var(--red); }
+  .cform { display: grid; grid-template-columns: 1fr 1fr; gap: 16px 18px; }
+  .cform .full { grid-column: 1 / -1; }
+  .cform label { display: block; font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-soft); margin: 0 0 7px; }
+  .cform label i { color: var(--red); font-style: normal; }
+  .cform input, .cform select, .cform textarea { width: 100%; font-family: var(--font-body); font-size: 16px; color: var(--ink); background: var(--bg); border: 1px solid var(--line-strong); border-radius: 8px; padding: 12px 14px; }
+  .cform textarea { min-height: 150px; resize: vertical; }
+  .cform input:focus, .cform select:focus, .cform textarea:focus { outline: 2px solid var(--red); outline-offset: 1px; border-color: var(--red); }
+  .cform .hp { position: absolute; left: -9999px; height: 0; overflow: hidden; }
+  .csend { grid-column: 1 / -1; display: flex; align-items: center; gap: 18px; flex-wrap: wrap; }
+  .csend button { font-family: var(--font-mono); font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; cursor: pointer; color: #191016; background: var(--red); border: 0; padding: 14px 26px; border-radius: 6px; }
+  .csend button:hover { background: var(--paper); }
+  .csend button[disabled] { opacity: .6; cursor: wait; }
+  .cstatus { font-size: 14.5px; margin: 0; }
+  .cstatus.err { color: #F0876F; }
+  .cdirect { margin: 26px 0 0; padding-top: 20px; border-top: 1px solid var(--line); font-family: var(--font-mono); font-size: 12.5px; letter-spacing: 0.04em; color: var(--ink-soft); display: flex; gap: 8px 22px; flex-wrap: wrap; }
+  .cdirect a { color: var(--ink); border-bottom: 1px solid var(--red); }
+  .cdirect a:hover { color: var(--red); }
+  .cthanks { text-align: center; padding: 30px 0 10px; }
+  .cthanks h3 { font-family: var(--font-display); font-weight: 900; text-transform: uppercase; font-size: 34px; margin: 0 0 8px; color: var(--red); }
+  @media (max-width: 640px) { .cbox { padding: 40px 20px 26px; } .cform { grid-template-columns: 1fr; } }
   .subnav { position: sticky; top: 138px; z-index: 15; display: flex; flex-wrap: wrap; gap: 8px 10px; align-items: center; margin: 0 0 34px; padding: 10px 16px; box-shadow: 0 10px 18px -8px rgba(0,0,0,0.55); background: var(--bg-raised); border: 1px solid var(--line-strong); border-radius: 14px; }
   .subnav-label { font-family: var(--font-body); font-size: 13px; font-weight: 600; color: var(--ink); margin-right: 8px; }
   .subnav-label span { color: var(--ink-soft); font-weight: 400; margin-left: 6px; }
@@ -224,6 +256,7 @@
     <li><a href="#work" data-jump="caricature">Caricature</a></li>
     <li><a href="#work" data-jump="animation">Animation</a></li>
     <li><a href="#work" data-jump="misc">Pen and Paint</a></li>
+    <li><a href="#contact" id="menuContact" class="menu-contact">Contact</a></li>
   </ul>
 </div>
 
@@ -321,14 +354,62 @@
 
 <p class="copyright" id="copyright"></p>
 
+<div class="cmodal" id="cmodal" hidden role="dialog" aria-modal="true" aria-labelledby="cTitle">
+  <div class="cbox">
+    <button type="button" class="cclose" id="cClose">Close &#215;</button>
+    <div id="cFormWrap">
+      <h2 id="cTitle">Let&#8217;s Work <em>Together.</em></h2>
+      <p class="cintro">Have a project, a role, or an idea? Tell me a little about it and I&#8217;ll get back to you.</p>
+      <form class="cform" name="contact" method="POST" action="/" data-netlify="true" netlify-honeypot="bot-field" id="cForm">
+        <input type="hidden" name="form-name" value="contact">
+        <p class="hp"><label>Leave this empty <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+        <div><label for="cName">Your name <i>*</i></label><input id="cName" name="name" type="text" required autocomplete="name"></div>
+        <div><label for="cEmail">Email <i>*</i></label><input id="cEmail" name="email" type="email" required autocomplete="email"></div>
+        <div><label for="cOrg">Company / organization</label><input id="cOrg" name="organization" type="text" autocomplete="organization"></div>
+        <div><label for="cTopic">I&#8217;m reaching out about</label>
+          <select id="cTopic" name="topic"><option>Job opportunity</option><option>Freelance project</option><option>Collaboration</option><option>Speaking / workshop</option><option>Just saying hello</option></select></div>
+        <div class="full"><label for="cSubject">Subject</label><input id="cSubject" name="subject" type="text"></div>
+        <div class="full"><label for="cMsg">Message <i>*</i></label><textarea id="cMsg" name="message" required></textarea></div>
+        <div class="csend"><button type="submit" id="cSend">Send message</button><p class="cstatus" id="cStatus" role="status"></p></div>
+      </form>
+      <p class="cdirect"><span>Or email me directly:</span><a id="contactEmail2" href="#"></a></p>
+    </div>
+    <div class="cthanks" id="cThanks" hidden>
+      <h3>Message sent!</h3>
+      <p class="cintro">Thanks for reaching out. I&#8217;ll get back to you soon.</p>
+      <p class="cdirect" style="justify-content:center;border:0;padding:0;margin:0;"><a href="#" id="cAgain">Send another message</a></p>
+    </div>
+  </div>
+</div>
+
 <div class="contact-ribbon" id="contactRibbon">
   <button type="button" class="cr-tab" id="crTab" aria-expanded="false" aria-controls="crPanel">Let's Work Together</button>
-  <div class="cr-panel" id="crPanel"><a id="contactEmail" href="#"></a><a id="contactLinkedIn" href="#" target="_blank" rel="noopener">LinkedIn &#8599;</a></div>
+  <div class="cr-panel" id="crPanel"><a id="contactEmail" href="#"></a><a id="crSend" class="cr-send" href="#contact">Send a message &#8594;</a></div>
 </div>
 
 <script>
 (function () {
   "use strict";
+  (function () {
+    var modal = document.getElementById("cmodal"), form = document.getElementById("cForm");
+    var status = document.getElementById("cStatus"), send = document.getElementById("cSend"), lastFocus = null;
+    function open(e) { if (e) e.preventDefault(); lastFocus = document.activeElement; var r = document.getElementById("contactRibbon"); if (r) r.classList.remove("open"); modal.hidden = false; document.body.style.overflow = "hidden"; setTimeout(function () { document.getElementById("cName").focus(); }, 30); }
+    function close() { modal.hidden = true; document.body.style.overflow = ""; if (lastFocus && lastFocus.focus) lastFocus.focus(); }
+    ["menuContact", "crSend"].forEach(function (id) { var el = document.getElementById(id); if (el) el.addEventListener("click", open); });
+    document.getElementById("cClose").addEventListener("click", close);
+    modal.addEventListener("mousedown", function (e) { if (e.target === modal) close(); });
+    document.addEventListener("keydown", function (e) { if (e.key === "Escape" && !modal.hidden) close(); });
+    document.getElementById("cAgain").addEventListener("click", function (e) { e.preventDefault(); form.reset(); status.textContent = ""; document.getElementById("cThanks").hidden = true; document.getElementById("cFormWrap").hidden = false; document.getElementById("cName").focus(); });
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      status.className = "cstatus"; status.textContent = "Sending\u2026"; send.disabled = true;
+      var body = new URLSearchParams(new FormData(form)).toString();
+      fetch("/", { method: "POST", headers: { "Content-Type": "application/x-www-form-urlencoded" }, body: body })
+        .then(function (r) { if (!r.ok) throw new Error("bad"); document.getElementById("cFormWrap").hidden = true; document.getElementById("cThanks").hidden = false; })
+        .catch(function () { status.className = "cstatus err"; status.textContent = "Sorry, that didn\u2019t go through. Please email me directly at the address below."; })
+        .then(function () { send.disabled = false; });
+    });
+  })();
   document.getElementById("copyright").textContent = "© " + new Date().getFullYear() + " Shawn Camp. All rights reserved.";
   (function () { var r = document.getElementById("contactRibbon"), t = document.getElementById("crTab"); t.addEventListener("click", function (e) { e.stopPropagation(); var o = r.classList.toggle("open"); t.setAttribute("aria-expanded", String(o)); }); document.addEventListener("click", function (e) { if (!r.contains(e.target)) { r.classList.remove("open"); t.setAttribute("aria-expanded", "false"); } }); })();
 
@@ -395,8 +476,7 @@
     var emailEl = document.getElementById('contactEmail');
     emailEl.textContent = c.email || '';
     emailEl.href = 'mailto:' + (c.email || '');
-    var liEl = document.getElementById('contactLinkedIn');
-    if (c.linkedin) { liEl.href = c.linkedin; } else { liEl.style.display = 'none'; }
+    var em2 = document.getElementById('contactEmail2'); em2.textContent = c.email || ''; em2.href = 'mailto:' + (c.email || '');
 
     BUCKET_KEYS.forEach(function (key) { renderBucket(key, data[key]); });
     var reel = data.animation_reel;
