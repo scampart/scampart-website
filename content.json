@@ -1,6 +1,5 @@
 {
   "hero": {
-    "eyebrow_tags": "Design, Instructional Design, Illustration, Caricature, Animation, Misc",
     "title_line1": "Ideas Into",
     "title_line2": "Experiences.",
     "subtitle": "Senior visual designer crafting illustration, caricature, animation, and instructional design for brands that move people.",
@@ -1050,7 +1049,155 @@
     },
     {
       "subtype": "Behind the Animation",
-      "items": []
+      "items": [
+        {
+          "title": "Grocery Store Storyboard",
+          "subtitle": "Storyboard",
+          "desc": "",
+          "image": "/images/sb-grocery-story.jpg",
+          "fit": "wide"
+        },
+        {
+          "title": "Office Chase Storyboard",
+          "subtitle": "Storyboard",
+          "desc": "",
+          "image": "/images/sb-office-chase.jpg",
+          "fit": "wide"
+        },
+        {
+          "title": "Airport Lounge Storyboard",
+          "subtitle": "Storyboard",
+          "desc": "",
+          "image": "/images/sb-airport-lounge.jpg",
+          "fit": "wide"
+        },
+        {
+          "title": "Bowling Alley Storyboard",
+          "subtitle": "Storyboard",
+          "desc": "",
+          "image": "/images/sb-bowling-alley.jpg",
+          "fit": "wide"
+        },
+        {
+          "title": "Five Expectations Storyboard",
+          "subtitle": "Storyboard",
+          "desc": "",
+          "image": "/images/sb-five-expectations.jpg",
+          "fit": "wide"
+        },
+        {
+          "title": "Route Team Meeting Storyboard",
+          "subtitle": "Storyboard",
+          "desc": "",
+          "image": "/images/sb-route-meeting.jpg",
+          "fit": "wide"
+        },
+        {
+          "title": "Growth in Stages Storyboard",
+          "subtitle": "Storyboard",
+          "desc": "",
+          "image": "/images/sb-growth-stages.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Grocery Clerk Frame",
+          "subtitle": "Storyboard",
+          "desc": "",
+          "image": "/images/sb-grocery-clerk.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Cubicle Aisle Frame",
+          "subtitle": "Storyboard",
+          "desc": "",
+          "image": "/images/sb-cubicle-aisle.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Bar Scene Frame",
+          "subtitle": "Storyboard",
+          "desc": "",
+          "image": "/images/sb-bar-scene.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Equipment Rental Storyboard",
+          "subtitle": "Storyboard",
+          "desc": "",
+          "image": "/images/sb-equipment-rental.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Meeting Room 32 Frame",
+          "subtitle": "Storyboard",
+          "desc": "",
+          "image": "/images/sb-meeting-room-32.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Broccoli Character Sheet",
+          "subtitle": "Character Design",
+          "desc": "",
+          "image": "/images/cd-broccoli-sheet.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Turtle Head Turnaround",
+          "subtitle": "Character Design",
+          "desc": "",
+          "image": "/images/cd-turtle-turnaround.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Bow-Tie Character Design",
+          "subtitle": "Character Design",
+          "desc": "",
+          "image": "/images/cd-bow-tie-character.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Self-Caricature Rig",
+          "subtitle": "Character Design",
+          "desc": "",
+          "image": "/images/cd-self-caricature-rig.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Hat Character Expressions",
+          "subtitle": "Character Design",
+          "desc": "",
+          "image": "/images/cd-hat-character-rig.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Party Foul Game Screen",
+          "subtitle": "Character Design",
+          "desc": "",
+          "image": "/images/cd-party-foul-game.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Party Scene Background",
+          "subtitle": "Character Design",
+          "desc": "",
+          "image": "/images/cd-party-scene.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Office Background",
+          "subtitle": "Character Design",
+          "desc": "",
+          "image": "/images/cd-office-background.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Water Cooler Character Scene",
+          "subtitle": "Character Design",
+          "desc": "",
+          "image": "/images/cd-water-cooler.jpg",
+          "fit": "letterbox"
+        }
+      ]
     }
   ],
   "misc": [

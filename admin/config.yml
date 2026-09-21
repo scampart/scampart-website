@@ -17,7 +17,6 @@ collections:
             name: "hero"
             widget: "object"
             fields:
-              - {label: "Discipline Tags (comma separated)", name: "eyebrow_tags", widget: "string"}
               - {label: "Headline Line 1", name: "title_line1", widget: "string"}
               - {label: "Headline Line 2 (highlighted in red)", name: "title_line2", widget: "string"}
               - {label: "Subheading", name: "subtitle", widget: "text"}
