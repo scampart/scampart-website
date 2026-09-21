@@ -2,61 +2,61 @@
   "hero": {
     "title_line1": "Ideas Into",
     "title_line2": "Experiences.",
-    "subtitle": "Senior visual designer crafting illustration, caricature, animation, and instructional design for brands that move people.",
+    "subtitle": "Senior visual designer crafting illustration, design, caricature, animation, and instructional design for brands that move people.",
     "image": "/images/hero.webp",
     "image_alt": "Illustrated portrait of Shawn Camp",
-    "note_text": "Same curiosity. Different canvas.",
+    "note_text": "Your Swiss Army knife of art. One artist, every tool.",
     "est_tag": "est. '96"
   },
   "about": {
     "title_line1": "Part Artist.",
     "title_line2": "Part Problem Solver.",
-    "body": "For over 25 years, I've helped brands turn complex ideas into clear, engaging visual experiences. Whether it's a caricature, a character, an animation, or a full instructional design build, I love finding creative ways to make information stick."
+    "body": "For over 25 years, I've helped brands turn complex ideas into clear, engaging visual experiences, taking complicated information and turning it into simple designs that are easy to understand. Whether it's a caricature, a character, an animation, an infographic, or a full instructional design build, I love finding creative ways to make information stick."
   },
   "contact": {
     "email": "scampart@gmail.com",
-    "footer_line": "Good Ideas Travel Far."
+    "linkedin": "https://www.linkedin.com/in/scampart"
   },
   "design": [
     {
       "title": "Spirit Songbook Cover Art",
       "subtitle": "Editorial Design",
-      "desc": "Hand-lettered type and a single spot of color over a black-and-white street photograph.",
+      "desc": "",
       "image": "/images/spirit-songbook.jpg",
       "fit": "wide"
     },
     {
       "title": "Hospitality Trends Infographics",
       "subtitle": "Information Design",
-      "desc": "Two data-driven infographic spreads that turn hospitality research into discussion-ready layouts.",
+      "desc": "",
       "image": "/images/hospitality-infographics.jpg",
       "fit": "wide"
     },
     {
       "title": "Energy Drink Vehicle Icons",
       "subtitle": "Icon Design",
-      "desc": "An icon series showing a vehicle evolving through stages for an energy drink brand.",
+      "desc": "",
       "image": "/images/energy-drink-icons.jpg",
       "fit": "contain"
     },
     {
       "title": "Maumee Valley Movers Brand & Promotional",
       "subtitle": "Brand Identity",
-      "desc": "A logo seal, apparel, business cards, truck graphics and a web banner for a regional moving company.",
+      "desc": "",
       "image": "/images/maumee-valley-movers.jpg",
       "fit": "wide"
     },
     {
       "title": "Rental Company Workshop Experience",
       "subtitle": "Illustrative Design",
-      "desc": "An illustrated workshop guide with a character host, activity panels and data graphics that walk a team through a growth-planning exercise.",
+      "desc": "",
       "image": "/images/workshop-experience.jpg",
       "fit": "wide"
     },
     {
       "title": "Employee Recognition Program",
       "subtitle": "Print & Collateral",
-      "desc": "Lanyard badge and recognition card system for an airline, from print layout to in-use mockups.",
+      "desc": "",
       "image": "/images/recognition-program-collage.jpg",
       "fit": "wide"
     }
@@ -264,7 +264,7 @@
       ]
     },
     {
-      "subtype": "Illustration Collection",
+      "subtype": "Illustrations",
       "items": [
         {
           "title": "Vespa Fun",

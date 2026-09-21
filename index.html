@@ -3,10 +3,22 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Ideas Into Experiences</title>
+<title>Shawn Camp | Senior Visual Designer: Illustration, Caricature, Animation &amp; Instructional Design</title>
+<meta name="description" content="Portfolio of Shawn Camp, a senior visual designer with 25+ years of experience in design, illustration, caricature, animation and instructional design. Ideas Into Experiences.">
+<meta name="theme-color" content="#151319">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="64x64" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Shawn Camp | Scamp Art">
+<meta property="og:title" content="Shawn Camp | Ideas Into Experiences">
+<meta property="og:description" content="Portfolio of Shawn Camp, a senior visual designer with 25+ years of experience in design, illustration, caricature, animation and instructional design. Ideas Into Experiences.">
+<meta property="og:url" content="https://scampart.com/">
+<meta property="og:image" content="https://scampart.com/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;900&family=Work+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@500;700&family=Rubik+Spray+Paint&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;600;700;900&family=Work+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@500;700&family=Rubik+Spray+Paint&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
 
 <style>
   :root {
@@ -42,9 +54,13 @@
     position: sticky; top: 0; z-index: 30; background: var(--bg);
     border-bottom: 1px solid var(--line);
   }
-  .mark { font-family: var(--font-display); font-weight: 900; font-size: 21px; letter-spacing: 0.02em; }
-  .mark span { color: var(--red); }
+  .mark { font-family: var(--font-display); font-weight: 400; font-size: 20px; letter-spacing: 0.03em; white-space: nowrap; display: inline-flex; align-items: center; gap: 14px; }
+  .mark-text { font-weight: 400; }
+  .hero-logo { position: absolute; left: 0%; top: 4%; width: clamp(96px, 11vw, 150px); height: auto; transform: rotate(-10deg); z-index: 3; pointer-events: none; filter: drop-shadow(0 6px 12px rgba(0,0,0,0.45)); }
+  .mark span { color: var(--red); text-transform: uppercase; font-weight: 900; }
   .toplinks { display: flex; gap: 26px; list-style: none; margin: 0; padding: 0; font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; align-items: center; }
+  @media (max-width: 1180px) { .toplinks { gap: 16px; font-size: 11px; letter-spacing: 0.05em; } .mark { font-size: 18px; } }
+  @media (max-width: 1100px) { .toplinks { display: none; } }
   .toplinks a { border-bottom: 1px solid transparent; padding-bottom: 3px; }
   .toplinks a:hover { border-color: var(--red); color: var(--red); }
 
@@ -63,7 +79,7 @@
   .hero-art { position: relative; }
   .hero { overflow-x: clip; }
   html, body { overflow-x: clip; }
-  .hero-blob { position: absolute; left: 50%; top: 50%; width: 150%; max-width: 900px; aspect-ratio: 1; transform: translate(-50%, -50%); overflow: visible; z-index: 0; pointer-events: none; }
+  .hero-blob { position: absolute; left: 50%; top: 50%; width: 118%; max-width: 760px; aspect-ratio: 1; transform: translate(-50%, -50%); overflow: visible; z-index: 0; pointer-events: none; }
   .hero-art-frame { position: relative; z-index: 1; display: flex; justify-content: center; align-items: flex-end; padding-top: 30px; }
   .hero-art-frame img { position: relative; z-index: 1; width: auto; max-width: 100%; max-height: 640px; display: block; filter: drop-shadow(0 18px 28px rgba(0,0,0,0.5)); }
   .torn-note { position: absolute; bottom: -22px; left: -24px; width: 150px; background: var(--paper); color: #2A2620; padding: 16px 16px 18px; font-family: var(--font-hand); font-size: 19px; line-height: 1.2; text-align: center; box-shadow: 0 14px 26px rgba(0,0,0,0.45); transform: rotate(3deg); z-index: 3; clip-path: polygon(2% 6%, 18% 0%, 40% 4%, 60% 0%, 80% 5%, 100% 0%, 98% 92%, 82% 100%, 62% 96%, 42% 100%, 20% 97%, 0% 100%); }
@@ -117,7 +133,18 @@
   .lbox-next { right: 12px; }
   @media (max-width: 780px) { .lbox { padding: 52px 10px 16px; } .lbox-nav { top: auto; bottom: 18px; transform: none; width: 52px; height: 44px; } .lbox-prev { left: 14px; } .lbox-next { right: 14px; } .lbox-cap { margin-bottom: 52px; } }
   .bucket + .bucket { margin-top: 84px; }
-  .bucket-title { font-family: var(--font-display); font-weight: 900; text-transform: uppercase; font-size: clamp(28px, 3.6vw, 40px); line-height: 1; margin: 0 0 28px; padding-bottom: 14px; border-bottom: 1px solid var(--line-strong); }
+  .bucket-title { font-family: var(--font-display); font-weight: 900; text-transform: uppercase; color: var(--red); font-size: clamp(28px, 3.6vw, 40px); line-height: 1; margin: 0 0 28px; padding-bottom: 14px; border-bottom: 1px solid var(--line-strong); }
+  .contact-ribbon { position: fixed; right: 0; top: 50%; transform: translateY(-50%); z-index: 30; display: flex; align-items: stretch; }
+  .contact-ribbon .cr-tab { writing-mode: vertical-rl; transform: rotate(180deg); font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.14em; text-transform: uppercase; background: var(--red); color: #191016; border: 0; padding: 20px 9px; cursor: pointer; white-space: nowrap; border-radius: 0 8px 8px 0; box-shadow: 0 8px 20px rgba(0,0,0,0.45); }
+  .contact-ribbon .cr-panel { max-width: 0; overflow: hidden; white-space: nowrap; background: var(--paper); color: #1a1620; display: flex; flex-direction: column; justify-content: center; gap: 10px; padding: 14px 0; transition: max-width .25s ease; border-radius: 8px 0 0 8px; }
+  .contact-ribbon.open .cr-panel { max-width: 320px; }
+  .contact-ribbon .cr-panel a { font-family: var(--font-mono); font-size: 12.5px; letter-spacing: 0.04em; padding: 0 20px; }
+  .contact-ribbon .cr-panel a:hover { color: var(--red-ink); }
+  .contact-ribbon { flex-direction: row-reverse; }
+  @media (hover: hover) { .contact-ribbon:hover .cr-panel { max-width: 320px; } }
+  @media (max-width: 780px) { .contact-ribbon .cr-tab { padding: 14px 7px; font-size: 10.5px; } .contact-ribbon.open .cr-panel { max-width: 250px; } }
+  @media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; animation: none !important; transition: none !important; } }
+  .copyright { text-align: center; font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.06em; color: var(--ink-soft); padding: 34px 20px 40px; border-top: 1px solid var(--line); }
   .subnav { position: sticky; top: 138px; z-index: 15; display: flex; flex-wrap: wrap; gap: 8px 10px; align-items: center; margin: 0 0 34px; padding: 10px 16px; box-shadow: 0 10px 18px -8px rgba(0,0,0,0.55); background: var(--bg-raised); border: 1px solid var(--line-strong); border-radius: 14px; }
   .subnav-label { font-family: var(--font-body); font-size: 13px; font-weight: 600; color: var(--ink); margin-right: 8px; }
   .subnav-label span { color: var(--ink-soft); font-weight: 400; margin-left: 6px; }
@@ -142,7 +169,7 @@
   .card img.letterbox { object-fit: contain; background: #0f0e13; }
   .card img.contain { object-fit: contain; background: #fff; padding: 14px; }
   .card-body { padding: 18px 18px 22px; }
-  .card-tag { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--red); margin: 0 0 8px; }
+  .card-tag { font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.06em; text-transform: uppercase; color: #EE6A55; margin: 0 0 8px; }
   .card-title { font-family: var(--font-display); font-weight: 700; font-size: 21px; text-transform: uppercase; margin: 0 0 6px; line-height: 1.05; }
   .card-desc { font-size: 13.5px; color: var(--ink-soft); line-height: 1.5; margin: 0 0 14px; }
   .card-link { font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.05em; text-transform: uppercase; color: var(--ink); }
@@ -152,6 +179,7 @@
   @media (max-width: 560px) { .grid { grid-template-columns: 1fr; } }
   @media (max-width: 780px) {
     .topbar { padding: 14px 20px; }
+    .mark { gap: 10px; font-size: 16px; }
     .bucket-nav-wrap { top: 52px; padding: 10px 0; margin-bottom: 26px; }
     .bucket-nav { flex-wrap: nowrap; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; gap: 8px; padding: 0 20px; margin: 0 -20px; -webkit-mask-image: linear-gradient(90deg, #000 88%, transparent); mask-image: linear-gradient(90deg, #000 88%, transparent); }
     .bucket-nav::-webkit-scrollbar { display: none; }
@@ -168,20 +196,11 @@
   .about-grid h2 { font-family: var(--font-display); font-weight: 900; text-transform: uppercase; font-size: clamp(30px,4.4vw,48px); line-height: 0.96; margin: 0 0 22px; text-wrap: balance; }
   .about-grid h2 em { font-style: normal; color: var(--red); }
   .about-grid p { font-size: 16px; line-height: 1.65; color: var(--ink-soft); max-width: 52ch; margin: 0 0 20px; }
-  .about-more { font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.05em; text-transform: uppercase; color: var(--red); border-bottom: 1px solid var(--red); padding-bottom: 3px; }
   .about-icons { display: flex; flex-direction: column; gap: 18px; }
   .about-icons div { display: flex; align-items: center; gap: 14px; font-family: var(--font-mono); font-size: 12.5px; letter-spacing: 0.05em; text-transform: uppercase; color: var(--ink); border-bottom: 1px solid var(--line); padding-bottom: 14px; }
   .about-icons svg { width: 20px; height: 20px; fill: none; stroke: var(--red); stroke-width: 1.6; flex: none; }
   @media (max-width: 860px) { .about-grid { grid-template-columns: 1fr; } }
 
-  .footer { position: relative; padding-top: 96px; overflow: hidden; border-top: 1px solid var(--line); }
-  .footer-hand { font-family: var(--font-hand); font-size: clamp(26px, 4vw, 38px); color: var(--ink); text-align: center; margin: 0 0 44px; }
-  .footer-hand em { font-style: normal; color: var(--red); }
-  .mountains { display: block; width: 100%; height: auto; }
-  .contact-row { position: absolute; top: 30px; left: 0; right: 0; display: flex; justify-content: space-between; padding: 0 40px; z-index: 2; }
-  .contact-link { font-family: var(--font-mono); font-size: 12.5px; letter-spacing: 0.05em; text-transform: uppercase; border-bottom: 1px solid var(--line-strong); padding-bottom: 3px; }
-  .contact-link:hover { color: var(--red); border-color: var(--red); }
-  .foot-meta { font-family: var(--font-mono); font-size: 10.5px; color: var(--ink-soft); text-transform: uppercase; letter-spacing: 0.05em; }
 </style>
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 <script>
@@ -196,7 +215,7 @@
 <body>
 
 <div class="topbar">
-  <a class="mark" href="#top">SCAMP<span>.</span>ART</a>
+  <a class="mark" href="#top"><b class="mark-text">The Art and Design of <span>Shawn Camp</span></b></a>
   <ul class="toplinks">
     <li><a href="#work" data-jump="design">Design</a></li>
     <li><a href="#work" data-jump="instructional_design">Instructional Design</a></li>
@@ -204,7 +223,6 @@
     <li><a href="#work" data-jump="caricature">Caricature</a></li>
     <li><a href="#work" data-jump="animation">Animation</a></li>
     <li><a href="#work" data-jump="misc">Pen and Paint</a></li>
-    <li><a href="#contact">Contact</a></li>
   </ul>
 </div>
 
@@ -227,7 +245,7 @@
             <stop offset="0.75" stop-color="#fff" stop-opacity="0.35"/>
             <stop offset="1" stop-color="#fff" stop-opacity="0"/>
           </radialGradient>
-          <filter id="splatter" x="0%" y="0%" width="100%" height="100%" color-interpolation-filters="sRGB">
+          <filter id="splatter" x="-25%" y="-25%" width="150%" height="150%" color-interpolation-filters="sRGB">
             <feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="3" seed="21" result="warp"/>
             <feDisplacementMap in="SourceGraphic" in2="warp" scale="120" xChannelSelector="R" yChannelSelector="G" result="shape"/>
             <feTurbulence type="fractalNoise" baseFrequency="0.55" numOctaves="2" seed="8" result="fine"/>
@@ -241,8 +259,9 @@
             <feComposite in="red" in2="hard" operator="in"/>
           </filter>
         </defs>
-        <circle cx="300" cy="300" r="290" fill="url(#splatFall)" filter="url(#splatter)"/>
+        <circle cx="300" cy="300" r="235" fill="url(#splatFall)" filter="url(#splatter)"/>
       </svg>
+      <img class="hero-logo" src="/images/logo.png" alt="Scamp Art logo">
       <div class="hero-art-frame" id="heroFrame"></div>
       <div class="torn-note" id="heroNote"></div>
       <div class="est-tag" id="heroEst"></div>
@@ -287,7 +306,6 @@
       <p class="section-num">02 — About</p>
       <h2 id="aboutTitle"></h2>
       <p id="aboutBody"></p>
-      <a class="about-more" href="#contact">More About Me &#8594;</a>
     </div>
     <div class="about-icons">
       <div><svg viewBox="0 0 24 24"><rect x="3" y="3" width="8" height="8"/><rect x="13" y="3" width="8" height="8"/><rect x="3" y="13" width="8" height="8"/><rect x="13" y="13" width="8" height="8"/></svg>Design</div>
@@ -299,22 +317,19 @@
   </div>
 </section>
 
-<footer class="footer" id="contact">
-  <div class="contact-row">
-    <a class="contact-link" id="contactEmail" href="#"></a>
-    <span class="foot-meta">&#169; Shawn Camp — Scamp.Art</span>
-  </div>
-  <p class="footer-hand" id="footerLine"></p>
-  <svg class="mountains" viewBox="0 0 1180 260" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-    <polygon points="0,260 0,160 180,60 340,150 520,40 720,170 900,90 1180,200 1180,260" fill="#211E28"/>
-    <polygon points="0,260 0,200 220,120 430,190 650,110 860,200 1060,150 1180,220 1180,260" fill="#191720"/>
-    <circle cx="900" cy="70" r="46" fill="#E1503B" opacity="0.85"/>
-  </svg>
-</footer>
+
+<p class="copyright" id="copyright"></p>
+
+<div class="contact-ribbon" id="contactRibbon">
+  <button type="button" class="cr-tab" id="crTab" aria-expanded="false" aria-controls="crPanel">Let's Work Together</button>
+  <div class="cr-panel" id="crPanel"><a id="contactEmail" href="#"></a><a id="contactLinkedIn" href="#" target="_blank" rel="noopener">LinkedIn &#8599;</a></div>
+</div>
 
 <script>
 (function () {
   "use strict";
+  document.getElementById("copyright").textContent = "© " + new Date().getFullYear() + " Shawn Camp. All rights reserved.";
+  (function () { var r = document.getElementById("contactRibbon"), t = document.getElementById("crTab"); t.addEventListener("click", function (e) { e.stopPropagation(); var o = r.classList.toggle("open"); t.setAttribute("aria-expanded", String(o)); }); document.addEventListener("click", function (e) { if (!r.contains(e.target)) { r.classList.remove("open"); t.setAttribute("aria-expanded", "false"); } }); })();
 
   function escText(s) { return String(s == null ? "" : s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;"); }
   function escAttr(s) { return String(s == null ? "" : s).replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;").replace(/>/g, "&gt;"); }
@@ -325,7 +340,7 @@
     return (
       '<a class="card' + (item.fit === 'contain' || item.fit === 'wide' ? ' wide' : '') + (item.video ? ' has-video' : '') + '" href="#"' + (item.video ? ' data-video="' + escAttr(item.video) + '" data-title="' + escAttr(item.title) + '"' : '') + '>' +
         (item.video ? '<span class="play" aria-hidden="true"><span></span></span>' : '') +
-        '<img' + (item.fit === 'contain' ? ' class="contain"' : (item.fit === 'wide' ? ' class="natural"' : (item.fit === 'letterbox' ? ' class="letterbox"' : ''))) + ' src="' + escAttr(item.image) + '" alt="' + escAttr(item.title) + '">' +
+        '<img' + (item.fit === 'contain' ? ' class="contain"' : (item.fit === 'wide' ? ' class="natural"' : (item.fit === 'letterbox' ? ' class="letterbox"' : ''))) + ' src="' + escAttr(item.image) + '" alt="' + escAttr(item.title) + '"' + (item.fit === 'wide' ? '' : ' loading="lazy" decoding="async"') + '>' +
         '<div class="card-body">' +
           '<p class="card-tag">' + escText(item.subtitle) + '</p>' +
           '<h3 class="card-title">' + escText(item.title) + '</h3>' +
@@ -379,7 +394,8 @@
     var emailEl = document.getElementById('contactEmail');
     emailEl.textContent = c.email || '';
     emailEl.href = 'mailto:' + (c.email || '');
-    document.getElementById('footerLine').innerHTML = escText(c.footer_line || '');
+    var liEl = document.getElementById('contactLinkedIn');
+    if (c.linkedin) { liEl.href = c.linkedin; } else { liEl.style.display = 'none'; }
 
     BUCKET_KEYS.forEach(function (key) { renderBucket(key, data[key]); });
     var reel = data.animation_reel;
@@ -398,8 +414,18 @@
     document.querySelectorAll('.bucket-nav button').forEach(function (t) { t.setAttribute('aria-pressed', String(t.getAttribute('data-bucket') === name)); });
     document.querySelectorAll('.bucket').forEach(function (b) { b.style.display = (name === 'all' || b.id === name) ? '' : 'none'; });
   }
-  document.querySelectorAll('.bucket-nav button').forEach(function (t) { t.addEventListener('click', function () { applyBucketFilter(t.getAttribute('data-bucket')); }); });
-  document.querySelectorAll('a[data-jump]').forEach(function (a) { a.addEventListener('click', function () { applyBucketFilter(a.getAttribute('data-jump')); }); });
+  function goToBucket(name) {
+    applyBucketFilter(name);
+    var target = document.getElementById(name === 'all' ? 'design' : name);
+    var wrap = document.querySelector('.bucket-nav-wrap');
+    if (!target || !wrap) return;
+    var stickyTop = parseFloat(getComputedStyle(wrap).top) || 0;
+    var y = target.getBoundingClientRect().top + window.pageYOffset - (stickyTop + wrap.offsetHeight + 20);
+    var still = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    window.scrollTo({ top: Math.max(0, y), behavior: still ? 'auto' : 'smooth' });
+  }
+  document.querySelectorAll('.bucket-nav button').forEach(function (t) { t.addEventListener('click', function () { goToBucket(t.getAttribute('data-bucket')); }); });
+  document.querySelectorAll('a[data-jump]').forEach(function (a) { a.addEventListener('click', function (e) { e.preventDefault(); goToBucket(a.getAttribute('data-jump')); }); });
 
   fetch('/content.json', { cache: 'no-store' })
     .then(function (res) { return res.json(); })

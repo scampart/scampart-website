@@ -31,12 +31,12 @@ collections:
               - {label: "Headline Line 1", name: "title_line1", widget: "string"}
               - {label: "Headline Line 2 (highlighted in red)", name: "title_line2", widget: "string"}
               - {label: "Body Paragraph", name: "body", widget: "text"}
-          - label: "Contact / Footer"
+          - label: "Contact"
             name: "contact"
             widget: "object"
             fields:
               - {label: "Email", name: "email", widget: "string"}
-              - {label: "Footer Tagline", name: "footer_line", widget: "string"}
+              - {label: "LinkedIn URL", name: "linkedin", widget: "string", required: false}
           - label: "Design Projects"
             name: "design"
             widget: "list"
