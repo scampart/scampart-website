@@ -89,7 +89,7 @@ collections:
                 name: "items"
                 widget: "list"
                 fields: *project_fields
-          - label: "Misc Projects"
+          - label: "Pen and Paint"
             hint: "Traditional art, 3D, or anything else that doesn't fit the other buckets."
             name: "misc"
             widget: "list"

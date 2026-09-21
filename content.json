@@ -585,6 +585,160 @@
           "fit": "letterbox"
         }
       ]
+    },
+    {
+      "subtype": "Sketchbook",
+      "items": [
+        {
+          "title": "Marker Monsters",
+          "subtitle": "Sketchbook",
+          "desc": "",
+          "image": "/images/sk-marker-monsters.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Character Sketch Page",
+          "subtitle": "Sketchbook",
+          "desc": "",
+          "image": "/images/sk-character-sketch-page.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Chewbacca and C-3PO",
+          "subtitle": "Sketchbook",
+          "desc": "",
+          "image": "/images/sk-chewbacca-and-c-3po.jpg"
+        },
+        {
+          "title": "Tin Man Under the Moon",
+          "subtitle": "Sketchbook",
+          "desc": "",
+          "image": "/images/sk-tin-man-under-the-moon.jpg"
+        },
+        {
+          "title": "Creature from the Black Lagoon",
+          "subtitle": "Sketchbook",
+          "desc": "",
+          "image": "/images/sk-creature-from-the-black-lagoon.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Piranha Plant",
+          "subtitle": "Sketchbook",
+          "desc": "",
+          "image": "/images/sk-piranha-plant.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Teeny Little Super Guy",
+          "subtitle": "Sketchbook",
+          "desc": "",
+          "image": "/images/sk-teeny-little-super-guy.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Egg Tragedy",
+          "subtitle": "Sketchbook",
+          "desc": "",
+          "image": "/images/sk-egg-tragedy.jpg"
+        },
+        {
+          "title": "Jack in the Box",
+          "subtitle": "Sketchbook",
+          "desc": "",
+          "image": "/images/sk-jack-in-the-box.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Party Shark",
+          "subtitle": "Sketchbook",
+          "desc": "",
+          "image": "/images/sk-party-shark.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Braided Caricature Sketch",
+          "subtitle": "Sketchbook",
+          "desc": "",
+          "image": "/images/sk-braided-caricature-sketch.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Godzilla on Wheels",
+          "subtitle": "Sketchbook",
+          "desc": "",
+          "image": "/images/sk-godzilla-on-wheels.jpg"
+        },
+        {
+          "title": "Burnt Match",
+          "subtitle": "Sketchbook",
+          "desc": "",
+          "image": "/images/sk-burnt-match.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Waldo",
+          "subtitle": "Sketchbook",
+          "desc": "",
+          "image": "/images/sk-waldo.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Tin Man in the Swirl",
+          "subtitle": "Sketchbook",
+          "desc": "",
+          "image": "/images/sk-tin-man-in-the-swirl.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Wandering Mouse",
+          "subtitle": "Sketchbook",
+          "desc": "",
+          "image": "/images/sk-wandering-mouse.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Bulldog",
+          "subtitle": "Sketchbook",
+          "desc": "",
+          "image": "/images/sk-bulldog.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Pennywise",
+          "subtitle": "Sketchbook",
+          "desc": "",
+          "image": "/images/sk-pennywise.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Sphynx Cat",
+          "subtitle": "Sketchbook",
+          "desc": "",
+          "image": "/images/sk-sphynx-cat.jpg"
+        },
+        {
+          "title": "Raid Bug",
+          "subtitle": "Sketchbook",
+          "desc": "",
+          "image": "/images/sk-raid-bug.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Night Diver",
+          "subtitle": "Sketchbook",
+          "desc": "",
+          "image": "/images/sk-night-diver.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Dachshund",
+          "subtitle": "Sketchbook",
+          "desc": "",
+          "image": "/images/sk-dachshund.jpg",
+          "fit": "letterbox"
+        }
+      ]
     }
   ],
   "caricature": [
@@ -1202,58 +1356,102 @@
   ],
   "misc": [
     {
-      "title": "3D Piece 1",
-      "subtitle": "3D",
+      "title": "Parrot Portrait",
+      "subtitle": "Pen and Paint",
       "desc": "",
-      "image": "/images/3d-piece-1.jpg"
+      "image": "/images/pp-parrot-portrait.jpg",
+      "fit": "letterbox"
     },
     {
-      "title": "3D Piece 2",
-      "subtitle": "3D",
+      "title": "Tin Man Balloon",
+      "subtitle": "Pen and Paint",
       "desc": "",
-      "image": "/images/3d-piece-2.jpg"
+      "image": "/images/pp-tin-man-balloon.jpg",
+      "fit": "letterbox"
     },
     {
-      "title": "3D Piece 3",
-      "subtitle": "3D",
+      "title": "Red-Eyed Tree Frog",
+      "subtitle": "Pen and Paint",
       "desc": "",
-      "image": "/images/3d-piece-3.jpg"
+      "image": "/images/pp-red-eyed-tree-frog.jpg",
+      "fit": "letterbox"
     },
     {
-      "title": "Traditional Art 1",
-      "subtitle": "Traditional Art",
+      "title": "Chameleon",
+      "subtitle": "Pen and Paint",
       "desc": "",
-      "image": "/images/traditional-art-1.jpg"
+      "image": "/images/pp-chameleon.jpg",
+      "fit": "letterbox"
     },
     {
-      "title": "Traditional Art 2",
-      "subtitle": "Traditional Art",
+      "title": "Owl in Flight",
+      "subtitle": "Pen and Paint",
       "desc": "",
-      "image": "/images/traditional-art-2.jpg"
+      "image": "/images/pp-owl-in-flight.jpg",
+      "fit": "letterbox"
     },
     {
-      "title": "Traditional Art 3",
-      "subtitle": "Traditional Art",
+      "title": "Goldfish",
+      "subtitle": "Pen and Paint",
       "desc": "",
-      "image": "/images/traditional-art-3.jpg"
+      "image": "/images/pp-goldfish.jpg",
+      "fit": "letterbox"
     },
     {
-      "title": "Traditional Art 4",
-      "subtitle": "Traditional Art",
+      "title": "Kingfisher",
+      "subtitle": "Pen and Paint",
       "desc": "",
-      "image": "/images/traditional-art-4.jpg"
+      "image": "/images/pp-kingfisher.jpg",
+      "fit": "letterbox"
     },
     {
-      "title": "Traditional Art 5",
-      "subtitle": "Traditional Art",
+      "title": "Crested Bird",
+      "subtitle": "Pen and Paint",
       "desc": "",
-      "image": "/images/traditional-art-5.jpg"
+      "image": "/images/pp-crested-bird.jpg",
+      "fit": "letterbox"
     },
     {
-      "title": "Traditional Art 6",
-      "subtitle": "Traditional Art",
+      "title": "Robin on a Branch",
+      "subtitle": "Pen and Paint",
       "desc": "",
-      "image": "/images/traditional-art-6.jpg"
+      "image": "/images/pp-robin-on-a-branch.jpg",
+      "fit": "letterbox"
+    },
+    {
+      "title": "Birch Trees in Snow",
+      "subtitle": "Pen and Paint",
+      "desc": "",
+      "image": "/images/pp-birch-trees-in-snow.jpg",
+      "fit": "letterbox"
+    },
+    {
+      "title": "Octopus",
+      "subtitle": "Pen and Paint",
+      "desc": "",
+      "image": "/images/pp-octopus.jpg",
+      "fit": "letterbox"
+    },
+    {
+      "title": "Chimpanzee",
+      "subtitle": "Pen and Paint",
+      "desc": "",
+      "image": "/images/pp-chimpanzee.jpg",
+      "fit": "letterbox"
+    },
+    {
+      "title": "Tiki Guardian",
+      "subtitle": "Pen and Paint",
+      "desc": "",
+      "image": "/images/pp-tiki-guardian.jpg",
+      "fit": "letterbox"
+    },
+    {
+      "title": "Betta Fish",
+      "subtitle": "Pen and Paint",
+      "desc": "",
+      "image": "/images/pp-betta-fish.jpg",
+      "fit": "letterbox"
     }
   ]
 }

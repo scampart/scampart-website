@@ -61,6 +61,8 @@
   .btn-outline:hover { border-color: var(--ink); transform: translateY(-2px); }
 
   .hero-art { position: relative; }
+  .hero { overflow-x: clip; }
+  html, body { overflow-x: clip; }
   .hero-blob { position: absolute; left: 50%; top: 50%; width: 150%; max-width: 900px; aspect-ratio: 1; transform: translate(-50%, -50%); overflow: visible; z-index: 0; pointer-events: none; }
   .hero-art-frame { position: relative; z-index: 1; display: flex; justify-content: center; align-items: flex-end; padding-top: 30px; }
   .hero-art-frame img { position: relative; z-index: 1; width: auto; max-width: 100%; max-height: 640px; display: block; filter: drop-shadow(0 18px 28px rgba(0,0,0,0.5)); }
@@ -116,14 +118,14 @@
   @media (max-width: 780px) { .lbox { padding: 52px 10px 16px; } .lbox-nav { top: auto; bottom: 18px; transform: none; width: 52px; height: 44px; } .lbox-prev { left: 14px; } .lbox-next { right: 14px; } .lbox-cap { margin-bottom: 52px; } }
   .bucket + .bucket { margin-top: 84px; }
   .bucket-title { font-family: var(--font-display); font-weight: 900; text-transform: uppercase; font-size: clamp(28px, 3.6vw, 40px); line-height: 1; margin: 0 0 28px; padding-bottom: 14px; border-bottom: 1px solid var(--line-strong); }
-  .subnav { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin: 0 0 34px; padding: 16px 18px; background: var(--bg-raised); border: 1px solid var(--line-strong); border-radius: 14px; }
+  .subnav { position: sticky; top: 138px; z-index: 15; display: flex; flex-wrap: wrap; gap: 8px 10px; align-items: center; margin: 0 0 34px; padding: 10px 16px; box-shadow: 0 10px 18px -8px rgba(0,0,0,0.55); background: var(--bg-raised); border: 1px solid var(--line-strong); border-radius: 14px; }
   .subnav-label { font-family: var(--font-body); font-size: 13px; font-weight: 600; color: var(--ink); margin-right: 8px; }
   .subnav-label span { color: var(--ink-soft); font-weight: 400; margin-left: 6px; }
   .subnav button { font-family: var(--font-body); font-size: 14px; font-weight: 600; cursor: pointer; color: #1a1620; background: var(--paper); border: 2px solid var(--paper); border-radius: 999px; padding: 9px 18px; display: inline-flex; align-items: center; gap: 8px; transition: background .15s ease, color .15s ease, border-color .15s ease, transform .15s ease; }
   .subnav button::after { content: "↓"; font-size: 15px; line-height: 1; }
   .subnav button:hover { background: var(--red); border-color: var(--red); color: #191016; transform: translateY(2px); }
   .subnav button .n { font-weight: 500; opacity: 0.6; margin-left: 2px; }
-  .subgroup { scroll-margin-top: 150px; }
+  .subgroup { scroll-margin-top: 215px; }
   .subgroup-empty { font-family: var(--font-mono); font-size: 12.5px; color: var(--ink-soft); margin: 0; }
   .bucket-nav { display: flex; flex-wrap: wrap; gap: 10px; }
   .bucket-nav button { font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.05em; text-transform: uppercase; cursor: pointer; color: var(--ink); background: transparent; border: 1px solid var(--line-strong); padding: 9px 16px; transition: background .15s ease, color .15s ease; }
@@ -155,9 +157,11 @@
     .bucket-nav::-webkit-scrollbar { display: none; }
     .bucket-nav button { flex: none; white-space: nowrap; padding: 8px 14px; }
     .wrap { padding: 0 20px; }
-    .subnav { padding: 12px 14px; margin-bottom: 24px; }
-    .subnav-label { width: 100%; margin-bottom: 2px; }
-    .subgroup { scroll-margin-top: 120px; }
+    .subnav { top: 104px; padding: 8px 12px; margin-bottom: 24px; flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; }
+    .subnav::-webkit-scrollbar { display: none; }
+    .subnav button { flex: none; white-space: nowrap; padding: 7px 14px; font-size: 13px; }
+    .subnav-label { display: none; }
+    .subgroup { scroll-margin-top: 170px; }
   }
 
   .about-grid { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 50px; align-items: start; }
@@ -199,7 +203,7 @@
     <li><a href="#work" data-jump="illustration">Illustration</a></li>
     <li><a href="#work" data-jump="caricature">Caricature</a></li>
     <li><a href="#work" data-jump="animation">Animation</a></li>
-    <li><a href="#work" data-jump="misc">Misc</a></li>
+    <li><a href="#work" data-jump="misc">Pen and Paint</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
 </div>
@@ -264,7 +268,7 @@
         <button type="button" role="tab" aria-pressed="false" data-bucket="illustration">Illustration</button>
         <button type="button" role="tab" aria-pressed="false" data-bucket="caricature">Caricature</button>
         <button type="button" role="tab" aria-pressed="false" data-bucket="animation">Animation</button>
-        <button type="button" role="tab" aria-pressed="false" data-bucket="misc">Misc</button>
+        <button type="button" role="tab" aria-pressed="false" data-bucket="misc">Pen and Paint</button>
       </nav>
     </div>
 
@@ -273,7 +277,7 @@
     <div class="bucket" id="illustration"><h3 class="bucket-title">Illustration</h3><div class="bucket-body" data-body="illustration"></div></div>
     <div class="bucket" id="caricature"><h3 class="bucket-title">Caricature</h3><div class="bucket-body" data-body="caricature"></div></div>
     <div class="bucket" id="animation"><h3 class="bucket-title">Animation</h3><div class="bucket-body" data-body="animation"></div></div>
-    <div class="bucket" id="misc"><h3 class="bucket-title">Misc</h3><div class="bucket-body" data-body="misc"></div></div>
+    <div class="bucket" id="misc"><h3 class="bucket-title">Pen and Paint</h3><div class="bucket-body" data-body="misc"></div></div>
   </div>
 </section>
 
