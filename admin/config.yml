@@ -45,7 +45,8 @@ collections:
               - {label: "Title", name: "title", widget: "string"}
               - {label: "Tag / Subcategory", name: "subtitle", widget: "string"}
               - {label: "One-line Description", name: "desc", widget: "string"}
-              - {label: "Image", name: "image", widget: "image"}
+              - {label: "Image (or video cover image)", name: "image", widget: "image"}
+              - {label: "Video (optional MP4, plays in a pop-up when the card is clicked)", name: "video", widget: "file", required: false, media_folder: "/videos", public_folder: "/videos"}
               - {label: "Image Fit (Contain = full-width strip for icons, Wide = full-width showcase for big layouts, Letterbox = show the whole image inside the card without cropping)", name: "fit", widget: "select", options: ["cover", "letterbox", "contain", "wide"], default: "cover", required: false}
           - label: "Instructional Design Projects"
             name: "instructional_design"
@@ -71,10 +72,24 @@ collections:
                 name: "items"
                 widget: "list"
                 fields: *project_fields
+          - label: "Animation Reel (featured video at the top of Animation)"
+            name: "animation_reel"
+            widget: "object"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Subtitle", name: "subtitle", widget: "string", required: false}
+              - {label: "Video (MP4)", name: "video", widget: "file", media_folder: "/videos", public_folder: "/videos"}
+              - {label: "Cover Image", name: "poster", widget: "image"}
           - label: "Animation Projects"
+            hint: "Two subsections: Animation, and Behind the Animation (storyboards and character drawings that support the animations)."
             name: "animation"
             widget: "list"
-            fields: *project_fields
+            fields:
+              - {label: "Subsection Name", name: "subtype", widget: "string"}
+              - label: "Pieces In This Subsection"
+                name: "items"
+                widget: "list"
+                fields: *project_fields
           - label: "Misc Projects"
             hint: "Traditional art, 3D, or anything else that doesn't fit the other buckets."
             name: "misc"

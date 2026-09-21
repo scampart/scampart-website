@@ -23,7 +23,8 @@
       "title": "Spirit Songbook Cover Art",
       "subtitle": "Editorial Design",
       "desc": "Hand-lettered type and a single spot of color over a black-and-white street photograph.",
-      "image": "/images/spirit-songbook.jpg"
+      "image": "/images/spirit-songbook.jpg",
+      "fit": "wide"
     },
     {
       "title": "Hospitality Trends Infographics",
@@ -974,54 +975,82 @@
       ]
     }
   ],
+  "animation_reel": {
+    "title": "Animation Reel",
+    "subtitle": "A reel of my animation work",
+    "video": "/videos/scamp_reel.mp4",
+    "poster": "/images/reel-poster.jpg"
+  },
   "animation": [
     {
-      "title": "Animation Build Up 1",
-      "subtitle": "Animation Build Up",
-      "desc": "",
-      "image": "/images/animation-build-up-1.jpg"
+      "subtype": "Animation",
+      "items": [
+        {
+          "title": "Broccoli Character Walk-On",
+          "subtitle": "Animation",
+          "desc": "",
+          "image": "/images/anim-broccoli-walk-on.jpg",
+          "video": "/videos/broccoli-walk-on.mp4",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Tightrope Balance Explainer",
+          "subtitle": "Animation",
+          "desc": "",
+          "image": "/images/anim-tightrope-balance-explainer.jpg",
+          "video": "/videos/tightrope-balance-explainer.mp4"
+        },
+        {
+          "title": "Animated Logo Sting",
+          "subtitle": "Animation",
+          "desc": "",
+          "image": "/images/anim-animated-logo-sting.jpg",
+          "video": "/videos/animated-logo-sting.mp4",
+          "fit": "letterbox"
+        },
+        {
+          "title": "LEGO Pilot Scene",
+          "subtitle": "Animation",
+          "desc": "",
+          "image": "/images/anim-lego-pilot-scene.jpg",
+          "video": "/videos/lego-pilot-scene.mp4",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Presenter Character Explainer",
+          "subtitle": "Animation",
+          "desc": "",
+          "image": "/images/anim-presenter-character-explainer.jpg",
+          "video": "/videos/presenter-character-explainer.mp4"
+        },
+        {
+          "title": "Trainer Character Explainer",
+          "subtitle": "Animation",
+          "desc": "",
+          "image": "/images/anim-trainer-character-explainer.jpg",
+          "video": "/videos/trainer-character-explainer.mp4"
+        },
+        {
+          "title": "Dashboard Walkthrough Explainer",
+          "subtitle": "Animation",
+          "desc": "",
+          "image": "/images/anim-dashboard-walkthrough-explainer.jpg",
+          "video": "/videos/dashboard-walkthrough-explainer.mp4",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Line-Art Day in the Life",
+          "subtitle": "Animation",
+          "desc": "",
+          "image": "/images/anim-line-art-day-in-the-life.jpg",
+          "video": "/videos/line-art-day-in-the-life.mp4",
+          "fit": "letterbox"
+        }
+      ]
     },
     {
-      "title": "Animation Build Up 2",
-      "subtitle": "Animation Build Up",
-      "desc": "",
-      "image": "/images/animation-build-up-2.jpg"
-    },
-    {
-      "title": "Animation Build Up 3",
-      "subtitle": "Animation Build Up",
-      "desc": "",
-      "image": "/images/animation-build-up-3.jpg"
-    },
-    {
-      "title": "Animation Build Up 4",
-      "subtitle": "Animation Build Up",
-      "desc": "",
-      "image": "/images/animation-build-up-4.jpg"
-    },
-    {
-      "title": "Animation Build Up 5",
-      "subtitle": "Animation Build Up",
-      "desc": "",
-      "image": "/images/animation-build-up-5.jpg"
-    },
-    {
-      "title": "Animation Build Up 6",
-      "subtitle": "Animation Build Up",
-      "desc": "",
-      "image": "/images/animation-build-up-6.jpg"
-    },
-    {
-      "title": "Animation Build Up 7",
-      "subtitle": "Animation Build Up",
-      "desc": "",
-      "image": "/images/animation-build-up-7.jpg"
-    },
-    {
-      "title": "Animation Build Up 8",
-      "subtitle": "Animation Build Up",
-      "desc": "",
-      "image": "/images/animation-build-up-8.jpg"
+      "subtype": "Behind the Animation",
+      "items": []
     }
   ],
   "misc": [

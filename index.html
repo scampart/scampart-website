@@ -47,13 +47,13 @@
   .toplinks a { border-bottom: 1px solid transparent; padding-bottom: 3px; }
   .toplinks a:hover { border-color: var(--red); color: var(--red); }
 
-  .hero { padding: 30px 0 90px; }
+  .hero { padding: 40px 0 72px; }
   .hero-grid { display: grid; grid-template-columns: 1.15fr 1fr; gap: 50px; align-items: center; }
-  .eyebrow-row { display: flex; gap: 18px; flex-wrap: wrap; margin-bottom: 22px; }
+  .eyebrow-row { display: flex; gap: 8px 22px; flex-wrap: wrap; margin-bottom: 26px; }
   .eyebrow-row span { font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--red); }
   .eyebrow-row span::before { content: "— "; color: var(--ink-soft); }
 
-  .hero h1 { font-family: var(--font-display); font-weight: 900; text-transform: uppercase; font-size: clamp(46px, 6.2vw, 82px); line-height: 0.92; letter-spacing: -0.01em; margin: 0 0 26px; text-wrap: balance; }
+  .hero h1 { font-family: var(--font-display); font-weight: 900; text-transform: uppercase; font-size: clamp(46px, 6.2vw, 82px); line-height: 0.92; letter-spacing: -0.01em; margin: 0 0 28px; text-wrap: balance; }
   .hero h1 em { font-style: normal; color: var(--red); }
   .hero-sub { max-width: 42ch; font-size: 16.5px; line-height: 1.6; color: var(--ink-soft); margin: 0 0 34px; }
   .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; }
@@ -66,10 +66,8 @@
   .hero-art-frame { position: relative; display: flex; justify-content: center; align-items: flex-end; padding-top: 30px; }
   .hero-art-frame::before { content: ""; position: absolute; top: 0; right: 4%; bottom: 0; width: 62%; background: var(--red); z-index: 0; }
   .hero-art-frame img { position: relative; z-index: 1; width: auto; max-width: 100%; max-height: 640px; display: block; filter: drop-shadow(0 18px 28px rgba(0,0,0,0.5)); }
-  .badge { position: absolute; top: 4px; left: 30%; width: 64px; height: 64px; background: var(--red); border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 8px 18px rgba(0,0,0,0.4); z-index: 3; }
-  .badge svg { width: 30px; height: 30px; fill: #191016; }
   .torn-note { position: absolute; bottom: -22px; right: -24px; width: 150px; background: var(--paper); color: #2A2620; padding: 16px 16px 18px; font-family: var(--font-hand); font-size: 19px; line-height: 1.2; text-align: center; box-shadow: 0 14px 26px rgba(0,0,0,0.45); transform: rotate(3deg); z-index: 3; clip-path: polygon(2% 6%, 18% 0%, 40% 4%, 60% 0%, 80% 5%, 100% 0%, 98% 92%, 82% 100%, 62% 96%, 42% 100%, 20% 97%, 0% 100%); }
-  .est-tag { position: absolute; bottom: 14px; left: 34%; z-index: 3; font-family: var(--font-hand); font-size: 20px; color: var(--ink); background: rgba(21,19,25,0.55); padding: 4px 10px; backdrop-filter: blur(2px); }
+  .est-tag { position: absolute; top: 46px; right: calc(4% + 16px); z-index: 3; font-family: var(--font-hand); font-size: 20px; color: var(--ink); background: rgba(21,19,25,0.55); padding: 4px 10px; backdrop-filter: blur(2px); }
 
   @media (max-width: 900px) { .hero-grid { grid-template-columns: 1fr; } .toplinks { display: none; } .torn-note { right: 6px; bottom: -18px; } }
 
@@ -84,6 +82,42 @@
 
   .bucket-nav-wrap { position: sticky; top: 65px; z-index: 20; background: var(--bg); padding: 16px 0; margin-bottom: 40px; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
   .subgroup-head { font-family: var(--font-mono); font-size: 12.5px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--red); margin: 0 0 18px; padding-bottom: 10px; border-bottom: 1px solid var(--line); }
+  .reel { margin: 0 0 40px; }
+  .reel-label { font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--red); margin: 0 0 6px; }
+  .reel h3 { font-family: var(--font-display); font-weight: 900; text-transform: uppercase; font-size: clamp(26px, 3.6vw, 40px); line-height: 1; margin: 0 0 6px; }
+  .reel-sub { color: var(--ink-soft); font-size: 15px; margin: 0 0 18px; }
+  .reel-frame { background: #000; border: 1px solid var(--line-strong); max-width: 1000px; }
+  .reel-frame video { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; background: #000; }
+  .card .play { position: absolute; top: 0; left: 0; right: 0; aspect-ratio: 4 / 3; display: flex; align-items: center; justify-content: center; pointer-events: none; z-index: 1; }
+  .card .play span { width: 62px; height: 62px; border-radius: 50%; background: rgba(21,19,25,0.72); border: 2px solid var(--paper); display: flex; align-items: center; justify-content: center; transition: background .15s ease, transform .15s ease; }
+  .card .play span::before { content: ""; border-style: solid; border-width: 11px 0 11px 18px; border-color: transparent transparent transparent var(--paper); margin-left: 4px; }
+  .card.has-video { cursor: pointer; }
+  .card.has-video:hover .play span { background: var(--red); border-color: var(--red); transform: scale(1.08); }
+  .card.has-video:hover .play span::before { border-left-color: #191016; }
+  .vmodal { position: fixed; inset: 0; z-index: 100; background: rgba(8,7,10,0.92); display: flex; align-items: center; justify-content: center; padding: 24px; }
+  .vmodal[hidden] { display: none; }
+  .vmodal-box { position: relative; width: min(1100px, 100%); }
+  .vmodal video { display: block; width: 100%; max-height: 78vh; background: #000; }
+  .vmodal-title { font-family: var(--font-display); font-weight: 700; font-size: 22px; text-transform: uppercase; margin: 14px 0 0; }
+  .vmodal-close { position: absolute; top: -44px; right: 0; font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; cursor: pointer; color: var(--ink); background: transparent; border: 1px solid var(--line-strong); padding: 8px 14px; }
+  .vmodal-close:hover { border-color: var(--red); color: var(--red); }
+  .lbox { position: fixed; inset: 0; z-index: 110; background: rgba(8,7,10,0.94); display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 56px 72px 28px; }
+  .lbox[hidden] { display: none; }
+  .lbox-stage { display: flex; align-items: center; justify-content: center; width: 100%; flex: 1; min-height: 0; }
+  .lbox img { max-width: 100%; max-height: 100%; object-fit: contain; display: block; background: #0f0e13; box-shadow: 0 20px 60px rgba(0,0,0,0.6); }
+  .lbox-cap { text-align: center; margin: 14px 0 0; }
+  .lbox-cap .t { font-family: var(--font-display); font-weight: 700; font-size: 22px; text-transform: uppercase; line-height: 1.1; }
+  .lbox-cap .s { font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--red); margin: 0 0 4px; }
+  .lbox-cap .n { font-family: var(--font-mono); font-size: 11.5px; color: var(--ink-soft); margin: 6px 0 0; }
+  .lbox button { font-family: var(--font-mono); cursor: pointer; color: var(--ink); background: rgba(21,19,25,0.85); border: 1px solid var(--line-strong); }
+  .lbox button:hover { border-color: var(--red); color: var(--red); }
+  .lbox-close { position: absolute; top: 14px; right: 18px; font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; padding: 9px 14px; }
+  .lbox-nav { position: absolute; top: 50%; transform: translateY(-50%); width: 46px; height: 64px; font-size: 26px; line-height: 1; }
+  .lbox-prev { left: 12px; }
+  .lbox-next { right: 12px; }
+  @media (max-width: 780px) { .lbox { padding: 52px 10px 16px; } .lbox-nav { top: auto; bottom: 18px; transform: none; width: 52px; height: 44px; } .lbox-prev { left: 14px; } .lbox-next { right: 14px; } .lbox-cap { margin-bottom: 52px; } }
+  .bucket + .bucket { margin-top: 84px; }
+  .bucket-title { font-family: var(--font-display); font-weight: 900; text-transform: uppercase; font-size: clamp(28px, 3.6vw, 40px); line-height: 1; margin: 0 0 28px; padding-bottom: 14px; border-bottom: 1px solid var(--line-strong); }
   .subnav { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin: 0 0 34px; padding: 16px 18px; background: var(--bg-raised); border: 1px solid var(--line-strong); border-radius: 14px; }
   .subnav-label { font-family: var(--font-body); font-size: 13px; font-weight: 600; color: var(--ink); margin-right: 8px; }
   .subnav-label span { color: var(--ink-soft); font-weight: 400; margin-left: 6px; }
@@ -101,7 +135,6 @@
   .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 24px; }
   .card { display: flex; flex-direction: column; background: var(--bg-raised); border: 1px solid var(--line); position: relative; transition: transform .18s ease, border-color .18s ease; }
   .card:hover { transform: translateY(-6px); border-color: var(--line-strong); }
-  .card-num { position: absolute; top: 12px; right: 12px; z-index: 2; font-family: var(--font-mono); font-size: 11px; color: var(--ink); background: rgba(21,19,25,0.6); padding: 3px 8px; backdrop-filter: blur(2px); }
   .card img { width: 100%; aspect-ratio: 4/3; object-fit: cover; display: block; filter: contrast(1.03); background: var(--bg-raised); }
   .card.wide { grid-column: 1 / -1; }
   .card.wide img.contain { aspect-ratio: 7 / 1; padding: 22px 30px; }
@@ -117,6 +150,17 @@
 
   @media (max-width: 980px) { .grid { grid-template-columns: repeat(2, 1fr); } }
   @media (max-width: 560px) { .grid { grid-template-columns: 1fr; } }
+  @media (max-width: 780px) {
+    .topbar { padding: 14px 20px; }
+    .bucket-nav-wrap { top: 52px; padding: 10px 0; margin-bottom: 26px; }
+    .bucket-nav { flex-wrap: nowrap; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; gap: 8px; padding: 0 20px; margin: 0 -20px; -webkit-mask-image: linear-gradient(90deg, #000 88%, transparent); mask-image: linear-gradient(90deg, #000 88%, transparent); }
+    .bucket-nav::-webkit-scrollbar { display: none; }
+    .bucket-nav button { flex: none; white-space: nowrap; padding: 8px 14px; }
+    .wrap { padding: 0 20px; }
+    .subnav { padding: 12px 14px; margin-bottom: 24px; }
+    .subnav-label { width: 100%; margin-bottom: 2px; }
+    .subgroup { scroll-margin-top: 120px; }
+  }
 
   .about-grid { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 50px; align-items: start; }
   .about-grid h2 { font-family: var(--font-display); font-weight: 900; text-transform: uppercase; font-size: clamp(30px,4.4vw,48px); line-height: 0.96; margin: 0 0 22px; text-wrap: balance; }
@@ -128,11 +172,11 @@
   .about-icons svg { width: 20px; height: 20px; fill: none; stroke: var(--red); stroke-width: 1.6; flex: none; }
   @media (max-width: 860px) { .about-grid { grid-template-columns: 1fr; } }
 
-  .footer { position: relative; padding-top: 60px; overflow: hidden; border-top: 1px solid var(--line); }
-  .footer-hand { font-family: var(--font-hand); font-size: clamp(26px, 4vw, 38px); color: var(--ink); text-align: center; margin: 0 0 40px; }
+  .footer { position: relative; padding-top: 96px; overflow: hidden; border-top: 1px solid var(--line); }
+  .footer-hand { font-family: var(--font-hand); font-size: clamp(26px, 4vw, 38px); color: var(--ink); text-align: center; margin: 0 0 44px; }
   .footer-hand em { font-style: normal; color: var(--red); }
   .mountains { display: block; width: 100%; height: auto; }
-  .contact-row { position: absolute; top: 18px; left: 0; right: 0; display: flex; justify-content: space-between; padding: 0 40px; z-index: 2; }
+  .contact-row { position: absolute; top: 30px; left: 0; right: 0; display: flex; justify-content: space-between; padding: 0 40px; z-index: 2; }
   .contact-link { font-family: var(--font-mono); font-size: 12.5px; letter-spacing: 0.05em; text-transform: uppercase; border-bottom: 1px solid var(--line-strong); padding-bottom: 3px; }
   .contact-link:hover { color: var(--red); border-color: var(--red); }
   .foot-meta { font-family: var(--font-mono); font-size: 10.5px; color: var(--ink-soft); text-transform: uppercase; letter-spacing: 0.05em; }
@@ -174,7 +218,6 @@
       </div>
     </div>
     <div class="hero-art">
-      <div class="badge" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2 L14.5 8.5 L21 9 L16 13.5 L17.5 20 L12 16.5 L6.5 20 L8 13.5 L3 9 L9.5 8.5 Z"/></svg></div>
       <div class="hero-art-frame" id="heroFrame"></div>
       <div class="torn-note" id="heroNote"></div>
       <div class="est-tag" id="heroEst"></div>
@@ -204,12 +247,12 @@
       </nav>
     </div>
 
-    <div class="bucket" id="design"><div class="bucket-body" data-body="design"></div></div>
-    <div class="bucket" id="instructional_design" style="margin-top:24px;"><div class="bucket-body" data-body="instructional_design"></div></div>
-    <div class="bucket" id="illustration" style="margin-top:24px;"><div class="bucket-body" data-body="illustration"></div></div>
-    <div class="bucket" id="caricature" style="margin-top:24px;"><div class="bucket-body" data-body="caricature"></div></div>
-    <div class="bucket" id="animation" style="margin-top:24px;"><div class="bucket-body" data-body="animation"></div></div>
-    <div class="bucket" id="misc" style="margin-top:24px;"><div class="bucket-body" data-body="misc"></div></div>
+    <div class="bucket" id="design"><h3 class="bucket-title">Design</h3><div class="bucket-body" data-body="design"></div></div>
+    <div class="bucket" id="instructional_design"><h3 class="bucket-title">Instructional Design</h3><div class="bucket-body" data-body="instructional_design"></div></div>
+    <div class="bucket" id="illustration"><h3 class="bucket-title">Illustration</h3><div class="bucket-body" data-body="illustration"></div></div>
+    <div class="bucket" id="caricature"><h3 class="bucket-title">Caricature</h3><div class="bucket-body" data-body="caricature"></div></div>
+    <div class="bucket" id="animation"><h3 class="bucket-title">Animation</h3><div class="bucket-body" data-body="animation"></div></div>
+    <div class="bucket" id="misc"><h3 class="bucket-title">Misc</h3><div class="bucket-body" data-body="misc"></div></div>
   </div>
 </section>
 
@@ -222,10 +265,11 @@
       <a class="about-more" href="#contact">More About Me &#8594;</a>
     </div>
     <div class="about-icons">
+      <div><svg viewBox="0 0 24 24"><rect x="3" y="3" width="8" height="8"/><rect x="13" y="3" width="8" height="8"/><rect x="3" y="13" width="8" height="8"/><rect x="13" y="13" width="8" height="8"/></svg>Design</div>
+      <div><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="14" rx="1"/><path d="M3 9h18"/></svg>Instructional Design</div>
       <div><svg viewBox="0 0 24 24"><path d="M3 17l6-6 4 4 8-8M21 7h-4v4"/></svg>Illustration</div>
-      <div><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="14" rx="1"/><path d="M3 9h18"/></svg>E&#8209;Learning</div>
+      <div><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 14c1.2 2 6.8 2 8 0M9 9.5h.01M15 9.5h.01"/></svg>Caricature</div>
       <div><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M10 9l5 3-5 3z"/></svg>Animation</div>
-      <div><svg viewBox="0 0 24 24"><rect x="3" y="3" width="8" height="8"/><rect x="13" y="3" width="8" height="8"/><rect x="3" y="13" width="8" height="8"/><rect x="13" y="13" width="8" height="8"/></svg>Visual Design</div>
     </div>
   </div>
 </section>
@@ -253,16 +297,15 @@
   var BUCKET_KEYS = ["design", "instructional_design", "illustration", "caricature", "animation", "misc"];
 
   function renderCard(item, idx) {
-    var num = String(idx + 1).padStart(2, "0");
     return (
-      '<a class="card' + (item.fit === 'contain' || item.fit === 'wide' ? ' wide' : '') + '" href="#">' +
-        '<span class="card-num">' + num + '</span>' +
+      '<a class="card' + (item.fit === 'contain' || item.fit === 'wide' ? ' wide' : '') + (item.video ? ' has-video' : '') + '" href="#"' + (item.video ? ' data-video="' + escAttr(item.video) + '" data-title="' + escAttr(item.title) + '"' : '') + '>' +
+        (item.video ? '<span class="play" aria-hidden="true"><span></span></span>' : '') +
         '<img' + (item.fit === 'contain' ? ' class="contain"' : (item.fit === 'wide' ? ' class="natural"' : (item.fit === 'letterbox' ? ' class="letterbox"' : ''))) + ' src="' + escAttr(item.image) + '" alt="' + escAttr(item.title) + '">' +
         '<div class="card-body">' +
           '<p class="card-tag">' + escText(item.subtitle) + '</p>' +
           '<h3 class="card-title">' + escText(item.title) + '</h3>' +
           (item.desc ? '<p class="card-desc">' + escText(item.desc) + '</p>' : '') +
-          '<span class="card-link">View Project &#8594;</span>' +
+          '<span class="card-link">' + (item.video ? 'Watch Video' : 'View Larger') + ' &#8594;</span>' +
         '</div>' +
       '</a>'
     );
@@ -315,6 +358,14 @@
     document.getElementById('footerLine').innerHTML = escText(c.footer_line || '');
 
     BUCKET_KEYS.forEach(function (key) { renderBucket(key, data[key]); });
+    var reel = data.animation_reel;
+    var animBody = document.querySelector('.bucket-body[data-body="animation"]');
+    if (reel && reel.video && animBody) {
+      animBody.insertAdjacentHTML('afterbegin',
+        '<div class="reel"><p class="reel-label">Featured</p><h3>' + escText(reel.title || 'Animation Reel') + '</h3>' +
+        (reel.subtitle ? '<p class="reel-sub">' + escText(reel.subtitle) + '</p>' : '') +
+        '<div class="reel-frame"><video controls playsinline preload="metadata"' + (reel.poster ? ' poster="' + escAttr(reel.poster) + '"' : '') + ' src="' + escAttr(reel.video) + '">This browser cannot play the video.</video></div></div>');
+    }
   }
 
   var currentFilter = 'all';
@@ -330,6 +381,72 @@
     .then(function (res) { return res.json(); })
     .then(function (data) { render(data); })
     .catch(function () { document.body.insertAdjacentHTML('afterbegin', '<p style="padding:20px;color:#E1503B;font-family:monospace;">Could not load content.json</p>'); });
+})();
+</script>
+<div class="vmodal" id="vmodal" hidden role="dialog" aria-modal="true" aria-label="Video player">
+  <div class="vmodal-box">
+    <button type="button" class="vmodal-close" id="vmodalClose">Close &#215;</button>
+    <video id="vmodalVideo" controls playsinline preload="metadata"></video>
+    <p class="vmodal-title" id="vmodalTitle"></p>
+  </div>
+</div>
+
+<script>
+(function () {
+  var modal = document.getElementById('vmodal'), vid = document.getElementById('vmodalVideo'), ttl = document.getElementById('vmodalTitle');
+  function openVideo(src, title) { ttl.textContent = title || ''; vid.src = src; modal.hidden = false; document.body.style.overflow = 'hidden'; var p = vid.play(); if (p && p.catch) p.catch(function () {}); }
+  function closeVideo() { vid.pause(); vid.removeAttribute('src'); vid.load(); modal.hidden = true; document.body.style.overflow = ''; }
+  document.addEventListener('click', function (e) {
+    var card = e.target.closest ? e.target.closest('.card') : null;
+    if (card) { e.preventDefault(); if (card.dataset.video) openVideo(card.dataset.video, card.dataset.title); else if (window.openLightbox) window.openLightbox(card); return; }
+    if (e.target === modal) closeVideo();
+  });
+  document.getElementById('vmodalClose').addEventListener('click', closeVideo);
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !modal.hidden) closeVideo(); });
+})();
+</script>
+<div class="lbox" id="lbox" hidden role="dialog" aria-modal="true" aria-label="Image viewer">
+  <button type="button" class="lbox-close" id="lboxClose">Close &#215;</button>
+  <button type="button" class="lbox-nav lbox-prev" id="lboxPrev" aria-label="Previous">&#8592;</button>
+  <button type="button" class="lbox-nav lbox-next" id="lboxNext" aria-label="Next">&#8594;</button>
+  <div class="lbox-stage"><img id="lboxImg" alt=""></div>
+  <div class="lbox-cap"><p class="s" id="lboxSub"></p><p class="t" id="lboxTitle"></p><p class="n" id="lboxCount"></p></div>
+</div>
+
+<script>
+(function () {
+  var box = document.getElementById('lbox'), img = document.getElementById('lboxImg');
+  var list = [], idx = 0, startX = null;
+  function show() {
+    var c = list[idx]; if (!c) return;
+    var im = c.querySelector('img');
+    img.src = im.getAttribute('src'); img.alt = im.alt || '';
+    document.getElementById('lboxTitle').textContent = (c.querySelector('.card-title') || {}).textContent || '';
+    document.getElementById('lboxSub').textContent = (c.querySelector('.card-tag') || {}).textContent || '';
+    document.getElementById('lboxCount').textContent = (idx + 1) + ' / ' + list.length;
+    var multi = list.length > 1;
+    document.getElementById('lboxPrev').style.display = multi ? '' : 'none';
+    document.getElementById('lboxNext').style.display = multi ? '' : 'none';
+    [idx - 1, idx + 1].forEach(function (i) { var n = list[i]; if (n) { var p = new Image(); p.src = n.querySelector('img').getAttribute('src'); } });
+  }
+  function step(d) { if (!list.length) return; idx = (idx + d + list.length) % list.length; show(); }
+  function close() { box.hidden = true; img.removeAttribute('src'); document.body.style.overflow = ''; }
+  window.openLightbox = function (card) {
+    var grid = card.closest('.grid');
+    list = grid ? Array.prototype.slice.call(grid.querySelectorAll('.card:not(.has-video)')) : [card];
+    idx = Math.max(0, list.indexOf(card));
+    box.hidden = false; document.body.style.overflow = 'hidden'; show();
+  };
+  document.getElementById('lboxClose').addEventListener('click', close);
+  document.getElementById('lboxPrev').addEventListener('click', function (e) { e.stopPropagation(); step(-1); });
+  document.getElementById('lboxNext').addEventListener('click', function (e) { e.stopPropagation(); step(1); });
+  box.addEventListener('click', function (e) { if (e.target === box || e.target.classList.contains('lbox-stage')) close(); });
+  document.addEventListener('keydown', function (e) {
+    if (box.hidden) return;
+    if (e.key === 'Escape') close(); else if (e.key === 'ArrowLeft') step(-1); else if (e.key === 'ArrowRight') step(1);
+  });
+  box.addEventListener('touchstart', function (e) { startX = e.touches[0].clientX; }, { passive: true });
+  box.addEventListener('touchend', function (e) { if (startX === null) return; var dx = e.changedTouches[0].clientX - startX; startX = null; if (Math.abs(dx) > 50) step(dx < 0 ? 1 : -1); });
 })();
 </script>
 </body>
