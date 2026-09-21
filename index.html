@@ -87,6 +87,7 @@
 
   @media (max-width: 900px) { .hero-grid { grid-template-columns: 1fr; } .toplinks { display: none; } .torn-note { left: 6px; bottom: -18px; } }
 
+  #about, #work { scroll-margin-top: 70px; }
   .section { padding: 80px 0; border-top: 1px solid var(--line); }
   .section-head { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; align-items: end; margin-bottom: 34px; }
   .section-num { font-family: var(--font-mono); font-size: 12px; color: var(--red); letter-spacing: 0.08em; text-transform: uppercase; margin: 0 0 10px; }
@@ -414,6 +415,13 @@
     document.querySelectorAll('.bucket-nav button').forEach(function (t) { t.setAttribute('aria-pressed', String(t.getAttribute('data-bucket') === name)); });
     document.querySelectorAll('.bucket').forEach(function (b) { b.style.display = (name === 'all' || b.id === name) ? '' : 'none'; });
   }
+  document.querySelectorAll('a[href="#top"]').forEach(function (a) {
+    a.addEventListener('click', function (e) {
+      e.preventDefault();
+      var still = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      window.scrollTo({ top: 0, behavior: still ? 'auto' : 'smooth' });
+    });
+  });
   function goToBucket(name) {
     applyBucketFilter(name);
     var target = document.getElementById(name === 'all' ? 'design' : name);
