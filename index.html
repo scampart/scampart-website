@@ -2,6 +2,14 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-H29HFX2WJG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-H29HFX2WJG');
+</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Shawn Camp | Senior Visual Designer: Illustration, Caricature, Animation &amp; Instructional Design</title>
 <meta name="description" content="Portfolio of Shawn Camp, a senior visual designer with 25+ years of experience in design, illustration, caricature, animation and instructional design. Ideas Into Experiences.">
@@ -199,6 +207,9 @@
   .bucket-drop.open .dropdown { opacity: 1; pointer-events: auto; }
   .cross-link { display: inline-block; font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.05em; text-transform: uppercase; color: var(--ink-soft); border-bottom: 1px solid var(--line-strong); padding-bottom: 3px; margin: -14px 0 28px; }
   .cross-link:hover { color: var(--red); border-color: var(--red); }
+  .commission-badge { display: inline-flex; align-items: center; gap: 8px; font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-soft); background: transparent; border: 1px solid var(--line-strong); border-radius: 999px; padding: 7px 16px 7px 12px; margin: 0 0 20px; cursor: pointer; }
+  .commission-badge:hover { border-color: var(--red); color: var(--red); }
+  .commission-badge .dot { width: 7px; height: 7px; border-radius: 50%; background: #6FBF73; flex: none; box-shadow: 0 0 0 3px rgba(111,191,115,0.18); }
   .subnav { position: sticky; top: 138px; z-index: 15; display: flex; flex-wrap: wrap; gap: 8px 10px; align-items: center; margin: 0 0 34px; padding: 10px 16px; box-shadow: 0 10px 18px -8px rgba(0,0,0,0.55); background: var(--bg-raised); border: 1px solid var(--line-strong); border-radius: 14px; }
   .subnav-label { font-family: var(--font-body); font-size: 13px; font-weight: 600; color: var(--ink); margin-right: 8px; }
   .subnav-label span { color: var(--ink-soft); font-weight: 400; margin-left: 6px; }
@@ -289,6 +300,7 @@
 <section class="hero wrap" id="top">
   <div class="hero-grid">
     <div>
+      <button type="button" class="commission-badge" id="commissionBadge"><span class="dot"></span>Open for Commissions</button>
       <h1 id="heroTitle"></h1>
       <p class="hero-sub" id="heroSub"></p>
       <div class="hero-actions">
@@ -408,7 +420,7 @@
         <div><label for="cEmail">Email <i>*</i></label><input id="cEmail" name="email" type="email" required autocomplete="email"></div>
         <div><label for="cOrg">Company / organization</label><input id="cOrg" name="organization" type="text" autocomplete="organization"></div>
         <div><label for="cTopic">I&#8217;m reaching out about</label>
-          <select id="cTopic" name="topic"><option>Job opportunity</option><option>Freelance project</option><option>Collaboration</option><option>Speaking / workshop</option><option>Just saying hello</option></select></div>
+          <select id="cTopic" name="topic"><option>Job opportunity</option><option>Freelance project</option><option>Commission request</option><option>Collaboration</option><option>Speaking / workshop</option><option>Just saying hello</option></select></div>
         <div class="full"><label for="cSubject">Subject</label><input id="cSubject" name="subject" type="text"></div>
         <div class="full"><label for="cMsg">Message <i>*</i></label><textarea id="cMsg" name="message" required></textarea></div>
         <div class="csend"><button type="submit" id="cSend">Send message</button><p class="cstatus" id="cStatus" role="status"></p></div>
@@ -486,9 +498,17 @@
   (function () {
     var modal = document.getElementById("cmodal"), form = document.getElementById("cForm");
     var status = document.getElementById("cStatus"), send = document.getElementById("cSend"), lastFocus = null;
-    function open(e) { if (e) e.preventDefault(); lastFocus = document.activeElement; var r = document.getElementById("contactRibbon"); if (r) r.classList.remove("open"); modal.hidden = false; document.body.style.overflow = "hidden"; setTimeout(function () { document.getElementById("cName").focus(); }, 30); }
+    function open(e) {
+      if (e) e.preventDefault();
+      lastFocus = document.activeElement;
+      var r = document.getElementById("contactRibbon"); if (r) r.classList.remove("open");
+      if (e && e.currentTarget && e.currentTarget.id === "commissionBadge") document.getElementById("cTopic").value = "Commission request";
+      modal.hidden = false;
+      document.body.style.overflow = "hidden";
+      setTimeout(function () { document.getElementById("cName").focus(); }, 30);
+    }
     function close() { modal.hidden = true; document.body.style.overflow = ""; if (lastFocus && lastFocus.focus) lastFocus.focus(); }
-    ["menuContact", "crSend"].forEach(function (id) { var el = document.getElementById(id); if (el) el.addEventListener("click", open); });
+    ["menuContact", "crSend", "commissionBadge"].forEach(function (id) { var el = document.getElementById(id); if (el) el.addEventListener("click", open); });
     document.getElementById("cClose").addEventListener("click", close);
     modal.addEventListener("mousedown", function (e) { if (e.target === modal) close(); });
     document.addEventListener("keydown", function (e) { if (e.key === "Escape" && !modal.hidden) close(); });
