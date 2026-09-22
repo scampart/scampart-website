@@ -24,9 +24,9 @@
   :root {
     --bg: #151319;
     --bg-raised: #1E1C24;
-    --paper: #EFE7D4;
-    --ink: #F4F1E9;
-    --ink-soft: #9C978D;
+    --paper: #E8D9B0;
+    --ink: #E8D9B0;
+    --ink-soft: #B6B1A6;
     --red: #E1503B;
     --red-ink: #C43D2B;
     --line: rgba(244,241,233,0.14);
@@ -179,6 +179,23 @@
   .cthanks-logo { width: 130px; height: auto; display: block; margin: 0 auto 22px; }
   .cthanks h3 { font-family: var(--font-display); font-weight: 900; text-transform: uppercase; font-size: 34px; margin: 0 0 8px; color: var(--red); }
   @media (max-width: 640px) { .cbox { padding: 40px 20px 26px; } .cform { grid-template-columns: 1fr; } }
+  .has-drop { position: relative; }
+  .has-drop > .drop-toggle { font-family: var(--font-mono); font-size: 11px; line-height: 1; cursor: pointer; color: inherit; background: transparent; border: 0; padding: 0 2px; }
+  .toplinks .has-drop { display: inline-flex; align-items: center; gap: 3px; }
+  .toplinks .drop-toggle { color: var(--ink-soft); }
+  .toplinks .has-drop.open .drop-toggle { color: var(--red); }
+  .toplinks .dropdown { list-style: none; margin: 0; padding: 8px 0; position: fixed; top: 0; left: 0; min-width: 190px; background: var(--bg-raised); border: 1px solid var(--line-strong); border-radius: 10px; box-shadow: 0 16px 30px rgba(0,0,0,0.5); opacity: 0; pointer-events: none; transition: opacity .15s ease; z-index: 60; }
+  .toplinks .dropdown a { display: block; padding: 9px 18px; border-bottom: 0 !important; font-size: 12px; letter-spacing: 0.06em; }
+  .toplinks .dropdown a:hover { color: var(--red); background: rgba(225,80,59,0.08); }
+  .toplinks .has-drop.open .dropdown { opacity: 1; pointer-events: auto; }
+  .bucket-drop { display: inline-flex; align-items: center; }
+  .bucket-drop > button[data-bucket] { border-top-right-radius: 0; border-bottom-right-radius: 0; }
+  .bucket-drop > .drop-toggle { border: 1px solid var(--line-strong); border-left: 0; border-top-right-radius: 999px; border-bottom-right-radius: 999px; padding: 9px 12px 9px 6px; color: var(--ink-soft); align-self: stretch; }
+  .bucket-drop.open > .drop-toggle { color: var(--red); }
+  .bucket-drop > button[aria-pressed="true"] ~ .drop-toggle { border-color: var(--red); }
+  .bucket-drop .dropdown { display: flex; flex-direction: column; gap: 2px; padding: 8px; position: fixed; top: 0; left: 0; min-width: 180px; background: var(--bg-raised); border: 1px solid var(--line-strong); border-radius: 10px; box-shadow: 0 16px 30px rgba(0,0,0,0.5); opacity: 0; pointer-events: none; transition: opacity .15s ease; z-index: 60; }
+  .bucket-drop .dropdown button { width: 100%; text-align: left; border-radius: 6px !important; }
+  .bucket-drop.open .dropdown { opacity: 1; pointer-events: auto; }
   .subnav { position: sticky; top: 138px; z-index: 15; display: flex; flex-wrap: wrap; gap: 8px 10px; align-items: center; margin: 0 0 34px; padding: 10px 16px; box-shadow: 0 10px 18px -8px rgba(0,0,0,0.55); background: var(--bg-raised); border: 1px solid var(--line-strong); border-radius: 14px; }
   .subnav-label { font-family: var(--font-body); font-size: 13px; font-weight: 600; color: var(--ink); margin-right: 8px; }
   .subnav-label span { color: var(--ink-soft); font-weight: 400; margin-left: 6px; }
@@ -253,10 +270,15 @@
   <ul class="toplinks">
     <li><a href="#work" data-jump="design">Design</a></li>
     <li><a href="#work" data-jump="instructional_design">Instructional Design</a></li>
-    <li><a href="#work" data-jump="illustration">Illustration</a></li>
-    <li><a href="#work" data-jump="caricature">Caricature</a></li>
+    <li class="has-drop" id="menuIllusDrop">
+      <a href="#work" data-jump="illustration">Illustration</a><button type="button" class="drop-toggle" aria-expanded="false" aria-label="Show more illustration sections">&#9662;</button>
+      <ul class="dropdown" role="menu">
+        <li><a href="#work" data-jump="illustration" role="menuitem">Illustration</a></li>
+        <li><a href="#work" data-jump="caricature" role="menuitem">Caricature</a></li>
+        <li><a href="#work" data-jump="misc" role="menuitem">Pen and Paint</a></li>
+      </ul>
+    </li>
     <li><a href="#work" data-jump="animation">Animation</a></li>
-    <li><a href="#work" data-jump="misc">Pen and Paint</a></li>
     <li><a href="#contact" id="menuContact" class="menu-contact">Contact</a></li>
   </ul>
 </div>
@@ -319,10 +341,14 @@
         <button type="button" role="tab" aria-pressed="true" data-bucket="all">All Work</button>
         <button type="button" role="tab" aria-pressed="false" data-bucket="design">Design</button>
         <button type="button" role="tab" aria-pressed="false" data-bucket="instructional_design">Instructional Design</button>
-        <button type="button" role="tab" aria-pressed="false" data-bucket="illustration">Illustration</button>
-        <button type="button" role="tab" aria-pressed="false" data-bucket="caricature">Caricature</button>
+        <span class="has-drop bucket-drop" id="filterIllusDrop">
+          <button type="button" role="tab" aria-pressed="false" data-bucket="illustration" data-family="illustration,caricature,misc">Illustration</button><button type="button" class="drop-toggle" aria-expanded="false" aria-label="Show more illustration sections">&#9662;</button>
+          <span class="dropdown" role="menu">
+            <button type="button" role="menuitem tab" aria-pressed="false" data-bucket="caricature">Caricature</button>
+            <button type="button" role="menuitem tab" aria-pressed="false" data-bucket="misc">Pen and Paint</button>
+          </span>
+        </span>
         <button type="button" role="tab" aria-pressed="false" data-bucket="animation">Animation</button>
-        <button type="button" role="tab" aria-pressed="false" data-bucket="misc">Pen and Paint</button>
       </nav>
     </div>
 
@@ -392,6 +418,57 @@
 <script>
 (function () {
   "use strict";
+  (function () {
+    var ids = ["menuIllusDrop", "filterIllusDrop"];
+    var wraps = ids.map(function (id) { return document.getElementById(id); }).filter(Boolean);
+    function closeAll(except) {
+      wraps.forEach(function (w) {
+        if (w === except) return;
+        w.classList.remove("open");
+        w.querySelector(".drop-toggle").setAttribute("aria-expanded", "false");
+      });
+    }
+    wraps.forEach(function (wrap) {
+      var toggle = wrap.querySelector(".drop-toggle"), panel = wrap.querySelector(".dropdown");
+      var closeTimer = null;
+      function place() {
+        var r = toggle.getBoundingClientRect();
+        var pw = panel.offsetWidth || 200;
+        var left = Math.min(r.left, window.innerWidth - pw - 12);
+        left = Math.max(12, left);
+        panel.style.left = left + "px";
+        panel.style.top = (r.bottom + 10) + "px";
+      }
+      function openIt() {
+        clearTimeout(closeTimer);
+        closeAll(wrap);
+        place();
+        wrap.classList.add("open");
+        toggle.setAttribute("aria-expanded", "true");
+      }
+      function closeIt() {
+        wrap.classList.remove("open");
+        toggle.setAttribute("aria-expanded", "false");
+      }
+      function scheduleClose() { clearTimeout(closeTimer); closeTimer = setTimeout(closeIt, 200); }
+      toggle.addEventListener("click", function (e) {
+        e.stopPropagation();
+        if (wrap.classList.contains("open")) closeIt(); else openIt();
+      });
+      wrap.addEventListener("mouseenter", function () { if (window.matchMedia && window.matchMedia("(hover: hover)").matches) openIt(); });
+      wrap.addEventListener("mouseleave", function () { if (window.matchMedia && window.matchMedia("(hover: hover)").matches) scheduleClose(); });
+      panel.addEventListener("mouseenter", function () { clearTimeout(closeTimer); });
+      panel.addEventListener("mouseleave", scheduleClose);
+      wrap.addEventListener("focusin", openIt);
+      wrap.addEventListener("focusout", function () { setTimeout(function () { if (!wrap.contains(document.activeElement)) closeIt(); }, 0); });
+      wrap._closeDrop = closeIt;
+      wrap._placeDrop = place;
+    });
+    document.addEventListener("click", function () { closeAll(); });
+    document.addEventListener("keydown", function (e) { if (e.key === "Escape") closeAll(); });
+    window.addEventListener("scroll", function () { wraps.forEach(function (w) { if (w.classList.contains("open")) w._placeDrop(); }); }, { passive: true });
+    window.addEventListener("resize", function () { wraps.forEach(function (w) { if (w.classList.contains("open")) w._placeDrop(); }); });
+  })();
   (function () {
     var modal = document.getElementById("cmodal"), form = document.getElementById("cForm");
     var status = document.getElementById("cStatus"), send = document.getElementById("cSend"), lastFocus = null;
@@ -494,7 +571,11 @@
   var currentFilter = 'all';
   function applyBucketFilter(name) {
     currentFilter = name;
-    document.querySelectorAll('.bucket-nav button').forEach(function (t) { t.setAttribute('aria-pressed', String(t.getAttribute('data-bucket') === name)); });
+    document.querySelectorAll('.bucket-nav button[data-bucket]').forEach(function (t) {
+      var family = t.getAttribute('data-family');
+      var active = family ? family.split(',').indexOf(name) !== -1 : t.getAttribute('data-bucket') === name;
+      t.setAttribute('aria-pressed', String(active));
+    });
     document.querySelectorAll('.bucket').forEach(function (b) { b.style.display = (name === 'all' || b.id === name) ? '' : 'none'; });
   }
   document.querySelectorAll('a[href="#top"]').forEach(function (a) {
@@ -514,7 +595,7 @@
     var still = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     window.scrollTo({ top: Math.max(0, y), behavior: still ? 'auto' : 'smooth' });
   }
-  document.querySelectorAll('.bucket-nav button').forEach(function (t) { t.addEventListener('click', function () { goToBucket(t.getAttribute('data-bucket')); }); });
+  document.querySelectorAll('.bucket-nav button[data-bucket]').forEach(function (t) { t.addEventListener('click', function () { goToBucket(t.getAttribute('data-bucket')); }); });
   document.querySelectorAll('a[data-jump]').forEach(function (a) { a.addEventListener('click', function (e) { e.preventDefault(); goToBucket(a.getAttribute('data-jump')); }); });
 
   fetch('/content.json', { cache: 'no-store' })
