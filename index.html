@@ -481,6 +481,17 @@
         e.stopPropagation();
         if (wrap.classList.contains("open")) closeIt(); else openIt();
       });
+      var mainTrigger = wrap.querySelector(":scope > a[data-jump], :scope > button[data-bucket]");
+      if (mainTrigger) {
+        mainTrigger.addEventListener("click", function (e) {
+          var touchDevice = !(window.matchMedia && window.matchMedia("(hover: hover)").matches);
+          if (touchDevice && !wrap.classList.contains("open")) {
+            e.preventDefault();
+            e.stopImmediatePropagation();
+            openIt();
+          }
+        });
+      }
       wrap.addEventListener("mouseenter", function () { if (window.matchMedia && window.matchMedia("(hover: hover)").matches) openIt(); });
       wrap.addEventListener("mouseleave", function () { if (window.matchMedia && window.matchMedia("(hover: hover)").matches) scheduleClose(); });
       panel.addEventListener("mouseenter", function () { clearTimeout(closeTimer); });
