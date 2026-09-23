@@ -742,146 +742,6 @@
   ],
   "caricature": [
     {
-      "subtype": "Caricature Commissions",
-      "items": [
-        {
-          "title": "Superhero Comic Cover",
-          "subtitle": "Caricature Commission",
-          "desc": "",
-          "image": "images/comm-superhero-comic-cover.jpg",
-          "fit": "letterbox"
-        },
-        {
-          "title": "Frequent Flyer Caricature",
-          "subtitle": "Caricature Commission",
-          "desc": "",
-          "image": "images/comm-frequent-flyer.jpg",
-          "fit": "letterbox"
-        },
-        {
-          "title": "Retro Cartoon Villain Parody",
-          "subtitle": "Caricature Commission",
-          "desc": "",
-          "image": "images/comm-retro-cartoon-villain.jpg",
-          "fit": "letterbox"
-        },
-        {
-          "title": "Shirt-Rip Hero Caricature",
-          "subtitle": "Caricature Commission",
-          "desc": "",
-          "image": "images/comm-shirt-rip-hero.jpg",
-          "fit": "letterbox"
-        },
-        {
-          "title": "Muscle Car Road Trip",
-          "subtitle": "Caricature Commission",
-          "desc": "",
-          "image": "images/comm-mustang-road-trip.jpg"
-        },
-        {
-          "title": "Comic Team-Up Family Portrait",
-          "subtitle": "Caricature Commission",
-          "desc": "",
-          "image": "images/comm-avengers-family.jpg"
-        },
-        {
-          "title": "Explorer Travel Scene",
-          "subtitle": "Caricature Commission",
-          "desc": "",
-          "image": "images/comm-explorer-luggage.jpg",
-          "fit": "letterbox"
-        },
-        {
-          "title": "Dragon Boat Team Caricature",
-          "subtitle": "Caricature Commission",
-          "desc": "",
-          "image": "images/comm-dragon-boat-team.jpg",
-          "fit": "letterbox"
-        },
-        {
-          "title": "Retirement Send-Off",
-          "subtitle": "Caricature Commission",
-          "desc": "",
-          "image": "images/comm-retirement-truck.jpg",
-          "fit": "letterbox"
-        },
-        {
-          "title": "Firefighter Caricature",
-          "subtitle": "Caricature Commission",
-          "desc": "",
-          "image": "images/comm-firefighter.jpg"
-        },
-        {
-          "title": "Pizza Dough Toss",
-          "subtitle": "Caricature Commission",
-          "desc": "",
-          "image": "images/comm-pizza-cook.jpg",
-          "fit": "letterbox"
-        },
-        {
-          "title": "Lakeside Cats Scene",
-          "subtitle": "Caricature Commission",
-          "desc": "",
-          "image": "images/comm-lakeside-cats.jpg"
-        },
-        {
-          "title": "Bobblehead Caricature",
-          "subtitle": "Caricature Commission",
-          "desc": "",
-          "image": "images/comm-bobblehead-crate.jpg",
-          "fit": "letterbox"
-        },
-        {
-          "title": "Cartoon-Style Basketball Portrait",
-          "subtitle": "Caricature Commission",
-          "desc": "",
-          "image": "images/comm-cartoon-basketball.jpg",
-          "fit": "letterbox"
-        },
-        {
-          "title": "Retro Gamer Caricature",
-          "subtitle": "Caricature Commission",
-          "desc": "",
-          "image": "images/comm-retro-gamer.jpg",
-          "fit": "letterbox"
-        },
-        {
-          "title": "Construction Quality Control",
-          "subtitle": "Caricature Commission",
-          "desc": "",
-          "image": "images/comm-construction-quality-control.jpg",
-          "fit": "letterbox"
-        },
-        {
-          "title": "Wedding Couple Caricature",
-          "subtitle": "Caricature Commission",
-          "desc": "",
-          "image": "images/comm-wedding-couple.jpg",
-          "fit": "letterbox"
-        },
-        {
-          "title": "Golfer Caricature",
-          "subtitle": "Caricature Commission",
-          "desc": "",
-          "image": "images/comm-golfer.jpg",
-          "fit": "letterbox"
-        },
-        {
-          "title": "Line Art Couple",
-          "subtitle": "Caricature Commission",
-          "desc": "",
-          "image": "images/comm-line-art-couple.jpg"
-        },
-        {
-          "title": "Framed Portrait Set",
-          "subtitle": "Caricature Commission",
-          "desc": "",
-          "image": "images/comm-framed-portraits.jpg",
-          "fit": "wide"
-        }
-      ]
-    },
-    {
       "subtype": "Caricature Celebrities",
       "items": [
         {
@@ -1123,6 +983,146 @@
           "desc": "",
           "image": "images/celeb-zz-top.jpg",
           "fit": "letterbox"
+        }
+      ]
+    },
+    {
+      "subtype": "Caricature Commissions",
+      "items": [
+        {
+          "title": "Superhero Comic Cover",
+          "subtitle": "Caricature Commission",
+          "desc": "",
+          "image": "images/comm-superhero-comic-cover.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Frequent Flyer Caricature",
+          "subtitle": "Caricature Commission",
+          "desc": "",
+          "image": "images/comm-frequent-flyer.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Retro Cartoon Villain Parody",
+          "subtitle": "Caricature Commission",
+          "desc": "",
+          "image": "images/comm-retro-cartoon-villain.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Shirt-Rip Hero Caricature",
+          "subtitle": "Caricature Commission",
+          "desc": "",
+          "image": "images/comm-shirt-rip-hero.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Muscle Car Road Trip",
+          "subtitle": "Caricature Commission",
+          "desc": "",
+          "image": "images/comm-mustang-road-trip.jpg"
+        },
+        {
+          "title": "Comic Team-Up Family Portrait",
+          "subtitle": "Caricature Commission",
+          "desc": "",
+          "image": "images/comm-avengers-family.jpg"
+        },
+        {
+          "title": "Explorer Travel Scene",
+          "subtitle": "Caricature Commission",
+          "desc": "",
+          "image": "images/comm-explorer-luggage.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Dragon Boat Team Caricature",
+          "subtitle": "Caricature Commission",
+          "desc": "",
+          "image": "images/comm-dragon-boat-team.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Retirement Send-Off",
+          "subtitle": "Caricature Commission",
+          "desc": "",
+          "image": "images/comm-retirement-truck.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Firefighter Caricature",
+          "subtitle": "Caricature Commission",
+          "desc": "",
+          "image": "images/comm-firefighter.jpg"
+        },
+        {
+          "title": "Pizza Dough Toss",
+          "subtitle": "Caricature Commission",
+          "desc": "",
+          "image": "images/comm-pizza-cook.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Lakeside Cats Scene",
+          "subtitle": "Caricature Commission",
+          "desc": "",
+          "image": "images/comm-lakeside-cats.jpg"
+        },
+        {
+          "title": "Bobblehead Caricature",
+          "subtitle": "Caricature Commission",
+          "desc": "",
+          "image": "images/comm-bobblehead-crate.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Cartoon-Style Basketball Portrait",
+          "subtitle": "Caricature Commission",
+          "desc": "",
+          "image": "images/comm-cartoon-basketball.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Retro Gamer Caricature",
+          "subtitle": "Caricature Commission",
+          "desc": "",
+          "image": "images/comm-retro-gamer.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Construction Quality Control",
+          "subtitle": "Caricature Commission",
+          "desc": "",
+          "image": "images/comm-construction-quality-control.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Wedding Couple Caricature",
+          "subtitle": "Caricature Commission",
+          "desc": "",
+          "image": "images/comm-wedding-couple.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Golfer Caricature",
+          "subtitle": "Caricature Commission",
+          "desc": "",
+          "image": "images/comm-golfer.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Line Art Couple",
+          "subtitle": "Caricature Commission",
+          "desc": "",
+          "image": "images/comm-line-art-couple.jpg"
+        },
+        {
+          "title": "Framed Portrait Set",
+          "subtitle": "Caricature Commission",
+          "desc": "",
+          "image": "images/comm-framed-portraits.jpg",
+          "fit": "wide"
         }
       ]
     }
