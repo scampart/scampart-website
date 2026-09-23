@@ -14,9 +14,9 @@
 <title>Shawn Camp | Senior Visual Designer: Illustration, Caricature, Animation &amp; Instructional Design</title>
 <meta name="description" content="Portfolio of Shawn Camp, a senior visual designer with 25+ years of experience in design, illustration, caricature, animation and instructional design. Ideas Into Experiences.">
 <meta name="theme-color" content="#151319">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
-<link rel="icon" type="image/png" sizes="64x64" href="/favicon.png">
-<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="64x64" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Shawn Camp | Scamp Art">
 <meta property="og:title" content="Shawn Camp | Ideas Into Experiences">
@@ -333,7 +333,7 @@
         </defs>
         <circle cx="300" cy="300" r="235" fill="url(#splatFall)" filter="url(#splatter)"/>
       </svg>
-      <img class="hero-logo" src="/images/logo.png" alt="Scamp Art logo">
+      <img class="hero-logo" src="images/logo.png" alt="Scamp Art logo">
       <div class="hero-art-frame" id="heroFrame"></div>
       <div class="torn-note" id="heroNote"></div>
       <div class="est-tag" id="heroEst"></div>
@@ -428,7 +428,7 @@
       <p class="cdirect"><span>Or email me directly:</span><a id="contactEmail2" href="#"></a></p>
     </div>
     <div class="cthanks" id="cThanks" hidden>
-      <img class="cthanks-logo" src="/images/logo.png" alt="Scamp Art logo">
+      <img class="cthanks-logo" src="images/logo.png" alt="Scamp Art logo">
       <h3>Thank you!</h3>
       <p class="cintro">I look forward to working with you. I will get back to you as soon as I can.</p>
       <p class="cdirect" style="justify-content:center;border:0;padding:0;margin:0;"><a href="#" id="cAgain">Send another message</a></p>
@@ -639,11 +639,21 @@
     var y = target.getBoundingClientRect().top + window.pageYOffset - (stickyTop + wrap.offsetHeight + 20);
     var still = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     window.scrollTo({ top: Math.max(0, y), behavior: still ? 'auto' : 'smooth' });
+    if (window.gtag && name !== 'all') {
+      var titleEl = target.querySelector('.bucket-title');
+      var label = titleEl ? titleEl.textContent : name;
+      window.gtag('event', 'page_view', {
+        page_title: document.title + ' – ' + label,
+        page_location: location.origin + location.pathname + '#' + name,
+        page_path: '/' + name
+      });
+      window.gtag('event', 'section_view', { section_name: name, section_label: label });
+    }
   }
   document.querySelectorAll('.bucket-nav button[data-bucket]').forEach(function (t) { t.addEventListener('click', function () { goToBucket(t.getAttribute('data-bucket')); }); });
   document.querySelectorAll('a[data-jump]').forEach(function (a) { a.addEventListener('click', function (e) { e.preventDefault(); goToBucket(a.getAttribute('data-jump')); }); });
 
-  fetch('/content.json', { cache: 'no-store' })
+  fetch('content.json', { cache: 'no-store' })
     .then(function (res) { return res.json(); })
     .then(function (data) { render(data); })
     .catch(function () { document.body.insertAdjacentHTML('afterbegin', '<p style="padding:20px;color:#E1503B;font-family:monospace;">Could not load content.json</p>'); });
