@@ -93,9 +93,10 @@
   .hero-art-frame { position: relative; z-index: 1; display: flex; justify-content: center; align-items: flex-end; padding-top: 30px; }
   .hero-art-frame img { position: relative; z-index: 1; width: auto; max-width: 100%; max-height: 640px; display: block; filter: drop-shadow(0 18px 28px rgba(0,0,0,0.5)); }
   .torn-note { position: absolute; bottom: -22px; left: -24px; width: 150px; background: var(--paper); color: #2A2620; padding: 16px 16px 18px; font-family: var(--font-hand); font-size: 19px; line-height: 1.2; text-align: center; box-shadow: 0 14px 26px rgba(0,0,0,0.45); transform: rotate(3deg); z-index: 3; clip-path: polygon(2% 6%, 18% 0%, 40% 4%, 60% 0%, 80% 5%, 100% 0%, 98% 92%, 82% 100%, 62% 96%, 42% 100%, 20% 97%, 0% 100%); }
+  .hero-knife { position: absolute; left: -98px; bottom: 92px; width: 125px; height: auto; transform: rotate(-58deg); transform-origin: center; z-index: 4; pointer-events: none; filter: drop-shadow(0 8px 10px rgba(0,0,0,0.45)); }
   .est-tag { position: absolute; right: 2%; bottom: 9%; z-index: 3; font-family: var(--font-spray); font-size: clamp(20px, 2.2vw, 30px); line-height: 1; letter-spacing: 0.02em; color: var(--paper); text-transform: uppercase; transform: rotate(-8deg); text-shadow: 0 2px 0 rgba(0,0,0,0.3); pointer-events: none; }
 
-  @media (max-width: 900px) { .hero-grid { grid-template-columns: 1fr; } .toplinks { display: none; } .torn-note { left: 6px; bottom: -18px; } }
+  @media (max-width: 900px) { .hero-grid { grid-template-columns: 1fr; } .toplinks { display: none; } .torn-note { left: 6px; bottom: -18px; } .hero-knife { left: -14px; bottom: 96px; width: 100px; } }
 
   #about, #work { scroll-margin-top: 70px; }
   .section { padding: 80px 0; border-top: 1px solid var(--line); }
@@ -336,6 +337,7 @@
       <img class="hero-logo" src="images/logo.png" alt="Scamp Art logo">
       <div class="hero-art-frame" id="heroFrame"></div>
       <div class="torn-note" id="heroNote"></div>
+      <img class="hero-knife" src="images/swiss-knife.gif" alt="" width="240" height="105">
       <div class="est-tag" id="heroEst"></div>
     </div>
   </div>
