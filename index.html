@@ -94,6 +94,15 @@
     position: sticky; top: 0; z-index: 30; background: var(--bg);
     border-bottom: 1px solid var(--line);
   }
+  .brand { display: flex; align-items: center; gap: 22px; min-width: 0; }
+  .head-icons { display: flex; align-items: center; gap: 6px; }
+  .head-icons a { position: relative; width: 36px; height: 36px; display: inline-flex; align-items: center; justify-content: center; border: 1px solid var(--line); color: var(--ink-soft); transition: color .15s ease, border-color .15s ease; }
+  .head-icons a:hover, .head-icons a:focus-visible { color: var(--red); border-color: var(--red); }
+  .head-icons svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+  .head-icons a::after { content: attr(data-label); position: absolute; top: calc(100% + 8px); left: 50%; transform: translateX(-50%); white-space: nowrap; font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink); background: var(--bg-raised); border: 1px solid var(--line-strong); padding: 5px 8px; opacity: 0; pointer-events: none; transition: opacity .15s ease; z-index: 5; }
+  .head-icons a:hover::after, .head-icons a:focus-visible::after { opacity: 1; }
+  @media (max-width: 1100px) { .head-icons { display: none; } }
+  .mobile-menu a svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; margin-right: 12px; flex: none; }
   .mark { font-family: var(--font-display); font-weight: 400; font-size: 20px; letter-spacing: 0.03em; white-space: nowrap; display: inline-flex; align-items: center; gap: 14px; }
   .mark-text { font-weight: 400; }
   .hero-logo { position: absolute; left: 0%; top: 4%; width: clamp(96px, 11vw, 150px); height: auto; transform: rotate(-10deg); z-index: 3; pointer-events: none; filter: drop-shadow(0 6px 12px rgba(0,0,0,0.45)); }
@@ -367,7 +376,15 @@
 <body>
 
 <div class="topbar">
-  <a class="mark" href="#top"><b class="mark-text">The Art and Design of <span>Shawn Camp</span></b></a>
+  <div class="brand">
+    <a class="mark" href="#top"><b class="mark-text">The Art and Design of <span>Shawn Camp</span></b></a>
+    <div class="head-icons">
+      <a href="Shawn_Camp_Resume.pdf" target="_blank" rel="noopener" aria-label="R&#233;sum&#233; (PDF)" data-label="R&#233;sum&#233;"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4M9 12h6M9 15.5h6M9 8.5h2"/></svg></a>
+      <a href="https://www.linkedin.com/in/scampart" target="_blank" rel="noopener" aria-label="LinkedIn" data-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="2.5"/><path d="M8 10.5V16M8 7.6v.01M12 16v-5.5M12 13c0-1.7 1.1-2.6 2.5-2.6S17 11.3 17 13v3"/></svg></a>
+      <a href="https://www.instagram.com/scampart" target="_blank" rel="noopener" aria-label="Instagram" data-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.4 6.6v.01"/></svg></a>
+      <a href="#contact" id="headContact" aria-label="Send me a message" data-label="Email me"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3.5 6.5l8.5 6.5 8.5-6.5"/></svg></a>
+    </div>
+  </div>
   <ul class="toplinks">
     <li><a href="#work" data-jump="design">Design</a></li>
     <li><a href="#work" data-jump="instructional_design">Instructional Design</a></li>
@@ -380,7 +397,6 @@
       </ul>
     </li>
     <li><a href="#work" data-jump="animation">Animation</a></li>
-    <li><a href="Shawn_Camp_Resume.pdf" target="_blank" rel="noopener">R&#233;sum&#233;</a></li>
     <li><a href="#contact" id="menuContact" class="menu-contact">Contact</a></li>
   </ul>
   <button type="button" class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false" aria-controls="mobileMenu"><span></span><span></span><span></span></button>
@@ -391,8 +407,10 @@
     <li class="sub"><a href="#work" data-jump="caricature">Caricature</a></li>
     <li class="sub"><a href="#work" data-jump="misc">Pen and Paint</a></li>
     <li><a href="#work" data-jump="animation">Animation</a></li>
-    <li><a href="Shawn_Camp_Resume.pdf" target="_blank" rel="noopener">R&#233;sum&#233;</a></li>
-    <li><a href="#contact" id="menuContactM" class="menu-contact">Contact</a></li>
+    <li><a href="Shawn_Camp_Resume.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4M9 12h6M9 15.5h6M9 8.5h2"/></svg>R&#233;sum&#233;</a></li>
+    <li><a href="https://www.linkedin.com/in/scampart" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="2.5"/><path d="M8 10.5V16M8 7.6v.01M12 16v-5.5M12 13c0-1.7 1.1-2.6 2.5-2.6S17 11.3 17 13v3"/></svg>LinkedIn</a></li>
+    <li><a href="https://www.instagram.com/scampart" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.4 6.6v.01"/></svg>Instagram</a></li>
+    <li><a href="#contact" id="menuContactM" class="menu-contact"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3.5 6.5l8.5 6.5 8.5-6.5"/></svg>Contact</a></li>
   </ul>
 </div>
 
@@ -409,9 +427,6 @@
       </div>
       <div class="social-row">
         <a class="with-label" href="Shawn_Camp_Resume.pdf" target="_blank" rel="noopener" title="R&#233;sum&#233; (PDF)"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4M9 12h6M9 15.5h6M9 8.5h2"/></svg>R&#233;sum&#233;</a>
-        <a href="https://www.linkedin.com/in/scampart" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="2.5"/><path d="M8 10.5V16M8 7.6v.01M12 16v-5.5M12 13c0-1.7 1.1-2.6 2.5-2.6S17 11.3 17 13v3"/></svg></a>
-        <a href="https://www.instagram.com/scampart" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.4 6.6v.01"/></svg></a>
-        <a href="#contact" id="socialContact" aria-label="Send me a message" title="Send me a message"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3.5 6.5l8.5 6.5 8.5-6.5"/></svg></a>
       </div>
     </div>
     <div class="hero-art">
@@ -636,7 +651,7 @@
       setTimeout(function () { document.getElementById("cName").focus(); }, 30);
     }
     function close() { modal.hidden = true; document.body.style.overflow = ""; if (lastFocus && lastFocus.focus) lastFocus.focus(); }
-    ["menuContact", "menuContactM", "crSend", "commissionBadge", "socialContact", "aboutContact", "heroContact", "bookCaricature"].forEach(function (id) { var el = document.getElementById(id); if (el) el.addEventListener("click", open); });
+    ["menuContact", "menuContactM", "crSend", "commissionBadge", "headContact", "aboutContact", "heroContact", "bookCaricature"].forEach(function (id) { var el = document.getElementById(id); if (el) el.addEventListener("click", open); });
     document.getElementById("cClose").addEventListener("click", close);
     modal.addEventListener("mousedown", function (e) { if (e.target === modal) close(); });
     document.addEventListener("keydown", function (e) { if (e.key === "Escape" && !modal.hidden) close(); });
