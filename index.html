@@ -93,6 +93,7 @@
   @media (max-width: 360px) { .topbar .mark { font-size: 12px; } }
 
   .hero { padding: 40px 0 72px; }
+  @media (min-width: 781px) and (max-width: 1260px) { .hero { padding-left: 40px; padding-right: 40px; } }
   .hero-grid { display: grid; grid-template-columns: 1.15fr 1fr; gap: 50px; align-items: center; }
 
   .hero h1 { font-family: var(--font-display); font-weight: 900; text-transform: uppercase; font-size: clamp(46px, 6.2vw, 82px); line-height: 0.92; letter-spacing: -0.01em; margin: 0 0 28px; text-wrap: balance; }
@@ -103,6 +104,17 @@
   .btn-solid { background: var(--red); border-color: var(--red); color: #191016; }
   .btn-solid:hover { background: var(--red-ink); border-color: var(--red-ink); transform: translateY(-2px); }
   .btn-outline:hover { border-color: var(--ink); transform: translateY(-2px); }
+
+  .social-row { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; margin-top: 26px; }
+  .social-row a { width: 46px; height: 46px; display: inline-flex; align-items: center; justify-content: center; border: 1px solid var(--line-strong); color: var(--ink); transition: color .15s ease, border-color .15s ease, transform .15s ease; }
+  .social-row a:hover, .social-row a:focus-visible { color: var(--red); border-color: var(--red); transform: translateY(-2px); }
+  .social-row svg, .btn svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; flex: none; }
+  .find-me { margin-top: 30px; }
+  .find-me h3 { font-family: var(--font-mono); font-size: 12px; font-weight: 400; letter-spacing: 0.08em; text-transform: uppercase; color: var(--red); margin: 0 0 12px; }
+  .find-me ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 10px; }
+  .find-me a { display: inline-flex; align-items: center; gap: 10px; min-height: 44px; padding: 0 16px; border: 1px solid var(--line-strong); font-family: var(--font-mono); font-size: 12.5px; letter-spacing: 0.05em; text-transform: uppercase; color: var(--ink); transition: color .15s ease, border-color .15s ease; }
+  .find-me a:hover, .find-me a:focus-visible { color: var(--red); border-color: var(--red); }
+  .find-me svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; flex: none; }
 
   .hero-art { position: relative; }
   .hero { overflow-x: clip; }
@@ -317,6 +329,7 @@
       </ul>
     </li>
     <li><a href="#work" data-jump="animation">Animation</a></li>
+    <li><a href="Shawn_Camp_Resume.pdf" target="_blank" rel="noopener">R&#233;sum&#233;</a></li>
     <li><a href="#contact" id="menuContact" class="menu-contact">Contact</a></li>
   </ul>
   <button type="button" class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false" aria-controls="mobileMenu"><span></span><span></span><span></span></button>
@@ -327,6 +340,7 @@
     <li class="sub"><a href="#work" data-jump="caricature">Caricature</a></li>
     <li class="sub"><a href="#work" data-jump="misc">Pen and Paint</a></li>
     <li><a href="#work" data-jump="animation">Animation</a></li>
+    <li><a href="Shawn_Camp_Resume.pdf" target="_blank" rel="noopener">R&#233;sum&#233;</a></li>
     <li><a href="#contact" id="menuContactM" class="menu-contact">Contact</a></li>
   </ul>
 </div>
@@ -340,6 +354,12 @@
       <div class="hero-actions">
         <a class="btn btn-solid" href="#work">View Work</a>
         <a class="btn btn-outline" href="#about">About Me &#8594;</a>
+        <a class="btn btn-outline" href="Shawn_Camp_Resume.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4M9 12h6M9 15.5h6M9 8.5h2"/></svg>R&#233;sum&#233;</a>
+      </div>
+      <div class="social-row">
+        <a href="https://www.linkedin.com/in/scampart" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="2.5"/><path d="M8 10.5V16M8 7.6v.01M12 16v-5.5M12 13c0-1.7 1.1-2.6 2.5-2.6S17 11.3 17 13v3"/></svg></a>
+        <a href="https://www.instagram.com/scampart" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.4 6.6v.01"/></svg></a>
+        <a href="#contact" id="socialContact" aria-label="Send me a message" title="Send me a message"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3.5 6.5l8.5 6.5 8.5-6.5"/></svg></a>
       </div>
     </div>
     <div class="hero-art">
@@ -419,6 +439,15 @@
       <p class="section-num">02 — About</p>
       <h2 id="aboutTitle"></h2>
       <p id="aboutBody"></p>
+      <div class="find-me">
+        <h3>Find me online</h3>
+        <ul>
+          <li><a href="Shawn_Camp_Resume.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4M9 12h6M9 15.5h6M9 8.5h2"/></svg>R&#233;sum&#233; (PDF)</a></li>
+          <li><a href="https://www.linkedin.com/in/scampart" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="2.5"/><path d="M8 10.5V16M8 7.6v.01M12 16v-5.5M12 13c0-1.7 1.1-2.6 2.5-2.6S17 11.3 17 13v3"/></svg>LinkedIn</a></li>
+          <li><a href="https://www.instagram.com/scampart" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.4 6.6v.01"/></svg>Instagram</a></li>
+          <li><a href="#contact" id="aboutContact"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3.5 6.5l8.5 6.5 8.5-6.5"/></svg>Email me</a></li>
+        </ul>
+      </div>
     </div>
     <div class="about-icons">
       <div><svg viewBox="0 0 24 24"><rect x="3" y="3" width="8" height="8"/><rect x="13" y="3" width="8" height="8"/><rect x="3" y="13" width="8" height="8"/><rect x="13" y="13" width="8" height="8"/></svg>Design</div>
@@ -555,7 +584,7 @@
       setTimeout(function () { document.getElementById("cName").focus(); }, 30);
     }
     function close() { modal.hidden = true; document.body.style.overflow = ""; if (lastFocus && lastFocus.focus) lastFocus.focus(); }
-    ["menuContact", "menuContactM", "crSend", "commissionBadge"].forEach(function (id) { var el = document.getElementById(id); if (el) el.addEventListener("click", open); });
+    ["menuContact", "menuContactM", "crSend", "commissionBadge", "socialContact", "aboutContact"].forEach(function (id) { var el = document.getElementById(id); if (el) el.addEventListener("click", open); });
     document.getElementById("cClose").addEventListener("click", close);
     modal.addEventListener("mousedown", function (e) { if (e.target === modal) close(); });
     document.addEventListener("keydown", function (e) { if (e.key === "Escape" && !modal.hidden) close(); });
