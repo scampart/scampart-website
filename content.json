@@ -582,6 +582,27 @@
           "desc": "",
           "image": "images/ill-witch-doctor-cauldron.jpg",
           "fit": "letterbox"
+        },
+        {
+          "title": "Steamboat Kids",
+          "subtitle": "Illustration",
+          "desc": "",
+          "image": "images/ill-steamboat-kids.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Mr. Freeze",
+          "subtitle": "Illustration",
+          "desc": "",
+          "image": "images/ill-mr-freeze.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Hazmat Suit",
+          "subtitle": "Illustration",
+          "desc": "",
+          "image": "images/ill-hazmat-suit.jpg",
+          "fit": "letterbox"
         }
       ]
     },
@@ -735,6 +756,13 @@
           "subtitle": "Sketchbook",
           "desc": "",
           "image": "images/sk-dachshund.jpg",
+          "fit": "letterbox"
+        },
+        {
+          "title": "Anteater",
+          "subtitle": "Sketchbook",
+          "desc": "",
+          "image": "images/sk-anteater.jpg",
           "fit": "letterbox"
         }
       ]
@@ -983,6 +1011,13 @@
           "desc": "",
           "image": "images/celeb-zz-top.jpg",
           "fit": "letterbox"
+        },
+        {
+          "title": "Bernie Sanders",
+          "subtitle": "Celebrity Caricature",
+          "desc": "",
+          "image": "images/celeb-bernie-sanders.jpg",
+          "fit": "letterbox"
         }
       ]
     },
@@ -1196,6 +1231,14 @@
           "desc": "",
           "image": "images/anim-line-art-day-in-the-life.jpg",
           "video": "videos/line-art-day-in-the-life.mp4",
+          "fit": "letterbox"
+        },
+        {
+          "title": "OBIC Animation",
+          "subtitle": "Animation",
+          "desc": "",
+          "image": "images/anim-obic-animation.jpg",
+          "video": "videos/obic-animation.mp4",
           "fit": "letterbox"
         }
       ]
