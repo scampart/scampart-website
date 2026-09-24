@@ -2,6 +2,17 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<!-- Owner opt-out: visit scampart.com/?notrack once on a device to stop counting your own visits there. Visit /?track to turn counting back on. -->
+<script>
+  (function () {
+    try {
+      var q = location.search;
+      if (/[?&]notrack\b/.test(q)) localStorage.setItem("scamp_notrack", "1");
+      if (/[?&]track\b/.test(q)) localStorage.removeItem("scamp_notrack");
+      if (localStorage.getItem("scamp_notrack") === "1") window["ga-disable-G-H29HFX2WJG"] = true;
+    } catch (e) {}
+  })();
+</script>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-H29HFX2WJG"></script>
 <script>
@@ -661,7 +672,7 @@
       status.className = "cstatus"; status.textContent = "Sending\u2026"; send.disabled = true;
       var body = new FormData(form);
       fetch(form.action, { method: "POST", body: body, headers: { "Accept": "application/json" } })
-        .then(function (r) { if (!r.ok) throw new Error("bad"); document.getElementById("cFormWrap").hidden = true; document.getElementById("cThanks").hidden = false; })
+        .then(function (r) { if (!r.ok) throw new Error("bad"); document.getElementById("cFormWrap").hidden = true; document.getElementById("cThanks").hidden = false; track("contact_form_sent", { topic: (form.querySelector('input[name="topic"]:checked') || {}).value || "" }); })
         .catch(function () { status.className = "cstatus err"; status.textContent = "Sorry, that didn\u2019t go through. Please email me directly at the address below."; })
         .then(function () { send.disabled = false; });
     });
@@ -859,6 +870,48 @@
   });
   box.addEventListener('touchstart', function (e) { startX = e.touches[0].clientX; }, { passive: true });
   box.addEventListener('touchend', function (e) { if (startX === null) return; var dx = e.changedTouches[0].clientX - startX; startX = null; if (Math.abs(dx) > 50) step(dx < 0 ? 1 : -1); });
+})();
+</script>
+<script>
+// Click tracking: sends simple named events to Google Analytics so you can see what visitors actually use.
+function track(name, params) {
+  try { if (typeof gtag === "function") gtag("event", name, params || {}); } catch (e) {}
+}
+(function () {
+  function where(el) {
+    if (el.closest(".head-icons")) return "header";
+    if (el.closest(".mobile-menu")) return "mobile_menu";
+    if (el.closest(".toplinks")) return "top_menu";
+    if (el.closest(".hero")) return "hero";
+    if (el.closest("#about")) return "about";
+    if (el.closest(".contact-ribbon")) return "side_tab";
+    if (el.closest("#work")) return "work";
+    return "other";
+  }
+  document.addEventListener("click", function (e) {
+    var t = e.target; if (!t || !t.closest) return;
+    var a = t.closest("a"), el;
+    if (a) {
+      var href = a.getAttribute("href") || "";
+      if (href.indexOf("Shawn_Camp_Resume.pdf") !== -1) return track("resume_click", { location: where(a) });
+      if (href.indexOf("linkedin.com") !== -1) return track("linkedin_click", { location: where(a) });
+      if (href.indexOf("instagram.com") !== -1) return track("instagram_click", { location: where(a) });
+      if (href.indexOf("mailto:") === 0) return track("email_click", { location: where(a) });
+      if (a.id === "bookCaricature") return track("book_caricature_click", { location: where(a) });
+      if (a.id === "heroContact" || a.id === "headContact" || a.id === "aboutContact" || a.id === "menuContact" || a.id === "menuContactM" || a.id === "crSend") return track("contact_click", { location: where(a), button: a.id });
+    }
+    if (t.closest("#commissionBadge")) return track("contact_click", { location: "hero", button: "opportunities_badge" });
+    if (t.closest("#crTab")) return track("contact_click", { location: "side_tab", button: "side_tab" });
+    el = t.closest(".card");
+    if (el) {
+      var title = (el.querySelector(".card-title") || {}).textContent || "";
+      return track(el.hasAttribute("data-video") ? "video_play" : "view_piece", { title: title.trim(), section: (el.closest(".bucket") || {}).id || "" });
+    }
+    el = t.closest("button[data-bucket]");
+    if (el) return track("filter_click", { category: el.getAttribute("data-bucket") });
+    el = t.closest("a[data-jump]");
+    if (el) return track("menu_jump", { category: el.getAttribute("data-jump"), location: where(el) });
+  }, true);
 })();
 </script>
 </body>
