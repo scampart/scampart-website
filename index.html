@@ -121,7 +121,7 @@
   .toplinks { display: flex; gap: 26px; list-style: none; margin: 0; padding: 0; font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; align-items: center; }
   @media (max-width: 1180px) { .toplinks { gap: 16px; font-size: 11px; letter-spacing: 0.05em; } .mark { font-size: 18px; } }
   @media (max-width: 1100px) { .toplinks { display: none; } }
-  .toplinks a { border-bottom: 1px solid transparent; padding-bottom: 3px; }
+  .toplinks a { border-bottom: 1px solid var(--line-strong); padding-bottom: 3px; }
   .toplinks a.menu-contact { color: var(--red); font-weight: 700; }
   .toplinks a.menu-contact:hover { color: var(--paper); border-color: var(--paper); }
   .toplinks a:hover { border-color: var(--red); color: var(--red); }
@@ -230,21 +230,14 @@
   @media (max-width: 780px) { .lbox { padding: 52px 10px 16px; } .lbox-nav { top: auto; bottom: 18px; transform: none; width: 52px; height: 44px; } .lbox-prev { left: 14px; } .lbox-next { right: 14px; } .lbox-cap { margin-bottom: 52px; } }
   .bucket + .bucket { margin-top: 84px; }
   .bucket-title { font-family: var(--font-display); font-weight: 900; text-transform: uppercase; color: var(--red); font-size: clamp(28px, 3.6vw, 40px); line-height: 1; margin: 0 0 28px; padding-bottom: 14px; border-bottom: 1px solid var(--line-strong); }
-  .contact-ribbon { position: fixed; right: 0; top: 50%; transform: translateY(-50%); z-index: 30; display: flex; align-items: stretch; }
-  .contact-ribbon .cr-tab { writing-mode: vertical-rl; transform: rotate(180deg); font-family: var(--font-mono); font-weight: 700; font-size: 13px; letter-spacing: 0.14em; text-transform: uppercase; background: var(--red); color: #191016; border: 0; padding: 20px 9px; cursor: pointer; white-space: nowrap; border-radius: 0 8px 8px 0; box-shadow: 0 8px 20px rgba(0,0,0,0.45); }
-  .contact-ribbon .cr-panel { max-width: 0; overflow: hidden; white-space: nowrap; background: var(--paper); color: #1a1620; display: flex; flex-direction: column; justify-content: center; gap: 10px; padding: 14px 0; transition: max-width .25s ease; border-radius: 8px 0 0 8px; }
-  .contact-ribbon.open .cr-panel { max-width: 320px; }
-  .contact-ribbon .cr-panel a { font-family: var(--font-mono); font-size: 12.5px; letter-spacing: 0.04em; padding: 0 20px; }
-  .contact-ribbon .cr-panel .cr-send { display: none; }
-  @media (max-width: 1100px) { .contact-ribbon .cr-panel .cr-send { display: block; color: var(--red-ink); } }
-  .contact-ribbon .cr-panel a:hover { color: var(--red-ink); }
-  .contact-ribbon { flex-direction: row-reverse; }
+  .contact-ribbon { position: fixed; right: 0; top: 50%; transform: translateY(-50%); z-index: 30; display: flex; align-items: stretch; flex-direction: row-reverse; }
+  .contact-ribbon .cr-tab { writing-mode: vertical-rl; transform: rotate(180deg); font-family: var(--font-mono); font-weight: 700; font-size: 13px; letter-spacing: 0.14em; text-transform: uppercase; background: var(--red); color: #191016; border: 0; padding: 20px 9px; cursor: pointer; white-space: nowrap; border-radius: 0 8px 8px 0; box-shadow: 0 8px 20px rgba(0,0,0,0.45); transition: background .15s ease; }
+  .contact-ribbon .cr-tab:hover { background: var(--red-ink); }
   .to-top { position: absolute; right: 0; top: 100%; margin-top: 10px; width: 34px; height: 34px; padding: 0; display: flex; align-items: center; justify-content: center; cursor: pointer; background: var(--bg-raised); color: var(--red); border: 1px solid var(--red); border-right: 0; border-radius: 8px 0 0 8px; opacity: 0; visibility: hidden; transform: translateY(6px); transition: opacity .2s ease, transform .2s ease, visibility .2s, background .15s ease, color .15s ease; }
   .to-top.show { opacity: 1; visibility: visible; transform: none; }
   .to-top:hover, .to-top:focus-visible { background: var(--red); color: #191016; }
   .to-top svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
-  @media (hover: hover) { .contact-ribbon:hover .cr-panel { max-width: 320px; } }
-  @media (max-width: 780px) { .contact-ribbon .cr-tab { padding: 14px 7px; font-size: 10.5px; } .contact-ribbon.open .cr-panel { max-width: 250px; } }
+  @media (max-width: 780px) { .contact-ribbon .cr-tab { padding: 14px 7px; font-size: 10.5px; } }
   @media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; animation: none !important; transition: none !important; } }
   .copyright { text-align: center; font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.06em; color: var(--ink-soft); padding: 34px 20px 40px; border-top: 1px solid var(--line); }
   .sr-only-form { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
@@ -573,8 +566,7 @@
 </div>
 
 <div class="contact-ribbon" id="contactRibbon">
-  <button type="button" class="cr-tab" id="crTab" aria-expanded="false" aria-controls="crPanel">Contact</button>
-  <div class="cr-panel" id="crPanel"><a id="contactEmail" href="#"></a><a id="crSend" class="cr-send" href="#contact">Send a message &#8594;</a></div>
+  <button type="button" class="cr-tab" id="crTab">Contact</button>
   <button type="button" class="to-top" id="toTop" aria-label="Back to top" title="Back to top"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 19V5M5.5 11.5L12 5l6.5 6.5"/></svg></button>
 </div>
 
@@ -668,7 +660,7 @@
       setTimeout(function () { document.getElementById("cName").focus(); }, 30);
     }
     function close() { modal.hidden = true; document.body.style.overflow = ""; if (lastFocus && lastFocus.focus) lastFocus.focus(); }
-    ["menuContact", "menuContactM", "crSend", "commissionBadge", "headContact", "aboutContact", "heroContact", "bookCaricature"].forEach(function (id) { var el = document.getElementById(id); if (el) el.addEventListener("click", open); });
+    ["menuContact", "menuContactM", "crSend", "crTab", "commissionBadge", "headContact", "aboutContact", "heroContact", "bookCaricature"].forEach(function (id) { var el = document.getElementById(id); if (el) el.addEventListener("click", open); });
     document.getElementById("cClose").addEventListener("click", close);
     modal.addEventListener("mousedown", function (e) { if (e.target === modal) close(); });
     document.addEventListener("keydown", function (e) { if (e.key === "Escape" && !modal.hidden) close(); });
@@ -684,7 +676,6 @@
     });
   })();
   document.getElementById("copyright").textContent = "© " + new Date().getFullYear() + " Shawn Camp. All rights reserved.";
-  (function () { var r = document.getElementById("contactRibbon"), t = document.getElementById("crTab"); t.addEventListener("click", function (e) { e.stopPropagation(); var o = r.classList.toggle("open"); t.setAttribute("aria-expanded", String(o)); }); document.addEventListener("click", function (e) { if (!r.contains(e.target)) { r.classList.remove("open"); t.setAttribute("aria-expanded", "false"); } }); })();
 
   function escText(s) { return String(s == null ? "" : s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;"); }
   function escAttr(s) { return String(s == null ? "" : s).replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;").replace(/>/g, "&gt;"); }
@@ -747,8 +738,7 @@
 
     var c = data.contact || {};
     var emailEl = document.getElementById('contactEmail');
-    emailEl.textContent = c.email || '';
-    emailEl.href = 'mailto:' + (c.email || '');
+    if (emailEl) { emailEl.textContent = c.email || ''; emailEl.href = 'mailto:' + (c.email || ''); }
     var em2 = document.getElementById('contactEmail2'); em2.textContent = c.email || ''; em2.href = 'mailto:' + (c.email || '');
 
     BUCKET_KEYS.forEach(function (key) { renderBucket(key, data[key]); });
