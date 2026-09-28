@@ -1234,14 +1234,6 @@
           "video": "videos/trainer-character-explainer.mp4"
         },
         {
-          "title": "Dashboard Walkthrough Explainer",
-          "subtitle": "Animation",
-          "desc": "",
-          "image": "images/anim-dashboard-walkthrough-explainer.webp",
-          "video": "videos/dashboard-walkthrough-explainer.mp4",
-          "fit": "letterbox"
-        },
-        {
           "title": "Line-Art Day in the Life",
           "subtitle": "Animation",
           "desc": "",
