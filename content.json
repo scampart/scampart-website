@@ -18,9 +18,18 @@
   },
   "design": [
     {
+      "title": "Two Bandits Beer Can Illustrations",
+      "subtitle": "Packaging Illustration",
+      "desc": "Illustrated beer can designs for Two Bandits Brewing Co., Hicksville, Ohio.",
+      "image": "images/two-bandits-beer-cans.webp",
+      "fit": "wide",
+      "w": 1000,
+      "h": 610
+    },
+    {
       "title": "Ideal Hot Dog Brand Illustration",
       "subtitle": "Brand Identity",
-      "desc": "Modernized illustration of Ideal Hot Dog's original logo, Toledo, Ohio, since 1980.",
+      "desc": "Modernized illustration of Ideal Hot Dog's original logo, Toledo, Ohio.",
       "image": "images/ideal-hot-dog-brand-illustration.webp",
       "fit": "wide",
       "w": 1672,
