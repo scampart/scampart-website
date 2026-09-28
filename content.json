@@ -30,62 +30,43 @@
       "title": "Ideal Hot Dog Brand Illustration",
       "subtitle": "Brand Identity",
       "desc": "Modernized illustration of Ideal Hot Dog's original logo, Toledo, Ohio.",
-      "image": "images/ideal-hot-dog-brand-illustration.webp",
-      "fit": "wide",
-      "w": 1672,
-      "h": 941
+      "image": "images/ideal-hot-dog-brand-illustration.webp"
     },
     {
       "title": "Spirit Songbook Cover Art",
       "subtitle": "Editorial Design",
       "desc": "",
-      "image": "images/spirit-songbook.webp",
-      "fit": "wide",
-      "w": 1600,
-      "h": 1236
+      "image": "images/spirit-songbook.webp"
     },
     {
       "title": "Hospitality Trends Infographics",
       "subtitle": "Information Design",
       "desc": "",
-      "image": "images/hospitality-infographics.webp",
-      "fit": "wide",
-      "w": 2400,
-      "h": 1085
+      "image": "images/hospitality-infographics.webp"
     },
     {
       "title": "Energy Drink Vehicle Icons",
       "subtitle": "Icon Design",
       "desc": "",
-      "image": "images/energy-drink-icons.webp",
-      "fit": "contain"
+      "image": "images/energy-drink-icons.webp"
     },
     {
       "title": "Maumee Valley Movers Brand & Promotional",
       "subtitle": "Brand Identity",
       "desc": "",
-      "image": "images/maumee-valley-movers.webp",
-      "fit": "wide",
-      "w": 1161,
-      "h": 912
+      "image": "images/maumee-valley-movers.webp"
     },
     {
       "title": "Rental Company Workshop Experience",
       "subtitle": "Illustrative Design",
       "desc": "",
-      "image": "images/workshop-experience.webp",
-      "fit": "wide",
-      "w": 1384,
-      "h": 833
+      "image": "images/workshop-experience.webp"
     },
     {
       "title": "Employee Recognition Program",
       "subtitle": "Print & Collateral",
       "desc": "",
-      "image": "images/recognition-program-collage.webp",
-      "fit": "wide",
-      "w": 1600,
-      "h": 940
+      "image": "images/recognition-program-collage.webp"
     }
   ],
   "instructional_design": [
@@ -1190,8 +1171,8 @@
           "desc": "",
           "image": "images/comm-framed-portraits.webp",
           "fit": "wide",
-      "w": 800,
-      "h": 230
+          "w": 800,
+          "h": 230
         }
       ]
     }
@@ -1278,8 +1259,8 @@
           "desc": "",
           "image": "images/sb-grocery-story.webp",
           "fit": "wide",
-      "w": 1743,
-      "h": 289
+          "w": 1743,
+          "h": 289
         },
         {
           "title": "Office Chase Storyboard",
@@ -1287,8 +1268,8 @@
           "desc": "",
           "image": "images/sb-office-chase.webp",
           "fit": "wide",
-      "w": 1745,
-      "h": 256
+          "w": 1745,
+          "h": 256
         },
         {
           "title": "Airport Lounge Storyboard",
@@ -1296,8 +1277,8 @@
           "desc": "",
           "image": "images/sb-airport-lounge.webp",
           "fit": "wide",
-      "w": 1698,
-      "h": 310
+          "w": 1698,
+          "h": 310
         },
         {
           "title": "Bowling Alley Storyboard",
@@ -1305,8 +1286,8 @@
           "desc": "",
           "image": "images/sb-bowling-alley.webp",
           "fit": "wide",
-      "w": 1707,
-      "h": 381
+          "w": 1707,
+          "h": 381
         },
         {
           "title": "Five Expectations Storyboard",
@@ -1314,8 +1295,8 @@
           "desc": "",
           "image": "images/sb-five-expectations.webp",
           "fit": "wide",
-      "w": 1464,
-      "h": 688
+          "w": 1464,
+          "h": 688
         },
         {
           "title": "Route Team Meeting Storyboard",
@@ -1323,8 +1304,8 @@
           "desc": "",
           "image": "images/sb-route-meeting.webp",
           "fit": "wide",
-      "w": 1546,
-      "h": 747
+          "w": 1546,
+          "h": 747
         },
         {
           "title": "Growth in Stages Storyboard",
@@ -1534,4 +1515,4 @@
       "fit": "letterbox"
     }
   ]
-}
+}
