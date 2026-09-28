@@ -1197,12 +1197,18 @@
           "fit": "letterbox"
         },
         {
-          "title": "Broccoli Character Walk-On",
+          "title": "Presenter Character Explainer",
           "subtitle": "Animation",
           "desc": "",
-          "image": "images/anim-broccoli-walk-on.webp",
-          "video": "videos/broccoli-walk-on.mp4",
-          "fit": "letterbox"
+          "image": "images/anim-presenter-character-explainer.webp",
+          "video": "videos/presenter-character-explainer.mp4"
+        },
+        {
+          "title": "Trainer Character Explainer",
+          "subtitle": "Animation",
+          "desc": "",
+          "image": "images/anim-trainer-character-explainer.webp",
+          "video": "videos/trainer-character-explainer.mp4"
         },
         {
           "title": "Tightrope Balance Explainer",
@@ -1220,18 +1226,12 @@
           "fit": "letterbox"
         },
         {
-          "title": "Presenter Character Explainer",
+          "title": "Broccoli Character Walk-On",
           "subtitle": "Animation",
           "desc": "",
-          "image": "images/anim-presenter-character-explainer.webp",
-          "video": "videos/presenter-character-explainer.mp4"
-        },
-        {
-          "title": "Trainer Character Explainer",
-          "subtitle": "Animation",
-          "desc": "",
-          "image": "images/anim-trainer-character-explainer.webp",
-          "video": "videos/trainer-character-explainer.mp4"
+          "image": "images/anim-broccoli-walk-on.webp",
+          "video": "videos/broccoli-walk-on.mp4",
+          "fit": "letterbox"
         },
         {
           "title": "LEGO Pilot Scene",
