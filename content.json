@@ -71,6 +71,13 @@
   ],
   "instructional_design": [
     {
+      "title": "The Inbox Detective",
+      "subtitle": "Interactive Sample · Articulate Storyline 360",
+      "desc": "A noir-styled phishing-awareness microlearning course. Play the live, fully interactive module right here — flip evidence cards, spot the red flags, and crack the case.",
+      "image": "storyline/phishing-detective/story_content/thumbnail.jpg",
+      "interactive": "storyline/phishing-detective/story.html"
+    },
+    {
       "title": "Game-Based Learning Splash Screen",
       "subtitle": "Instructional Design",
       "desc": "A retro arcade title screen that introduces a game-based training program.",
