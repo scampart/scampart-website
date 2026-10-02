@@ -87,13 +87,13 @@
       "h": 866
     },
     {
-      "title": "Safety Course Title Screen",
+      "title": "Safety Starts Before You Arrive",
       "subtitle": "Instructional Design",
-      "desc": "An opening screen for an associate safety training course, pairing bold type with site photography.",
+      "desc": "Title screen for Ascend's associate safety training course, pairing bold type with site photography.",
       "image": "images/safety-course-title.webp",
       "fit": "wide",
-      "w": 1600,
-      "h": 786
+      "w": 1790,
+      "h": 879
     },
     {
       "title": "Illustrated Course Map Interface",
