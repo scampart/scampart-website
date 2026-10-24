@@ -18,20 +18,13 @@
   },
   "design": [
     {
-      "title": "Perspectives Illustrated Pillars & Words",
-      "subtitle": "Illustration & Lettering",
-      "desc": "Hand-drawn pillar illustrations and illustrated words created for Perspectives Consulting Partners.",
-      "image": "images/perspectives-pillars-words.webp",
+      "title": "Perspectives Consulting Partners Illustration Package",
+      "subtitle": "Illustration, Lettering & Icon Design",
+      "desc": "Custom pillar illustrations, hand-lettered words and a sketch-style icon library created for Perspectives Consulting Partners, with every piece animated.",
+      "image": "images/perspectives-package.webp",
       "fit": "wide",
-      "w": 1000,
-      "h": 610
-    },
-    {
-      "title": "Perspectives Icon Library",
-      "subtitle": "Icon Design",
-      "desc": "A sketch-style icon set created for Perspectives Consulting Partners.",
-      "image": "images/perspectives-icon-library.webp",
-      "fit": "letterbox"
+      "w": 2000,
+      "h": 1450
     },
     {
       "title": "Two Bandits Beer Can Illustrations",
@@ -1211,6 +1204,14 @@
       "subtype": "Animation",
       "items": [
         {
+          "title": "Perspectives Animated Illustrations",
+          "subtitle": "Animation",
+          "desc": "Illustrations, lettering and icons animated for Perspectives Consulting Partners.",
+          "image": "images/perspectives-motion-poster.webp",
+          "video": "videos/perspectives-motion-showcase.mp4",
+          "fit": "letterbox"
+        },
+        {
           "title": "OBIC Animation",
           "subtitle": "Animation",
           "desc": "",
@@ -1269,14 +1270,6 @@
           "desc": "",
           "image": "images/anim-line-art-day-in-the-life.webp",
           "video": "videos/line-art-day-in-the-life.mp4",
-          "fit": "letterbox"
-        },
-        {
-          "title": "Perspectives Animated Illustrations",
-          "subtitle": "Animation",
-          "desc": "Illustrations, lettering and icons animated for Perspectives Consulting Partners.",
-          "image": "images/perspectives-motion-poster.webp",
-          "video": "videos/perspectives-motion-showcase.mp4",
           "fit": "letterbox"
         }
       ]
